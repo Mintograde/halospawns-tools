@@ -63,6 +63,14 @@ def fix_line(line):
 
 def aether_postprocess(obj_filename, relative_paths=True, copy_img=True):
     """
+    Cleans up the given obj and associated mtl file by removing spaces and quotes
+    from material names and images.
+
+    # TODO: check if image files exist:
+        - if old image exists and new does not, rename old to new
+        - if new image exists, do nothing
+        - if neither exists, show warning for missing images
+
     aether-postprocess
         in .mtl:
             for map_Kd, change
