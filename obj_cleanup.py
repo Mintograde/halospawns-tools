@@ -48,6 +48,7 @@
 
 """
 import os
+import re
 import shutil
 
 
@@ -61,7 +62,7 @@ def fix_line(line):
         replace(' ', '-')
 
 
-def aether_postprocess(obj_filename, relative_paths=True, copy_img=True):
+def aether_postprocess(obj_filename, relative_paths=True, copy_img=True, remove_lights=True):
     """
     Cleans up the given obj and associated mtl file by removing spaces and quotes
     from material names and images.
@@ -84,11 +85,15 @@ def aether_postprocess(obj_filename, relative_paths=True, copy_img=True):
     # print(obj_filename)
     # print(directory)
 
-    # find mtl file
+    # TODO: better light/unwanted-object removal (*light removes too much)
+    excluded_materials = re.compile('.*light$')
+
+    # find mtl filename in obj
     mtl_filename = None
     with open(obj_filename) as f:
 
         out_lines = []
+        in_excluded_segment = False
         for line in f:
             if line.startswith('mtllib'):
                 # TODO: handle spaces / quotes
@@ -96,7 +101,9 @@ def aether_postprocess(obj_filename, relative_paths=True, copy_img=True):
                 mtl_filename = line.split()[-1]
             elif line.startswith('usemtl'):
                 line = f'usemtl {fix_line(line)}'
-            out_lines.append(line)
+                in_excluded_segment = excluded_materials.match(line) is not None
+            if not in_excluded_segment:
+                out_lines.append(line)
 
     # modify obj file with new material names
     with open(obj_filename, 'w') as f:
