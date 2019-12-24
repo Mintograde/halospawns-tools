@@ -1,16 +1,5 @@
 """
 
-    Input:  mapname.map
-    Output: mapname.glb
-
-    refinery:               .map -> .scenario + .scenario_structure_bsp                 also check reclaimer/meta/wrappers/halo_map.py
-    guerilla/kornman00:     .scenario -> mapname.txt
-    halospawns-tools:       mapname.txt -> itemlocations.json                           (spawns/teles/etc) -- note, refinery can also display metadata (double click .scenario tag, "display metadata")
-    aether:                 scenario_structure_bsp -> .obj + .mtl + .png
-    halospawns-tools:       post process .obj + .mtl
-    blender:                .obj + .mtl + .png -> .glb                                  https://blender.stackexchange.com/a/57921
-    halospawns:             .glb -> three.js
-
     https://discordapp.com/channels/331642419953139713/360988068901289985/601534076477767680
     L:\bens_stuff\projects\halospawns-tools\venv\Lib\site-packages\refinery\test_commands.txt
 
@@ -66,6 +55,12 @@ def convert(file_in, file_out):
     pass
 
 
+def fix_line(line):
+    return line.split(maxsplit=1)[1].\
+        replace('"', '').\
+        replace(' ', '-')
+
+
 def aether_postprocess(obj_filename, relative_paths=True, copy_img=True):
     """
     aether-postprocess
@@ -78,18 +73,27 @@ def aether_postprocess(obj_filename, relative_paths=True, copy_img=True):
     """
 
     directory = os.path.dirname(obj_filename)
-    print(obj_filename)
-    print(directory)
+    # print(obj_filename)
+    # print(directory)
 
     # find mtl file
     mtl_filename = None
     with open(obj_filename) as f:
+
+        out_lines = []
         for line in f:
             if line.startswith('mtllib'):
                 # TODO: handle spaces / quotes
+                line = line.replace('"', '')
                 mtl_filename = line.split()[-1]
-                print(f'mtl_filename is {mtl_filename}')
-                break
+            elif line.startswith('usemtl'):
+                line = f'usemtl {fix_line(line)}'
+            out_lines.append(line)
+
+    # modify obj file with new material names
+    with open(obj_filename, 'w') as f:
+
+        f.writelines(out_lines)
 
     if not mtl_filename:
         raise Exception('did not find .mtl filename in .obj')
@@ -111,17 +115,21 @@ def aether_postprocess(obj_filename, relative_paths=True, copy_img=True):
                 new_filename = old_filename.replace(' ', '-')
 
                 # rename or copy image with new name
-                old_path = os.path.join(directory, old_filename)
-                new_path = os.path.join(directory, new_filename)
-                if os.path.exists(old_path):
-                    if copy_img:
-                        print(f'renaming {old_path} to {new_path}')
-                        os.rename(old_path, new_path)
-                    else:
-                        print(f'copying {old_path} to {new_path}')
-                        shutil.copy2(old_path, new_path)
+                # old_path = os.path.join(directory, old_filename)
+                # new_path = os.path.join(directory, new_filename)
+                # if os.path.exists(old_path):
+                #     if copy_img:
+                #         print(f'renaming {old_path} to {new_path}')
+                #         os.rename(old_path, new_path)
+                #     else:
+                #         print(f'copying {old_path} to {new_path}')
+                #         shutil.copy2(old_path, new_path)
 
                 line = f'map_Kd {new_filename}'
+
+            elif line.startswith('newmtl'):
+
+                line = f'newmtl {fix_line(line)}'
 
             out_lines.append(line)
 

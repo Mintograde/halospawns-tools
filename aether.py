@@ -1,5 +1,8 @@
 """
 
+    Input:  mapname.scenario
+    Output: mapname.obj
+
     Use inspect.exe for control info
 
 """
@@ -7,8 +10,12 @@ import glob
 import os
 import shutil
 import time
+from pprint import pprint
+
 import pywinauto
 from pywinauto.application import Application
+
+from convertmap import aether_postprocess
 
 print(f'pywinauto version {pywinauto.__version__}')
 
@@ -18,7 +25,8 @@ CLEAN_DATA_FOLDER = True
 aether_path = r"C:\Users\minto\Downloads\Aether\Aether.exe"
 scenario_path = r"L:\ce\tags\levels\test\chillout\chillout.scenario"
 ce_path = r"L:\ce"
-aeth_project_name = f'{str(time.time()).replace(".","")}.aeth'
+current_time = str(time.time()).replace(".","")
+aeth_project_name = f'{current_time}.aeth'
 
 if CLEAN_DATA_FOLDER:
     try:
@@ -45,22 +53,36 @@ dialog = app.Aether.Export.BSPExport
 # export_portals_file = dialog.PortalsFileEdit.get_value()
 # export_fog_file = dialog.FogPlanesFileEdit.get_value()
 export_save_folder = dialog.child_window(title="Errors occured during the last export", auto_id="saveFolderText", control_type="Edit").get_value()
-export_bsp_file = dialog.child_window(auto_id="bspObjFilenameText", control_type="Edit").get_value()
-export_lightmaps_file = dialog.child_window(auto_id="lightmapObjFilenameText", control_type="Edit").get_value()
-export_portals_file = dialog.child_window(auto_id="portalsObjFilenameText", control_type="Edit").get_value()
-export_fog_file = dialog.child_window(auto_id="fogPlanesObjFilenameText", control_type="Edit").get_value()
-print(export_save_folder)
-print(export_bsp_file)
-print(export_lightmaps_file)
-print(export_portals_file)
-print(export_fog_file)
+export_bsp_obj = dialog.child_window(auto_id="bspObjFilenameText", control_type="Edit").get_value()
+export_lightmaps_obj = dialog.child_window(auto_id="lightmapObjFilenameText", control_type="Edit").get_value()
+export_portals_obj = dialog.child_window(auto_id="portalsObjFilenameText", control_type="Edit").get_value()
+export_fog_obj = dialog.child_window(auto_id="fogPlanesObjFilenameText", control_type="Edit").get_value()
+
+export_bsp_mtl = export_bsp_obj[:export_bsp_obj.find('.')] + '.mtl'
+export_lightmaps_mtl = export_lightmaps_obj[:export_lightmaps_obj.find('.')] + '.mtl'
+export_portals_mtl = export_portals_obj[:export_portals_obj.find('.')] + '.mtl'
+export_fog_mtl = export_fog_obj[:export_fog_obj.find('.')] + '.mtl'
+
+print('\n== obj files generated ==')
+print(' + ' + os.path.join(ce_path, export_save_folder, export_bsp_obj))
+print(' + ' + os.path.join(ce_path, export_save_folder, export_lightmaps_obj))
+print(' + ' + os.path.join(ce_path, export_save_folder, export_portals_obj))
+print(' + ' + os.path.join(ce_path, export_save_folder, export_fog_obj))
+
+print('\n== mtl files generated ==')
+print(' + ' + os.path.join(ce_path, export_save_folder, export_bsp_mtl))
+print(' + ' + os.path.join(ce_path, export_save_folder, export_lightmaps_mtl))
+print(' + ' + os.path.join(ce_path, export_save_folder, export_portals_mtl))
+print(' + ' + os.path.join(ce_path, export_save_folder, export_fog_mtl))
 
 app.Aether.Export.ExportButton.click()
 app.Aether.Export.close()
 app.Aether.close()
 
-print('== Images generated ==')
+print('\n== Images generated ==')
+images = []
 for filename in glob.glob(os.path.join(ce_path, 'data') + '/**/bitmaps/*.png', recursive=True):
+    images.append(filename)
     print(f' + {filename}')
 
 print('\n== Markers generated ==')
@@ -72,3 +94,21 @@ if CLEAN_PROJECT_FILES:
     for filename in glob.glob(os.path.join(ce_path, 'tags') + f'/**/{aeth_project_name}', recursive=True):
         print(f' - {filename}')
         os.remove(filename)
+
+
+def collect_images(image_filenames, destination_folder):
+    """
+    Copy all images into the specified folder, with new names
+    """
+    copied_files = {}
+    for source_path in image_filenames:
+        destination_filename = os.path.basename(source_path).replace(' ', '-')
+        destination_path = shutil.copy2(source_path, os.path.join(destination_folder, destination_filename))
+        copied_files[source_path] = destination_path
+    return copied_files
+
+
+filenames = collect_images(images, os.path.join(ce_path, export_save_folder))
+print(f'\nCopied {len(filenames)} images to {os.path.join(ce_path, export_save_folder)}')
+
+aether_postprocess(os.path.join(ce_path, export_save_folder, export_bsp_obj))
