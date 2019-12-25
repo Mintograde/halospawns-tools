@@ -59,7 +59,7 @@ def aether_postprocess(obj_filename, relative_paths=True, copy_img=True, remove_
             elif line.startswith('usemtl'):
                 line = f'usemtl {fix_line(line)}'
                 in_excluded_segment = excluded_materials.match(line) is not None
-            if not in_excluded_segment:
+            if not in_excluded_segment or not remove_lights:
                 out_lines.append(line)
 
     # modify obj file with new material names

@@ -114,6 +114,8 @@ def scenario_to_obj(scenario_path):
 
     aether_postprocess(os.path.join(ce_path, export_save_folder, export_bsp_obj))
 
+    return os.path.join(ce_path, export_save_folder, export_bsp_obj)
+
 
 if __name__ == '__main__':
 
