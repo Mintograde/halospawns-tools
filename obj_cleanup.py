@@ -1,49 +1,6 @@
 """
 
-    https://discordapp.com/channels/331642419953139713/360988068901289985/601534076477767680
-    L:\bens_stuff\projects\halospawns-tools\venv\Lib\site-packages\refinery\test_commands.txt
 
-
-    python repl_run.py
-    load-map "C:\Program Files (x86)\Microsoft Games\Halo Custom Edition\maps\chillout.map" --make-active 1
-    set-vars --bitmap-extract-format "png" --data-dir "C:\test\data\" --recursive 1 --tags-dir "C:\test\tags\" --tagslist-path "C:\test\tags\tagslist.txt"
-    extract-tags --tag-ids <scenario>
-
-    available commands are in arg_parsers.py
-    help info is in help_strs.py
-
-    player_starting_locations format
-        first_element   +0xC (element length 52: 0x34)
-            40 CE AF 10 3F 9D A1 77 40 18 7A 3A BF 49 0F DB 00 00 00 00 00 0D
-            C0 D7 1E 30 41 27 8C D7 3A A3 06 1A BF 66 39 99 00 01 00 00 00 01
-            big endian
-            +0  float   x
-            +4  float   y
-            +8  float   z
-            +12 float   facing (radians)
-            +13 int8    bsp index? (-1 = NONE)
-            +14 int8    team_index (0 or 1)
-            +15 int8    type 3
-            +16 int8    type 2
-            +17 int8    type 1
-            +18 int8    type 0
-
-        types:
-            0x0     none
-            0x1     ctf
-            0x2     slayer
-            0x3     oddball
-            0x4     king
-            0x5     race
-            0x6     terminator
-            0x7     stub
-            0x8     ignored1
-            0x9     ignored2
-            0xA     ignored3
-            0xB     ignored4
-            0xC     all games
-            0xD     all games except ctf
-            0xE     all games except ctf and race
 
 
 """
