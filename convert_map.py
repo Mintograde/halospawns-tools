@@ -13,9 +13,11 @@
     help info is in help_strs.py
 
 """
-import glob
 import os
+import re
 import shutil
+import sys
+from io import StringIO
 
 from refinery import core
 
@@ -32,11 +34,10 @@ def map_to_scenario(filename):
     # set-vars --bitmap-extract-format "png" --data-dir "C:\test\data\" --recursive 1 --tags-dir "C:\test\tags\" --tagslist-path "C:\test\tags\tagslist.txt"
     variables = dict(
         bitmap_extract_format='png',
-        # data_dir='C:\\test\\data\\',
         recursive=1,
         tags_dir='C:\\test\\tags\\',
         tagslist_path='C:\\test\\tags\\tagslist.txt',
-        # do_printout=1
+        # do_printout=1  # prints entire list of extracted tags
     )
     names = list(variables.keys())
     values = list(variables.values())
@@ -46,14 +47,23 @@ def map_to_scenario(filename):
     refinery_instance.enqueue('extract_tags', tag_ids=['<scenario>'], overwrite=1)
     refinery_instance.process_queue()
 
-    scenario_files = glob.glob(r'C:/test/tags/**/*.scenario', recursive=True)
-    # for filename in scenario_files:
-    #     print(os.path.join(filename))
+    refinery_instance.enqueue('print_map_info')
+    old_stdout = sys.stdout
+    result = StringIO()
+    sys.stdout = result
+    refinery_instance.process_queue()
+    result_string = result.getvalue()
+    sys.stdout = old_stdout
 
-    return scenario_files
+    map_name = ''
+    m = re.search(' {4}name +== (?P<mapname>.+)\\n', result_string)
+    if m:
+        map_name = m.group('mapname')
 
-    # refinery_instance.enqueue('print_map_info')
-    # refinery_instance.process_queue()
+    # scenario_files = glob.glob(f'C:/test/tags/levels/test/{map_name}/{map_name}.scenario', recursive=True)
+
+    # TODO: get scenario path from mek directly
+    return f'C:/test/tags/levels/test/{map_name}/{map_name}.scenario'
 
 
 if __name__ == '__main__':
@@ -62,4 +72,4 @@ if __name__ == '__main__':
     tag_directory = r'C:\test\tags'
     data_directory = r'C:\test\data'
     tagslist_path = r'C:\test\tags\tagslist.txt'
-    map_to_scenario(map_filename)
+    print(map_to_scenario(map_filename))
