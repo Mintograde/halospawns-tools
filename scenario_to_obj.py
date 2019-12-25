@@ -100,8 +100,11 @@ def scenario_to_obj(scenario_path):
         print(f' + {filename}')
 
     print('\n== Markers generated ==')
-    for filename in glob.glob(os.path.join(ce_path, export_save_folder) + '*.aemk', recursive=True):
+    markers = []
+    print(f'finding markers in {os.path.join(ce_path)}/**/*.aemk')
+    for filename in glob.glob(os.path.join(ce_path) + '/**/*.aemk', recursive=True):
         print(f' + {filename}')
+        markers.append(filename)
 
     if CLEAN_PROJECT_FILES:
         print('\n== Removing Aether project files ==')
@@ -112,9 +115,16 @@ def scenario_to_obj(scenario_path):
     renamed_files = collect_images(images, os.path.join(ce_path, export_save_folder))
     print(f'\nCopied {len(renamed_files)} images to {os.path.join(ce_path, export_save_folder)}')
 
-    aether_postprocess(os.path.join(ce_path, export_save_folder, export_bsp_obj))
+    obj_filename, mtl_filename = aether_postprocess(os.path.join(ce_path, export_save_folder, export_bsp_obj))
 
-    return os.path.join(ce_path, export_save_folder, export_bsp_obj)
+    return dict(
+        project_name=aeth_project_name,
+        map_name=export_bsp_obj[:export_bsp_obj.find('.')],
+        obj=obj_filename,
+        mtl=mtl_filename,
+        images=list(renamed_files.values()),
+        markers=markers
+    )
 
 
 if __name__ == '__main__':

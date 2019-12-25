@@ -110,6 +110,8 @@ def aether_postprocess(obj_filename, relative_paths=True, copy_img=True, remove_
 
         f.writelines(out_lines)
 
+    return obj_filename, os.path.join(directory, mtl_filename)
+
 
 if __name__ == '__main__':
 
