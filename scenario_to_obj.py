@@ -101,8 +101,8 @@ def scenario_to_obj(scenario_path):
 
     print('\n== Markers generated ==')
     markers = []
-    print(f'finding markers in {os.path.join(ce_path)}/**/*.aemk')
-    for filename in glob.glob(os.path.join(ce_path) + '/**/*.aemk', recursive=True):
+    print(f'finding markers in {os.path.join(ce_path)}/data/**/*.aemk')
+    for filename in glob.glob(os.path.join(ce_path) + '/data/**/*.aemk', recursive=True):
         print(f' + {filename}')
         markers.append(filename)
 
