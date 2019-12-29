@@ -1,2 +1,2 @@
 pywinauto
-refinery=2.2.3
+refinery==2.2.3
