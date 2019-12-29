@@ -13,10 +13,12 @@ def map_to_glb(map_filename, base_directory, output_directory, keep_blend_files=
 
     scenario_filename, meta_filename = map_to_scenario(map_filename, base_directory)
 
-    files = scenario_to_obj(scenario_path=scenario_filename)
+    files = scenario_to_obj(scenario_path=scenario_filename, remove_lights=False)
     destination = os.path.join(output_directory, files['map_name'])
     destination_files = {}
-    for file in [files['obj'], files['mtl'], *files['markers'], *files['images'], meta_filename]:
+    # remove duplicates with list(dict.fromkeys())
+    source_files = list(dict.fromkeys([files['obj'], files['mtl'], *files['markers'], *files['images'], meta_filename]))
+    for file in source_files:
         os.makedirs(destination, exist_ok=True)
         destination_files[file] = shutil.move(file, os.path.join(destination, os.path.basename(file)))
     print(f'Moved {len(destination_files)} to {destination}')

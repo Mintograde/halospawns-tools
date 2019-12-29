@@ -59,11 +59,27 @@ def map_to_scenario(filename, base_directory, delete_tags_directory=True):
     refinery_instance.enqueue('extract_tags', tag_ids=['<scenario>'], overwrite=1)
     refinery_instance.process_queue()
 
-    active_map = refinery_instance.active_map
-    index_ref = active_map.tag_index.scenario_tag_id
-    meta = refinery_instance.active_map.get_meta(index_ref & 0xFFff, True)
-    spawns_array = meta.player_starting_locations.player_starting_locations_array
+    # find exported scenario file, and rename if needed
+    # FIXME: find a better way of doing this
+    scenario_path = ''
+    with open(refinery_instance.tagslist_path, 'r') as f:
+        for line in f.readlines():
+            if line.strip().endswith('.scenario'):
+                scenario_path = os.path.join(base_directory, 'tags/', line[line.find(':')+2:-1])
+                break
+    if not scenario_path:
+        raise Exception('unable to find exported scenario filename in tagslist.txt')
+    parent_directory = os.path.basename(os.path.dirname(scenario_path))
+    scenario_filename = os.path.splitext(os.path.basename(scenario_path)[0])
+    if parent_directory != scenario_filename:
+        new_scenario_path = os.path.join(os.path.dirname(scenario_path), f'{parent_directory}.scenario')
+        old_scenario_path = scenario_path
+        scenario_path = shutil.move(scenario_path, new_scenario_path)
+        print(f'Renamed "{old_scenario_path}" to "{new_scenario_path}"')
 
+    # get extra metadata (spawns, scenery, teleporters, and equipment locations)
+    meta = refinery_instance.active_map.scnr_meta
+    spawns_array = meta.player_starting_locations.player_starting_locations_array
     spawns_list = []
     for i, spawn in enumerate(spawns_array):
         spawn_dict = dict(
@@ -85,9 +101,6 @@ def map_to_scenario(filename, base_directory, delete_tags_directory=True):
         )
         spawns_list.append(spawn_dict)
 
-    map_name = active_map.map_name
-    scenario_path = os.path.join(base_directory, f'tags/levels/test/{map_name}/{map_name}.scenario')
-
     meta_json = json.dumps(
         dict(
             spawns=spawns_list,
@@ -96,7 +109,7 @@ def map_to_scenario(filename, base_directory, delete_tags_directory=True):
             equipment=[],
         )
     )
-    meta_json_path = os.path.join(base_directory, f'tags/levels/test/{map_name}/{map_name}.json')
+    meta_json_path = os.path.join(os.path.join(os.path.dirname(scenario_path), f'{parent_directory}.json'))
     with open(meta_json_path, 'w') as f:
         f.write(meta_json)
 

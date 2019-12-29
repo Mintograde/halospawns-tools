@@ -41,7 +41,7 @@ def collect_images(image_filenames, destination_folder):
     return copied_files
 
 
-def scenario_to_obj(scenario_path):
+def scenario_to_obj(scenario_path, remove_lights=True):
 
     if CLEAN_DATA_FOLDER:
         try:
@@ -56,6 +56,7 @@ def scenario_to_obj(scenario_path):
     app.Dialog.Save.click()
 
     app.Aether.restore()
+    app.Aether.ExportBsp.wait('enabled')
     app.Aether.ExportBsp.click_input()
 
     # TODO: read filenames from export dialog
@@ -115,7 +116,7 @@ def scenario_to_obj(scenario_path):
     renamed_files = collect_images(images, os.path.join(ce_path, export_save_folder))
     print(f'\nCopied {len(renamed_files)} images to {os.path.join(ce_path, export_save_folder)}')
 
-    obj_filename, mtl_filename = aether_postprocess(os.path.join(ce_path, export_save_folder, export_bsp_obj))
+    obj_filename, mtl_filename = aether_postprocess(os.path.join(ce_path, export_save_folder, export_bsp_obj), remove_lights=remove_lights)
 
     return dict(
         project_name=aeth_project_name,
