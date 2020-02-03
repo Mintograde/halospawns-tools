@@ -139,6 +139,7 @@ def map_to_scenario(filename, base_directory, delete_tags_directory=True):
         if flag.type.enum_name in ('teleport_from', 'teleport_to'):
             teleporters[flag.team_index][flag.type.enum_name] = flag_item
         flags_list.append(flag_item)
+    teleporters = list(teleporters.values())
 
     meta_json = json.dumps(
         dict(
