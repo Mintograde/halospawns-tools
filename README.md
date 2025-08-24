@@ -1,4 +1,13 @@
 
+Blender/blendkrieg setup:
+
+- download blendkrieg from https://github.com/Sigmmma/Blendkrieg/tree/anim-bones
+- copy extracted folder to blender addons folder `2.90\scripts\addons\Blendkrieg-anim-bones`
+- cmd into `addons\Blendkrieg-anim-bones` directory
+- run `python3 -m pip install -r dependencies.txt --target="./lib" --no-deps`
+- in blender, enable addon from addons menu
+
+
 map conversion process
 
 ```

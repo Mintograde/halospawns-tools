@@ -10,38 +10,114 @@
 """
 import glob
 import os
+import re
 import shutil
 import time
-
-import pywinauto
-from pywinauto.application import Application
+import subprocess
+from pathlib import Path
+from pprint import pprint
 
 from obj_cleanup import aether_postprocess
-
-print(f'pywinauto version {pywinauto.__version__}')
 
 CLEAN_PROJECT_FILES = True
 CLEAN_DATA_FOLDER = True
 
 aether_path = r"C:\Users\minto\Downloads\Aether\Aether.exe"
-ce_path = r"L:\ce"
+ce_path = os.environ.get('CE_PATH', r"L:\ce")
+# ce_path = r"V:\test"
 current_time = str(time.time()).replace(".","")
 aeth_project_name = f'{current_time}.aeth'
 
 
 def collect_images(image_filenames, destination_folder):
     """
-    Copy all images into the specified folder, with new names
+    Copy all images into the specified folder, with new names (replacing spaces with dashes)
     """
     copied_files = {}
     for source_path in image_filenames:
         destination_filename = os.path.basename(source_path).replace(' ', '-')
-        destination_path = shutil.copy2(source_path, os.path.join(destination_folder, destination_filename))
-        copied_files[source_path] = destination_path
+        try:
+            destination_path = shutil.copy2(source_path, os.path.join(destination_folder, destination_filename))
+        except shutil.SameFileError:
+            destination_path = source_path
+        finally:
+            copied_files[source_path] = destination_path
     return copied_files
 
 
-def scenario_to_obj(scenario_path, remove_lights=True):
+def run_aether_and_get_paths(scenario_path):
+    """
+    Runs the Aether tool and extracts specified file paths from its output.
+
+    Args:
+        scenario_path (str): The full path to the .scenario file to be processed.
+
+    Returns:
+        dict: A dictionary containing the extracted paths (e.g., 'folder', 'bsp').
+              Returns None if the command fails or no data is found.
+    """
+    exe_path = os.environ.get(
+        'AETHER_EXECUTABLE_PATH',
+        r"L:\bens_stuff\projects\AetherCLI\bin\Debug\net8.0\AetherCLI.exe"
+    )
+
+    command = [
+        exe_path,
+        '--hek-folder', ce_path.rstrip(os.sep) + os.sep,  # FIXME: better path handling
+        '--bitmap-format', '3',
+        '--bitmap-export', '1',
+        '--overwrite-files', 'true',
+        # '--saveconfig',
+        str(scenario_path)
+    ]
+
+    print(f"Running command: {' '.join(command)}")
+
+    try:
+        result = subprocess.run(
+            command,
+            capture_output=True,
+            text=True,
+            # shell=True,
+            check=True,
+            encoding='utf-8'
+        )
+
+        print("Command executed successfully.")
+        print(f"Return Code: {result.returncode}")
+        print("\n--- Full Tool STDOUT ---")
+        print(result.stdout or "[No stdout captured]")
+        print("------------------------\n")
+        print("\n--- Full Tool STDERR ---")
+        print(result.stderr or "[No stderr captured]")
+        print("------------------------\n")
+
+        extracted_data = {}
+        pattern = re.compile(r"^@@(\w+)@@\s+(.*)$")
+        for line in result.stdout.splitlines():
+            if match := pattern.match(line.strip()):
+                variable_name = match.group(1)
+                file_path = Path(match.group(2))
+                extracted_data[variable_name] = file_path
+                if file_path.suffix == '.obj':
+                    extracted_data[f'{variable_name}_mtl'] = file_path.with_suffix('.mtl')
+
+        return extracted_data
+
+    except FileNotFoundError:
+        print(f"ERROR: The executable was not found at '{exe_path}'")
+        print("Please ensure the path is correct.")
+        return None
+    except subprocess.CalledProcessError as e:
+        print(f"ERROR: The command failed with exit code {e.returncode}.")
+        print("\n--- STDOUT ---")
+        print(e.stdout)
+        print("\n--- STDERR ---")
+        print(e.stderr)
+        return None
+
+
+def scenario_to_obj(scenario_path, meta_filename=None, remove_lights=True):
 
     if CLEAN_DATA_FOLDER:
         try:
@@ -50,53 +126,28 @@ def scenario_to_obj(scenario_path, remove_lights=True):
             print('Warning: could not clean data folder.')
             print(e)
 
-    app = Application(backend="uia").start(f'{aether_path} {scenario_path}')
+    aether_output = run_aether_and_get_paths(scenario_path)
 
-    app.Dialog.FileameEdit.set_text(f"{aeth_project_name}")
-    app.Dialog.Save.click()
+    if aether_output:
+        print("Successfully extracted data:\n")
 
-    app.Aether.restore()
-    app.Aether.ExportBsp.wait('enabled')
-    app.Aether.ExportBsp.click_input()
+        for key, path in aether_output.items():
+            print(f"  - {key:<16}: {path}")
 
-    # TODO: read filenames from export dialog
-    dialog = app.Aether.Export.BSPExport
-    # dialog.print_control_identifiers()
-    # export_save_folder = dialog.SaveFolderEdit.get_value()
-    # export_bsp_file = dialog.BSPFileEdit.get_value()
-    # export_lightmaps_file = dialog.LightmapsFileEdit.get_value()
-    # export_portals_file = dialog.PortalsFileEdit.get_value()
-    # export_fog_file = dialog.FogPlanesFileEdit.get_value()
-    export_save_folder = dialog.child_window(title="Errors occured during the last export", auto_id="saveFolderText", control_type="Edit").get_value()
-    export_bsp_obj = dialog.child_window(auto_id="bspObjFilenameText", control_type="Edit").get_value()
-    export_lightmaps_obj = dialog.child_window(auto_id="lightmapObjFilenameText", control_type="Edit").get_value()
-    export_portals_obj = dialog.child_window(auto_id="portalsObjFilenameText", control_type="Edit").get_value()
-    export_fog_obj = dialog.child_window(auto_id="fogPlanesObjFilenameText", control_type="Edit").get_value()
+        print("\n--- Accessing individual values ---")
+        bsp_path = aether_output.get("bsp")
+        if bsp_path:
+            print(f"The BSP file is located at: {bsp_path}")
 
-    export_bsp_mtl = export_bsp_obj[:export_bsp_obj.find('.')] + '.mtl'
-    export_lightmaps_mtl = export_lightmaps_obj[:export_lightmaps_obj.find('.')] + '.mtl'
-    export_portals_mtl = export_portals_obj[:export_portals_obj.find('.')] + '.mtl'
-    export_fog_mtl = export_fog_obj[:export_fog_obj.find('.')] + '.mtl'
+    else:
+        print("\nScript finished with errors. No data was extracted.")
 
-    print('\n== obj files generated ==')
-    print(' + ' + os.path.join(ce_path, export_save_folder, export_bsp_obj))
-    print(' + ' + os.path.join(ce_path, export_save_folder, export_lightmaps_obj))
-    print(' + ' + os.path.join(ce_path, export_save_folder, export_portals_obj))
-    print(' + ' + os.path.join(ce_path, export_save_folder, export_fog_obj))
-
-    print('\n== mtl files generated ==')
-    print(' + ' + os.path.join(ce_path, export_save_folder, export_bsp_mtl))
-    print(' + ' + os.path.join(ce_path, export_save_folder, export_lightmaps_mtl))
-    print(' + ' + os.path.join(ce_path, export_save_folder, export_portals_mtl))
-    print(' + ' + os.path.join(ce_path, export_save_folder, export_fog_mtl))
-
-    app.Aether.Export.ExportButton.click()
-    app.Aether.Export.close()
-    app.Aether.close()
+    bsp_obj_filename, bsp_mtl_filename = aether_postprocess(aether_output['bsp'], remove_lights=remove_lights)
+    lightmaps_obj_filename, lightmaps_mtl_filename = aether_postprocess(aether_output['lightmap'], remove_lights=remove_lights, find_lightmaps=meta_filename is None, meta_filename=meta_filename)
 
     print('\n== Images generated ==')
     images = []
-    for filename in glob.glob(os.path.join(ce_path, 'data') + '/**/bitmaps/*.png', recursive=True):
+    for filename in glob.glob(os.path.join(ce_path, 'data') + '/**/*.png', recursive=True):
         images.append(filename)
         print(f' + {filename}')
 
@@ -113,16 +164,22 @@ def scenario_to_obj(scenario_path, remove_lights=True):
             print(f' - {filename}')
             os.remove(filename)
 
-    renamed_files = collect_images(images, os.path.join(ce_path, export_save_folder))
-    print(f'\nCopied {len(renamed_files)} images to {os.path.join(ce_path, export_save_folder)}')
+    # from pathlib import Path
+    # folder = Path("/tmp/ce")
+    # print('=== MTL FILES ===')
+    # for f in folder.rglob("*.mtl"):
+    #     if f.is_file():
+    #         print(f)
 
-    obj_filename, mtl_filename = aether_postprocess(os.path.join(ce_path, export_save_folder, export_bsp_obj), remove_lights=remove_lights)
-
+    renamed_files = collect_images(images, aether_output['folder'])
+    print(f'\nCopied {len(renamed_files)} images to {aether_output["folder"]}')
     return dict(
         project_name=aeth_project_name,
-        map_name=export_bsp_obj[:export_bsp_obj.find('.')],
-        obj=obj_filename,
-        mtl=mtl_filename,
+        map_name=aether_output['bsp'].stem,
+        bsp_obj=aether_output['bsp'],
+        bsp_mtl=aether_output['bsp_mtl'],
+        lightmaps_obj=aether_output['lightmap'],
+        lightmaps_mtl=aether_output['lightmap_mtl'],
         images=list(renamed_files.values()),
         markers=markers
     )
@@ -130,4 +187,4 @@ def scenario_to_obj(scenario_path, remove_lights=True):
 
 if __name__ == '__main__':
 
-    scenario_to_obj(scenario_path=r"L:\ce\tags\levels\test\chillout\chillout.scenario")
+    pprint(scenario_to_obj(scenario_path=r"V:\test\tags\levels\test\prisoner\prisoner.scenario"))

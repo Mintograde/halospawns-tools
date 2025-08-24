@@ -1,2 +1,15 @@
-pywinauto
-refinery==2.2.3
+#pywinauto
+
+# https://stackoverflow.com/a/4837571
+#-e git+ssh://git@github.com/Mintograde/reclaimer.git@various_fixes_and_additions#egg=reclaimer
+reclaimer==2.11.2
+
+refinery==2.6.0
+#-e git+ssh://git@github.com/Sigmmma/refinery.git@various_fixes_and_additions#egg=refinery
+#numpy
+#pandas
+#matplotlib
+pillow
+#scipy
+boto3
+awscrt
