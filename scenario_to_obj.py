@@ -142,8 +142,8 @@ def scenario_to_obj(scenario_path, meta_filename=None, remove_lights=True):
     else:
         print("\nScript finished with errors. No data was extracted.")
 
-    bsp_obj_filename, bsp_mtl_filename = aether_postprocess(aether_output['bsp'], remove_lights=remove_lights)
-    lightmaps_obj_filename, lightmaps_mtl_filename = aether_postprocess(aether_output['lightmap'], remove_lights=remove_lights, find_lightmaps=meta_filename is None, meta_filename=meta_filename)
+    aether_postprocess(aether_output['bsp'], remove_lights=remove_lights)
+    aether_postprocess(aether_output['lightmap'], remove_lights=remove_lights, find_lightmaps=meta_filename is None, meta_filename=meta_filename)
 
     print('\n== Images generated ==')
     images = []

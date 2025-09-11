@@ -5,6 +5,7 @@ ARG BLENDER_VERSION="${BLENDER_MAJOR_MINOR}.0"
 ARG AETHER_REPO="Mintograde/AetherCLI"
 ARG AETHER_TAG="v1.0.8"
 ARG AETHER_ASSET_NAME="AetherCLI-${AETHER_TAG}-linux-x64.zip"
+ARG AETHER_ASSET_URL="https://github.com/${AETHER_REPO}/releases/download/${AETHER_TAG}/${AETHER_ASSET_NAME}"
 
 # NOTE: downloading standalone python to work around tkinter issues in the base image (required for reclaimer/refinery)
 #       https://github.com/aws/aws-lambda-base-images/tree/python3.10
@@ -31,22 +32,7 @@ RUN wget https://download.blender.org/release/Blender${BLENDER_MAJOR_MINOR}/blen
     mkdir blender && \
     tar -xvf blender-${BLENDER_VERSION}-linux-x64.tar.xz --strip-components=1 -C blender
 
-RUN --mount=type=secret,id=github_pat \
-    echo "Fetching release info for tag ${AETHER_TAG} from repo ${AETHER_REPO}..." && \
-    ASSET_URL=$(curl --fail --location \
-        --header "Authorization: token $(cat /run/secrets/github_pat)" \
-        --header "Accept: application/vnd.github.v3+json" \
-        "https://api.github.com/repos/${AETHER_REPO}/releases/tags/${AETHER_TAG}" | \
-        jq -r ".assets[] | select(.name == \"${AETHER_ASSET_NAME}\") | .url") && \
-    if [ -z "$ASSET_URL" ]; then \
-        echo "ERROR: Could not find asset URL for ${ASSET_NAME}." >&2; exit 1; \
-    fi && \
-    echo "Downloading asset from ${ASSET_URL}..." && \
-    curl --fail --location --output "${AETHER_ASSET_NAME}" \
-        --header "Authorization: token $(cat /run/secrets/github_pat)" \
-        --header "Accept: application/octet-stream" \
-        "${ASSET_URL}" && \
-    echo "Unpacking asset..." && \
+RUN wget -O ${AETHER_ASSET_NAME} ${AETHER_ASSET_URL} && \
     unzip "${AETHER_ASSET_NAME}" -d "AetherCLI" && rm "${AETHER_ASSET_NAME}"
 
 
@@ -59,8 +45,8 @@ COPY --from=builder /opt/dotnet /opt/dotnet
 COPY --from=builder /build/blender ${LAMBDA_TASK_ROOT}/blender
 COPY --from=builder /build/AetherCLI ${LAMBDA_TASK_ROOT}/AetherCLI
 
-ENV DOTNET_ROOT=/opt/dotnet \
-    AETHER_EXECUTABLE_PATH=${LAMBDA_TASK_ROOT}/AetherCLI/AetherCLI \
+ENV DOTNET_ROOT=/opt/dotnet
+ENV AETHER_EXECUTABLE_PATH=${LAMBDA_TASK_ROOT}/AetherCLI/AetherCLI \
     BLENDER_EXECUTABLE_PATH=${LAMBDA_TASK_ROOT}/blender/blender \
     CE_PATH=/tmp/ce \
     PATH="/opt/python/bin:${LAMBDA_TASK_ROOT}:${LAMBDA_TASK_ROOT}/blender:${DOTNET_ROOT}:${PATH}" \
