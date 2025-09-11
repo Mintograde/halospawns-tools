@@ -14,11 +14,11 @@ Write-Host "Build complete. Image '$($imageName):$imageTag' created."
 
 $imageUri = "283279960672.dkr.ecr.us-east-1.amazonaws.com/$($imageName):$imageTag"
 
-#aws ecr get-login-password --region us-east-1 --profile "halospawns-$environment" | docker login --username AWS --password-stdin "283279960672.dkr.ecr.us-east-1.amazonaws.com"
-#docker tag "$($imageName):$imageTag" $imageUri
-#docker push $imageUri
-#
-#aws lambda update-function-code --profile "halospawns-$environment" --function-name "halospawns-tools-$environment" --image-uri $imageUri
+aws ecr get-login-password --region us-east-1 --profile "halospawns-$environment" | docker login --username AWS --password-stdin "283279960672.dkr.ecr.us-east-1.amazonaws.com"
+docker tag "$($imageName):$imageTag" $imageUri
+docker push $imageUri
+
+aws lambda update-function-code --profile "halospawns-$environment" --function-name "halospawns-tools-$environment" --image-uri $imageUri
 
 # NOTE: to test locally, you can do this:
 # docker run -p 9000:8080 -v "$HOME/.aws:/root/.aws:ro" -e AWS_PROFILE=halospawns-$environment halospawns-tools:latest
