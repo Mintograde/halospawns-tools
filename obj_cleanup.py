@@ -196,8 +196,8 @@ def aether_postprocess(obj_filename, relative_paths=True, copy_img=True, remove_
         fixed_vt_indices = {}  # starts at 1, so target line is first_vt_line + vt_index (-1?)
         current_material = ''
         current_material_index = 0
-        vertex_pattern = re.compile('f(?: \d+/(\d+)/\d+ \d+/(\d+)/\d+ \d+/(\d+)/\d+)')
-        uv_pattern = re.compile('vt (?P<u>.+) (?P<v>.+) .+')
+        vertex_pattern = re.compile(r'f(?: \d+/(\d+)/\d+ \d+/(\d+)/\d+ \d+/(\d+)/\d+)')
+        uv_pattern = re.compile(r'vt (?P<u>.+) (?P<v>.+) .+')
         for line in f:
             if line.startswith('mtllib'):
                 # TODO: handle spaces / quotes

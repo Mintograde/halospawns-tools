@@ -1,8 +1,24 @@
 import os
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 from pprint import pprint
+
+# replace packages removed from python in 3.12 (imp) and 3.13 (audioop), which are still used by reclaimer
+try:
+    import zombie_imp
+except ImportError:
+    pass
+
+try:
+    import audioop
+except ImportError:
+    try:
+        import audioop_lts as audioop
+        sys.modules['audioop'] = audioop
+    except ImportError:
+        pass
 
 from map_to_scenario import map_to_scenario
 from scenario_to_obj import scenario_to_obj

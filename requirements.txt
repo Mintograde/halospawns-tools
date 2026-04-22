@@ -12,4 +12,7 @@ refinery==2.6.0
 pillow
 #scipy
 boto3
+awslambdaric
 awscrt
+audioop-lts; python_version>='3.13'
+zombie-imp; python_version>='3.13'
