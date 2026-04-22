@@ -4,7 +4,7 @@ $aetherTag = "v1.0.8"
 $environment = "dev"
 
 $env:DOCKER_BUILDKIT = 1
-$dockerCommand = "docker build --progress=plain --build-arg AETHER_TAG=$aetherTag -t $($imageName):$imageTag ."
+$dockerCommand = "docker build --progress=plain --provenance=false --platform linux/amd64 --build-arg AETHER_TAG=$aetherTag -t $($imageName):$imageTag ."
 Write-Host "Running Docker build command:"
 Write-Host $dockerCommand
 

@@ -75,7 +75,9 @@ def handler(event, context):
 
                     pprint(result_path)
 
+                    print(f"Uploading to s3://{bucket}/maps/processed/{os.path.basename(result_path['glb'])}")
                     s3.upload_file(result_path["glb"], bucket, f'maps/processed/{os.path.basename(result_path["glb"])}')
+                    print(f"Uploading to s3://{bucket}/maps/processed/{os.path.basename(result_path['blend'])}")
                     s3.upload_file(result_path["blend"], bucket, f'maps/processed/{os.path.basename(result_path["blend"])}')
 
                     results.append({
