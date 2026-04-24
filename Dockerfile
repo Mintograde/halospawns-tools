@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lambda/python:3.14 AS builder
+FROM python:3.14-slim AS builder
 
 ARG BLENDER_MAJOR_MINOR="2.93"
 ARG BLENDER_VERSION="${BLENDER_MAJOR_MINOR}.0"
@@ -8,23 +8,11 @@ ARG AETHER_ASSET_NAME="AetherCLI-${AETHER_TAG}-linux-x64.zip"
 ARG AETHER_ASSET_URL="https://github.com/${AETHER_REPO}/releases/download/${AETHER_TAG}/${AETHER_ASSET_NAME}"
 ARG DOTNET_CHANNEL="8.0"
 
-# NOTE: downloading standalone python to work around tkinter issues in the base image (required for reclaimer/refinery)
-#       https://github.com/aws/aws-lambda-base-images/tree/python3.10
-#       https://github.com/aws/aws-lambda-base-images/issues/70
-#       https://github.com/aws/aws-lambda-python-runtime-interface-client/issues/90
-#       https://github.com/open-mmlab/mmdetection/issues/9403
-#       https://stackoverflow.com/questions/74473315/unable-to-import-module-app-no-module-named-tkinter-errortype-runtim
-ARG PYTHON_VERSION="3.14.4"
-ARG PYTHON_TAG="20260408"
-ARG PYTHON_BUILD_URL="https://github.com/astral-sh/python-build-standalone/releases/download/${PYTHON_TAG}/cpython-${PYTHON_VERSION}+${PYTHON_TAG}-x86_64-unknown-linux-gnu-install_only.tar.gz"
-
-RUN dnf install -y wget unzip tar gzip xz jq findutils
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends wget unzip tar gzip xz-utils jq findutils ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /build
-
-RUN wget -O python.tar.gz ${PYTHON_BUILD_URL} && \
-    mkdir /opt/python && \
-    tar -xzf python.tar.gz -C /opt/python --strip-components=1
 
 RUN wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh && \
     chmod +x ./dotnet-install.sh && \
@@ -38,22 +26,20 @@ RUN wget -O ${AETHER_ASSET_NAME} ${AETHER_ASSET_URL} && \
     unzip "${AETHER_ASSET_NAME}" -d "AetherCLI" && rm "${AETHER_ASSET_NAME}"
 
 
-FROM public.ecr.aws/lambda/python:3.14
+FROM python:3.14-slim
 
-WORKDIR ${LAMBDA_TASK_ROOT}
+WORKDIR /var/task
 
-COPY --from=builder /opt/python /opt/python
 COPY --from=builder /opt/dotnet /opt/dotnet
-COPY --from=builder /build/blender ${LAMBDA_TASK_ROOT}/blender
-COPY --from=builder /build/AetherCLI ${LAMBDA_TASK_ROOT}/AetherCLI
+COPY --from=builder /build/blender /var/task/blender
+COPY --from=builder /build/AetherCLI /var/task/AetherCLI
 
 ENV DOTNET_ROOT=/opt/dotnet
-ENV AETHER_EXECUTABLE_PATH=${LAMBDA_TASK_ROOT}/AetherCLI/AetherCLI \
-    BLENDER_EXECUTABLE_PATH=${LAMBDA_TASK_ROOT}/blender/blender \
+ENV AETHER_EXECUTABLE_PATH=/var/task/AetherCLI/AetherCLI \
+    BLENDER_EXECUTABLE_PATH=/var/task/blender/blender \
     CE_PATH=/tmp/ce \
-    PATH="/opt/python/bin:${LAMBDA_TASK_ROOT}:${LAMBDA_TASK_ROOT}/blender:${DOTNET_ROOT}:${PATH}" \
-    CC=gcc \
-    PYTHONPATH=/opt/python/bin
+    PATH="/var/task:/var/task/blender:${DOTNET_ROOT}:${PATH}" \
+    CC=gcc
 
 COPY convert_map.py \
      map_to_scenario.py \
@@ -66,19 +52,14 @@ COPY convert_map.py \
      patch_reclaimer.py \
      ./
 
-# use downloaded standalone python instead of built in python
-RUN ln -sf /opt/python/bin/python /var/lang/bin/python &&  \
-    ls -sf /opt/python/bin/python /var/lang/bin/python3.14 && \
-    ln -sf /opt/python/bin/pip /var/lang/bin/pip && \
-    sed -i 's|/var/lang/bin/python3.14|/opt/python/bin/python|g' /var/runtime/bootstrap
-
-RUN dnf install -y \
-        gcc-c++ libicu \
-        libX11 libXext libXrender libXi libXxf86vm libICE libSM mesa-libGL && \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        g++ libicu-dev \
+        libx11-6 libxext6 libxrender1 libxi6 libxxf86vm1 libice6 libsm6 libgl1 libxfixes3 \
+        tcl tk && \
     pip install -r requirements.txt && \
-    python patch_reclaimer.py /opt/python/lib/python3.14/site-packages && \
-    dnf clean all && \
-    rm -rf /var/cache/dnf && \
-    rm -rf /var/yum/dnf
+    python patch_reclaimer.py /usr/local/lib/python3.14/site-packages && \
+    rm -rf /var/lib/apt/lists/*
 
+ENTRYPOINT ["/usr/local/bin/python", "-m", "awslambdaric"]
 CMD [ "app.handler" ]

@@ -21,5 +21,14 @@ docker push $imageUri
 aws lambda update-function-code --profile "halospawns-$environment" --function-name "halospawns-tools-$environment" --image-uri $imageUri
 
 # NOTE: to test locally, you can do this:
-# docker run -p 9000:8080 -v "$HOME/.aws:/root/.aws:ro" -e AWS_PROFILE=halospawns-$environment halospawns-tools:latest
-# curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d "@testevent.json"
+#$dirPath = "$HOME\.aws-lambda-rie"
+#if (-not (Test-Path $dirPath)) { New-Item -Path $dirPath -ItemType Directory | Out-Null }
+#Invoke-WebRequest -Uri "https://github.com/aws/aws-lambda-runtime-interface-emulator/releases/latest/download/aws-lambda-rie" -OutFile "$dirPath\aws-lambda-rie"
+#docker run --platform linux/amd64 -p 9000:8080 `
+#  -v "$HOME\.aws-lambda-rie:/aws-lambda" `
+#  -v "$HOME\.aws:/root/.aws:ro" `
+#  -e AWS_PROFILE=halospawns-$environment `
+#  --entrypoint /aws-lambda/aws-lambda-rie `
+#  halospawns-tools:latest `
+#  /usr/local/bin/python -m awslambdaric app.handler
+#curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d "@testevent.json"
