@@ -2,6 +2,13 @@
 
 This project is a map conversion service for Halo: Combat Evolved, designed to run as an AWS Lambda function within a Docker container. It converts `.map` files into `.glb` and `.blend` formats, extracting geometry, textures, lightmaps, and gameplay metadata (spawns, equipment, etc.).
 
+## Tooling & Dependencies
+
+*   **Refinery (MEK)**: Used for `.map` tag extraction.
+*   **AetherCLI**: Used for converting Halo tags to OBJ format.
+*   **Blender 2.93**: Used for UV merging, material setup, and GLB export.
+*   **AWS Lambda / Docker**: The runtime environment. The Dockerfile sets up a Python 3.14 environment with .NET (for AetherCLI) and Blender 2.93 pre-installed.
+
 ## Execution Flow Trace
 
 The execution follows this path from start to finish:
@@ -30,19 +37,11 @@ The execution follows this path from start to finish:
     *   The resulting `.glb` and `.blend` files are uploaded back to the S3 bucket under `maps/processed/`.
     *   The Lambda function returns a success status with the S3 paths of the generated assets.
 
-## Tooling & Dependencies
-
-*   **Refinery (MEK)**: Used for `.map` tag extraction.
-*   **AetherCLI**: Used for converting Halo tags to OBJ format.
-*   **Blender 2.93**: Used for UV merging, material setup, and GLB export.
-*   **AWS Lambda / Docker**: The runtime environment. The Dockerfile sets up a Python 3.14 environment with .NET (for AetherCLI) and Blender 2.93 pre-installed.
-*   **Pillow**: Used in `obj_cleanup.py` for lightmap image manipulation.
-
 ## Local Testing
 
 ### Handler IO modes
 
-`app.py` now supports two handler modes:
+`app.py` supports two handler modes:
 
 - `IO_MODE=s3` (default): current SNS/SQS/S3 flow
 - `IO_MODE=local`: run conversion from a local file path and skip S3 download/upload
@@ -55,7 +54,7 @@ The execution follows this path from start to finish:
 - `input_directory` / `INPUT_DIRECTORY`
 - `stage_local_input` / `STAGE_LOCAL_INPUT`
 
-### Local Python E2E (venv314)
+### Local Python E2E
 
 ```powershell
 python .\tests\e2e\run_local_e2e.py `
@@ -89,7 +88,7 @@ python .\tests\validation\validate_conversion_run.py `
 ### Example commands run during implementation
 
 ```powershell
-# from repo root, with venv already activated
+# from repo root
 Set-Location "$HOME\projects\halospawns-tools"
 
 # handler IO mode unit tests
