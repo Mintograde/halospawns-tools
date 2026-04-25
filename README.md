@@ -13,7 +13,7 @@ This project is a map conversion service for Halo: Combat Evolved, designed to r
 
 The execution follows this path from start to finish:
 
-1.  **Trigger**: An S3 event (e.g., a file upload to a specific bucket) triggers an SNS notification, which is then sent to an SQS queue that the Lambda function is polling.
+1.  **Trigger**: S3 event (.map file uploaded) -> SNS -> SQS -> Lambda.
 2.  **Entrypoint (`app.handler`)**:
     *   The Lambda runtime calls the `handler` function in `app.py`.
     *   It parses the SQS/SNS/S3 event to identify the source bucket and key.
