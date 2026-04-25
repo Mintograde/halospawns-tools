@@ -1,16 +1,13 @@
 import json
-import shutil
+import os
 import sys
 import traceback
-from pprint import pprint
-
-import boto3
-import os
 import urllib.parse
 
-from convert_map import map_to_glb
+import boto3
 
-s3 = boto3.client('s3')
+from conversion_runtime import resolve_directories, run_conversion
+from local_io_mode import process_local_event, resolve_io_mode
 
 try:
     print(f"Python Version: {sys.version}")
@@ -34,8 +31,12 @@ except Exception as e:
 print("=" * 50)
 
 
-def handler(event, context):
-    results = []
+def _as_dict(event):
+    return event if isinstance(event, dict) else {}
+
+
+def _process_s3_event(event, results):
+    s3 = boto3.client("s3")
 
     # print("Received event:")
     # pprint(event)
@@ -55,26 +56,14 @@ def handler(event, context):
                 event_name = s3_record["eventName"]
                 print(f'Handling {event_name} notification for {bucket}/{key}')
 
-                base_directory = "/tmp/ce"
-                output_directory = f"{base_directory}/output"
-                input_directory = f"{base_directory}/input"
+                base_directory, input_directory, output_directory = resolve_directories(event)
                 map_file_path = f"{input_directory}/{os.path.basename(key)}"
-
-                os.makedirs(input_directory, exist_ok=True)
-                os.makedirs(output_directory, exist_ok=True)
 
                 print(f"Downloading s3://{bucket}/{key} to {map_file_path}")
                 s3.download_file(bucket, key, map_file_path)
 
-                try:
-                    result_path = map_to_glb(map_file_path, base_directory, output_directory)
-                except Exception as e:
-                    print("An error occurred:")
-                    traceback.print_exc(file=sys.stdout)
-                else:
-
-                    pprint(result_path)
-
+                result_path = run_conversion(map_file_path, base_directory, output_directory)
+                if result_path:
                     print(f"Uploading to s3://{bucket}/maps/processed/{os.path.basename(result_path['glb'])}")
                     s3.upload_file(result_path["glb"], bucket, f'maps/processed/{os.path.basename(result_path["glb"])}')
                     print(f"Uploading to s3://{bucket}/maps/processed/{os.path.basename(result_path['blend'])}")
@@ -84,6 +73,12 @@ def handler(event, context):
                         "input": f"s3://{bucket}/{key}",
                         "output": result_path,
                         "status": "success"
+                    })
+                else:
+                    results.append({
+                        "input": f"s3://{bucket}/{key}",
+                        "status": "failure",
+                        "error": "map_to_glb failed; see logs"
                     })
 
                     # base_directory_to_zip = "/tmp/ce"
@@ -117,6 +112,18 @@ def handler(event, context):
                 "error": str(e),
                 "status": "failure"
             })
+
+
+def handler(event, context):
+    event = _as_dict(event)
+    results = []
+    io_mode = resolve_io_mode(event)
+    print(f"IO mode: {io_mode}")
+
+    if io_mode == "local":
+        results.extend(process_local_event(event))
+    else:
+        _process_s3_event(event, results)
 
     return {
         "statusCode": 200,

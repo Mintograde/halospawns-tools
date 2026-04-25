@@ -42,6 +42,8 @@ ENV AETHER_EXECUTABLE_PATH=/var/task/AetherCLI/AetherCLI \
     CC=gcc
 
 COPY convert_map.py \
+     conversion_runtime.py \
+     local_io_mode.py \
      map_to_scenario.py \
      obj_cleanup.py \
      blender.py \

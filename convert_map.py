@@ -105,7 +105,8 @@ if __name__ == '__main__':
     base_directory = r'L:\ce'
     output_directory = r'L:/ce/output/'
     map_filenames = [
-        r'C:\Program Files (x86)\Microsoft Games\Halo Custom Edition\maps\chillout.map',
+        # r'C:\Program Files (x86)\Microsoft Games\Halo Custom Edition\maps\chillout.map',
+        r"L:\bens_stuff\xbox mod\Games\Halo 1 - Pro Edition v2.0\Games\Halo 1 - Pro 2.0\maps\chillout.map"
         # r"L:\ce\input\fbebefb2-b089-4a71-b52d-11cc9e978426",
         # r"L:\ce\input\fbebefb2-b089-4a71-b52d-11cc9e978426.map",
         # r"C:\Program Files (x86)\Microsoft Games\Halo Custom Edition\maps\fbebefb2-b089-4a71-b52d-11cc9e978426.map",  # FIXME: works from within programfiles customedition folder, but not L ce input

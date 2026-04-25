@@ -1,0 +1,2243 @@
+L:/ce/tags:
+total 128
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 camera
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 characters
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 effects
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 item collections
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 levels
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 nhe-credits
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 old tags
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 powerups
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 scenery
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 sky
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 sound
+-rw-r--r-- 1 minto 197121 117542 Apr 24 20:26 tagslist.txt
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 ui
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 vehicles
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 weapons
+
+L:/ce/tags/camera:
+total 3
+-rw-r--r-- 1 minto 197121 652 Apr 24 20:26 scorpion_driver_loose.camera_track
+-rw-r--r-- 1 minto 197121 652 Apr 24 20:26 warthog_driver_loose.camera_track
+-rw-r--r-- 1 minto 197121 652 Apr 24 20:26 warthog_driver_tight.camera_track
+
+L:/ce/tags/characters:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 cyborg
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 elite
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 grunt
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 jackal
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 marine_armored
+
+L:/ce/tags/characters/cyborg:
+total 1
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 612 Apr 24 20:26 flashlight_cyborg.lens_flare
+
+L:/ce/tags/characters/cyborg/bitmaps:
+total 144
+-rw-r--r-- 1 minto 197121  11292 Apr 24 20:26 detail corroded metal light.bitmap
+-rw-r--r-- 1 minto 197121 131612 Apr 24 20:26 spotlight cyborg.bitmap
+
+L:/ce/tags/characters/elite:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+
+L:/ce/tags/characters/elite/bitmaps:
+total 20
+-rw-r--r-- 1 minto 197121 17180 Apr 24 20:26 cubemap dark gray.bitmap
+
+L:/ce/tags/characters/grunt:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+
+L:/ce/tags/characters/grunt/bitmaps:
+total 68
+-rw-r--r-- 1 minto 197121 66332 Apr 24 20:26 reflection grunt diffuse.bitmap
+
+L:/ce/tags/characters/jackal:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+
+L:/ce/tags/characters/jackal/bitmaps:
+total 136
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 shield mask.bitmap
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 shield noise.bitmap
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 shield offset.bitmap
+
+L:/ce/tags/characters/marine_armored:
+total 2
+-rw-r--r-- 1 minto 197121 495 Apr 24 20:26 flashlight_marine.light
+-rw-r--r-- 1 minto 197121 572 Apr 24 20:26 flashlight_marine.light_volume
+
+L:/ce/tags/effects:
+total 23
+-rw-r--r-- 1 minto 197121 442 Apr 24 20:26 blood collision elite large.effect
+-rw-r--r-- 1 minto 197121 445 Apr 24 20:26 blood collision engineer large.effect
+-rw-r--r-- 1 minto 197121 404 Apr 24 20:26 blood collision human large.effect
+-rw-r--r-- 1 minto 197121 722 Apr 24 20:26 blood collision hunter large.effect
+-rw-r--r-- 1 minto 197121 562 Apr 24 20:26 blood hunter glow collision.effect
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 decals
+-rw-r--r-- 1 minto 197121 385 Apr 24 20:26 flood bit death.effect
+-rw-r--r-- 1 minto 197121 636 Apr 24 20:26 glass collision.effect
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 particles
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 point physics
+-rw-r--r-- 1 minto 197121 902 Apr 24 20:26 slip vehicle water.effect
+-rw-r--r-- 1 minto 197121 497 Apr 24 20:26 stone bunch death.effect
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 vehicle effects
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 zmaps
+
+L:/ce/tags/effects/decals:
+total 8
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 blood splats
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bullet holes
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 vehicle marks
+
+L:/ce/tags/effects/decals/blood splats:
+total 12
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 386 Apr 24 20:26 blood elite splat.decal
+-rw-r--r-- 1 minto 197121 389 Apr 24 20:26 blood engineer splat.decal
+-rw-r--r-- 1 minto 197121 386 Apr 24 20:26 blood grunt splat.decal
+-rw-r--r-- 1 minto 197121 392 Apr 24 20:26 blood hunter glow splat.decal
+-rw-r--r-- 1 minto 197121 387 Apr 24 20:26 blood hunter splat.decal
+-rw-r--r-- 1 minto 197121 387 Apr 24 20:26 blood splat hunter small.decal
+-rw-r--r-- 1 minto 197121 380 Apr 24 20:26 blood splat small.decal
+-rw-r--r-- 1 minto 197121 380 Apr 24 20:26 blood splat.decal
+
+L:/ce/tags/effects/decals/blood splats/bitmaps:
+total 72
+-rw-r--r-- 1 minto 197121 11356 Apr 24 20:26 blood splat elite.bitmap
+-rw-r--r-- 1 minto 197121 11356 Apr 24 20:26 blood splat engineer.bitmap
+-rw-r--r-- 1 minto 197121 11356 Apr 24 20:26 blood splat grunt.bitmap
+-rw-r--r-- 1 minto 197121 11356 Apr 24 20:26 blood splat hunter glow.bitmap
+-rw-r--r-- 1 minto 197121 11260 Apr 24 20:26 blood splat hunter.bitmap
+-rw-r--r-- 1 minto 197121 11356 Apr 24 20:26 blood splat.bitmap
+
+L:/ce/tags/effects/decals/bullet holes:
+total 27
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 380 Apr 24 20:26 dirt pistol.decal
+-rw-r--r-- 1 minto 197121 380 Apr 24 20:26 grenade char.decal
+-rw-r--r-- 1 minto 197121 372 Apr 24 20:26 impact ice.decal
+-rw-r--r-- 1 minto 197121 374 Apr 24 20:26 metal.decal
+-rw-r--r-- 1 minto 197121 447 Apr 24 20:26 plasma blue burn inner glow.decal
+-rw-r--r-- 1 minto 197121 391 Apr 24 20:26 plasma blue burn outer glow.decal
+-rw-r--r-- 1 minto 197121 436 Apr 24 20:26 plasma blue burn.decal
+-rw-r--r-- 1 minto 197121 429 Apr 24 20:26 plasma blue snow burn.decal
+-rw-r--r-- 1 minto 197121 448 Apr 24 20:26 plasma burn inner glow large.decal
+-rw-r--r-- 1 minto 197121 442 Apr 24 20:26 plasma burn inner glow.decal
+-rw-r--r-- 1 minto 197121 443 Apr 24 20:26 plasma burn large.decal
+-rw-r--r-- 1 minto 197121 391 Apr 24 20:26 plasma burn outer glow large.decal
+-rw-r--r-- 1 minto 197121 391 Apr 24 20:26 plasma burn outer glow.decal
+-rw-r--r-- 1 minto 197121 431 Apr 24 20:26 plasma burn.decal
+-rw-r--r-- 1 minto 197121 444 Apr 24 20:26 plasma green burn large.decal
+-rw-r--r-- 1 minto 197121 450 Apr 24 20:26 plasma green inner glow large.decal
+-rw-r--r-- 1 minto 197121 391 Apr 24 20:26 plasma green outer glow large.decal
+-rw-r--r-- 1 minto 197121 431 Apr 24 20:26 plasma green snow burn.decal
+-rw-r--r-- 1 minto 197121 380 Apr 24 20:26 sniper.decal
+-rw-r--r-- 1 minto 197121 373 Apr 24 20:26 snow.decal
+-rw-r--r-- 1 minto 197121 374 Apr 24 20:26 stone med.decal
+-rw-r--r-- 1 minto 197121 374 Apr 24 20:26 stone.decal
+-rw-r--r-- 1 minto 197121 386 Apr 24 20:26 unbreakable glass.decal
+
+L:/ce/tags/effects/decals/bullet holes/bitmaps:
+total 336
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 dirt pistol.bitmap
+-rw-r--r-- 1 minto 197121 172540 Apr 24 20:26 ice.bitmap
+-rw-r--r-- 1 minto 197121  43612 Apr 24 20:26 metal.bitmap
+-rw-r--r-- 1 minto 197121   1084 Apr 24 20:26 plasma burn inner glow.bitmap
+-rw-r--r-- 1 minto 197121   1724 Apr 24 20:26 plasma burn large.bitmap
+-rw-r--r-- 1 minto 197121   3004 Apr 24 20:26 plasma burn outer glow.bitmap
+-rw-r--r-- 1 minto 197121   1724 Apr 24 20:26 plasma burn.bitmap
+-rw-r--r-- 1 minto 197121   1084 Apr 24 20:26 plasma green inner glow.bitmap
+-rw-r--r-- 1 minto 197121   1052 Apr 24 20:26 snow.bitmap
+-rw-r--r-- 1 minto 197121  43612 Apr 24 20:26 stone.bitmap
+-rw-r--r-- 1 minto 197121  43612 Apr 24 20:26 unbreakable glass.bitmap
+
+L:/ce/tags/effects/decals/vehicle marks:
+total 2
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 372 Apr 24 20:26 ice treadmark.decal
+-rw-r--r-- 1 minto 197121 385 Apr 24 20:26 snow treadmark.decal
+
+L:/ce/tags/effects/decals/vehicle marks/bitmaps:
+total 8
+-rw-r--r-- 1 minto 197121 5788 Apr 24 20:26 snow treadmarks.bitmap
+
+L:/ce/tags/effects/particles:
+total 20
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 air
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 energy
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 flash
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 lens flare
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 solid
+
+L:/ce/tags/effects/particles/air:
+total 17
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 485 Apr 24 20:26 bubbles fizz floodcombat.particle
+-rw-r--r-- 1 minto 197121 495 Apr 24 20:26 bubbles.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 dirt animated dust.particle
+-rw-r--r-- 1 minto 197121 500 Apr 24 20:26 dirt animated kick.particle
+-rw-r--r-- 1 minto 197121 507 Apr 24 20:26 rock dust.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 sand impact burst.particle
+-rw-r--r-- 1 minto 197121 507 Apr 24 20:26 smoke h fp.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 smoke h generic animated.particle
+-rw-r--r-- 1 minto 197121 507 Apr 24 20:26 smoke h generic animated2.particle
+-rw-r--r-- 1 minto 197121 507 Apr 24 20:26 smoke h generic still.particle
+-rw-r--r-- 1 minto 197121 538 Apr 24 20:26 smoke impact.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 smoke residual.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 smoke rifle water.particle
+
+L:/ce/tags/effects/particles/air/bitmaps:
+total 280
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 bubbles.bitmap
+-rw-r--r-- 1 minto 197121  22076 Apr 24 20:26 dirt impact.bitmap
+-rw-r--r-- 1 minto 197121  22076 Apr 24 20:26 sand impact burst.bitmap
+-rw-r--r-- 1 minto 197121 174476 Apr 24 20:26 smoke cloud.bitmap
+-rw-r--r-- 1 minto 197121  27788 Apr 24 20:26 smoke tank cannon.bitmap
+-rw-r--r-- 1 minto 197121  22076 Apr 24 20:26 smoke warthog gun.bitmap
+
+L:/ce/tags/effects/particles/energy:
+total 17
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 545 Apr 24 20:26 flash c generic med.particle
+-rw-r--r-- 1 minto 197121 545 Apr 24 20:26 flash c generic small.particle
+-rw-r--r-- 1 minto 197121 545 Apr 24 20:26 flash c generic.particle
+-rw-r--r-- 1 minto 197121 513 Apr 24 20:26 plasma electric bolts.particle
+-rw-r--r-- 1 minto 197121 511 Apr 24 20:26 plasma overcharge spark.particle
+-rw-r--r-- 1 minto 197121 513 Apr 24 20:26 plasma overheat.particle
+-rw-r--r-- 1 minto 197121 508 Apr 24 20:26 shield c generic.particle
+-rw-r--r-- 1 minto 197121 510 Apr 24 20:26 shield jackal bolt.particle
+-rw-r--r-- 1 minto 197121 511 Apr 24 20:26 shield jackal sparks.particle
+-rw-r--r-- 1 minto 197121 507 Apr 24 20:26 smoke c generic.particle
+-rw-r--r-- 1 minto 197121 513 Apr 24 20:26 smoke white c generic.particle
+-rw-r--r-- 1 minto 197121 498 Apr 24 20:26 sparks energy trail.particle
+-rw-r--r-- 1 minto 197121 509 Apr 24 20:26 tracer c generic.particle
+
+L:/ce/tags/effects/particles/energy/bitmaps:
+total 368
+-rw-r--r-- 1 minto 197121 88460 Apr 24 20:26 cloud c fire.bitmap
+-rw-r--r-- 1 minto 197121 87148 Apr 24 20:26 flash c generic muzzle.bitmap
+-rw-r--r-- 1 minto 197121 43612 Apr 24 20:26 plasma electric bolts.bitmap
+-rw-r--r-- 1 minto 197121  7020 Apr 24 20:26 shield c generic.bitmap
+-rw-r--r-- 1 minto 197121 21996 Apr 24 20:26 shield jackal bolt.bitmap
+-rw-r--r-- 1 minto 197121 11164 Apr 24 20:26 shield jackal spark.bitmap
+-rw-r--r-- 1 minto 197121 46444 Apr 24 20:26 smoke c generic.bitmap
+-rw-r--r-- 1 minto 197121 43676 Apr 24 20:26 smoke white c generic.bitmap
+-rw-r--r-- 1 minto 197121  5964 Apr 24 20:26 sparks c energy.bitmap
+-rw-r--r-- 1 minto 197121  3068 Apr 24 20:26 tracers c generic.bitmap
+
+L:/ce/tags/effects/particles/flash:
+total 17
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 505 Apr 24 20:26 flash h ar center.particle
+-rw-r--r-- 1 minto 197121 505 Apr 24 20:26 flash h ar.particle
+-rw-r--r-- 1 minto 197121 514 Apr 24 20:26 flash h generic med.particle
+-rw-r--r-- 1 minto 197121 514 Apr 24 20:26 flash h generic.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 flash h pistol center.particle
+-rw-r--r-- 1 minto 197121 546 Apr 24 20:26 flash h pistol detonate.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 flash h pistol muzzle.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 flash h pistol side.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 flash h pistol.particle
+-rw-r--r-- 1 minto 197121 543 Apr 24 20:26 flash h shield impact.particle
+-rw-r--r-- 1 minto 197121 501 Apr 24 20:26 flash h sniper muzzle break.particle
+-rw-r--r-- 1 minto 197121 505 Apr 24 20:26 sparks impact.particle
+-rw-r--r-- 1 minto 197121 488 Apr 24 20:26 sparks trail.particle
+
+L:/ce/tags/effects/particles/flash/bitmaps:
+total 972
+-rw-r--r-- 1 minto 197121  88460 Apr 24 20:26 fire cloud.bitmap
+-rw-r--r-- 1 minto 197121 345196 Apr 24 20:26 flash h ar fp.bitmap
+-rw-r--r-- 1 minto 197121  87436 Apr 24 20:26 flash h generic muzzle.bitmap
+-rw-r--r-- 1 minto 197121  86540 Apr 24 20:26 flash h pistol detonate.bitmap
+-rw-r--r-- 1 minto 197121 345676 Apr 24 20:26 flash h pistol.bitmap
+-rw-r--r-- 1 minto 197121   1932 Apr 24 20:26 flash h shield impact.bitmap
+-rw-r--r-- 1 minto 197121  11388 Apr 24 20:26 shell flash.bitmap
+-rw-r--r-- 1 minto 197121   3100 Apr 24 20:26 sparks impact.bitmap
+-rw-r--r-- 1 minto 197121   5964 Apr 24 20:26 sparks.bitmap
+
+L:/ce/tags/effects/particles/lens flare:
+total 2
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 545 Apr 24 20:26 flare h stealth cannon.particle
+-rw-r--r-- 1 minto 197121 510 Apr 24 20:26 grenade explosion flare.particle
+
+L:/ce/tags/effects/particles/lens flare/bitmaps:
+total 280
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 flares weapon lens.bitmap
+-rw-r--r-- 1 minto 197121  64060 Apr 24 20:26 flares_generic.bitmap
+-rw-r--r-- 1 minto 197121 153708 Apr 24 20:26 flares_generic2.bitmap
+-rw-r--r-- 1 minto 197121  55868 Apr 24 20:26 soft flares.bitmap
+
+L:/ce/tags/effects/particles/solid:
+total 45
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 524 Apr 24 20:26 blood bits floodcombat elite.particle
+-rw-r--r-- 1 minto 197121 534 Apr 24 20:26 blood bits hunter.particle
+-rw-r--r-- 1 minto 197121 534 Apr 24 20:26 blood elite burst.particle
+-rw-r--r-- 1 minto 197121 516 Apr 24 20:26 blood elite impact burst.particle
+-rw-r--r-- 1 minto 197121 515 Apr 24 20:26 blood elite impact mist med.particle
+-rw-r--r-- 1 minto 197121 515 Apr 24 20:26 blood elite impact mist small.particle
+-rw-r--r-- 1 minto 197121 515 Apr 24 20:26 blood elite impact mist.particle
+-rw-r--r-- 1 minto 197121 537 Apr 24 20:26 blood engineer burst.particle
+-rw-r--r-- 1 minto 197121 496 Apr 24 20:26 blood engineer trails.particle
+-rw-r--r-- 1 minto 197121 511 Apr 24 20:26 blood generic impact burst.particle
+-rw-r--r-- 1 minto 197121 510 Apr 24 20:26 blood generic impact mist med.particle
+-rw-r--r-- 1 minto 197121 510 Apr 24 20:26 blood generic impact mist small.particle
+-rw-r--r-- 1 minto 197121 510 Apr 24 20:26 blood generic impact mist.particle
+-rw-r--r-- 1 minto 197121 506 Apr 24 20:26 blood h impact burst.particle
+-rw-r--r-- 1 minto 197121 505 Apr 24 20:26 blood h impact mist med.particle
+-rw-r--r-- 1 minto 197121 505 Apr 24 20:26 blood h impact mist small.particle
+-rw-r--r-- 1 minto 197121 505 Apr 24 20:26 blood h impact mist.particle
+-rw-r--r-- 1 minto 197121 534 Apr 24 20:26 blood human burst.particle
+-rw-r--r-- 1 minto 197121 535 Apr 24 20:26 blood hunter burst.particle
+-rw-r--r-- 1 minto 197121 536 Apr 24 20:26 casing h ar bullet.particle
+-rw-r--r-- 1 minto 197121 522 Apr 24 20:26 casing h pistol.particle
+-rw-r--r-- 1 minto 197121 528 Apr 24 20:26 casing h shotgun.particle
+-rw-r--r-- 1 minto 197121 492 Apr 24 20:26 debris floodcombat scabs.particle
+-rw-r--r-- 1 minto 197121 500 Apr 24 20:26 debris shirt.particle
+-rw-r--r-- 1 minto 197121 527 Apr 24 20:26 dirt burst.particle
+-rw-r--r-- 1 minto 197121 585 Apr 24 20:26 glass breakable.particle
+-rw-r--r-- 1 minto 197121 561 Apr 24 20:26 glass death.particle
+-rw-r--r-- 1 minto 197121 492 Apr 24 20:26 grass impact.particle
+-rw-r--r-- 1 minto 197121 524 Apr 24 20:26 gravel small.particle
+-rw-r--r-- 1 minto 197121 561 Apr 24 20:26 ice.particle
+-rw-r--r-- 1 minto 197121 531 Apr 24 20:26 metal chips.particle
+-rw-r--r-- 1 minto 197121 502 Apr 24 20:26 needler spike debris.particle
+-rw-r--r-- 1 minto 197121 495 Apr 24 20:26 rubber impact.particle
+-rw-r--r-- 1 minto 197121 492 Apr 24 20:26 snow bunch.particle
+-rw-r--r-- 1 minto 197121 502 Apr 24 20:26 snow burst.particle
+-rw-r--r-- 1 minto 197121 491 Apr 24 20:26 snow impact.particle
+-rw-r--r-- 1 minto 197121 524 Apr 24 20:26 stone bunch.particle
+-rw-r--r-- 1 minto 197121 565 Apr 24 20:26 water burst small.particle
+-rw-r--r-- 1 minto 197121 497 Apr 24 20:26 water burst.particle
+-rw-r--r-- 1 minto 197121 503 Apr 24 20:26 water ripple.particle
+-rw-r--r-- 1 minto 197121 490 Apr 24 20:26 wood impact.particle
+
+L:/ce/tags/effects/particles/solid/bitmaps:
+total 644
+-rw-r--r-- 1 minto 197121  21820 Apr 24 20:26 blood burst.bitmap
+-rw-r--r-- 1 minto 197121  22300 Apr 24 20:26 blood elite impact burst.bitmap
+-rw-r--r-- 1 minto 197121  16796 Apr 24 20:26 blood engineer.bitmap
+-rw-r--r-- 1 minto 197121  22300 Apr 24 20:26 blood generic burst.bitmap
+-rw-r--r-- 1 minto 197121  22300 Apr 24 20:26 blood h impact.bitmap
+-rw-r--r-- 1 minto 197121 174476 Apr 24 20:26 casings h ar.bitmap
+-rw-r--r-- 1 minto 197121   5756 Apr 24 20:26 debris shirt.bitmap
+-rw-r--r-- 1 minto 197121  21820 Apr 24 20:26 dirt burst.bitmap
+-rw-r--r-- 1 minto 197121  16604 Apr 24 20:26 flood debris.bitmap
+-rw-r--r-- 1 minto 197121  86620 Apr 24 20:26 glass breakable large.bitmap
+-rw-r--r-- 1 minto 197121   3100 Apr 24 20:26 glass breakable mask large.bitmap
+-rw-r--r-- 1 minto 197121   5852 Apr 24 20:26 grass impact.bitmap
+-rw-r--r-- 1 minto 197121   6188 Apr 24 20:26 gravel.bitmap
+-rw-r--r-- 1 minto 197121   5852 Apr 24 20:26 impact bits hunter.bitmap
+-rw-r--r-- 1 minto 197121   5980 Apr 24 20:26 metal chips.bitmap
+-rw-r--r-- 1 minto 197121   5852 Apr 24 20:26 needler spike debris.bitmap
+-rw-r--r-- 1 minto 197121  22140 Apr 24 20:26 rubber impact.bitmap
+-rw-r--r-- 1 minto 197121  21820 Apr 24 20:26 snow bunch.bitmap
+-rw-r--r-- 1 minto 197121  22076 Apr 24 20:26 snow burst.bitmap
+-rw-r--r-- 1 minto 197121   6076 Apr 24 20:26 snow impact.bitmap
+-rw-r--r-- 1 minto 197121  21820 Apr 24 20:26 stone bunch.bitmap
+-rw-r--r-- 1 minto 197121  11068 Apr 24 20:26 water burst.bitmap
+-rw-r--r-- 1 minto 197121  11228 Apr 24 20:26 water ripple.bitmap
+-rw-r--r-- 1 minto 197121  43516 Apr 24 20:26 wood chips.bitmap
+
+L:/ce/tags/effects/point physics:
+total 18
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 cold smoke cloud.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 cold smoke puff.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 debris shirt.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 dirt burst.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 drip.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 fire.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 glass.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 hot smoke cloud.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 hot smoke puff.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 leaf.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 lightweight particle.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 projectile smoke.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 rubber.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 stone bunch.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 stones.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 vacuum particle.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 warm smoke cloud.point_physics
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 wood.point_physics
+
+L:/ce/tags/effects/vehicle effects:
+total 55
+-rw-r--r-- 1 minto 197121  776 Apr 24 20:26 slip dirt.effect
+-rw-r--r-- 1 minto 197121 1011 Apr 24 20:26 slip glass.effect
+-rw-r--r-- 1 minto 197121  776 Apr 24 20:26 slip grass.effect
+-rw-r--r-- 1 minto 197121  699 Apr 24 20:26 slip ice.effect
+-rw-r--r-- 1 minto 197121 1647 Apr 24 20:26 slip metal.effect
+-rw-r--r-- 1 minto 197121  777 Apr 24 20:26 slip rubber.effect
+-rw-r--r-- 1 minto 197121  776 Apr 24 20:26 slip sand.effect
+-rw-r--r-- 1 minto 197121  848 Apr 24 20:26 slip shield.effect
+-rw-r--r-- 1 minto 197121  762 Apr 24 20:26 slip snow.effect
+-rw-r--r-- 1 minto 197121 1980 Apr 24 20:26 slip stone.effect
+-rw-r--r-- 1 minto 197121  507 Apr 24 20:26 slip tire glass.effect
+-rw-r--r-- 1 minto 197121  830 Apr 24 20:26 slip tire metal.effect
+-rw-r--r-- 1 minto 197121  507 Apr 24 20:26 slip tire rubber.effect
+-rw-r--r-- 1 minto 197121  910 Apr 24 20:26 slip tire snow.effect
+-rw-r--r-- 1 minto 197121  776 Apr 24 20:26 slip tire stone.effect
+-rw-r--r-- 1 minto 197121 1376 Apr 24 20:26 slip wood.effect
+
+L:/ce/tags/effects/zmaps:
+total 36
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 zmap_noisy_large.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 zmap_noisy_medium.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 zmap_noisy_small.bitmap
+
+L:/ce/tags/item collections:
+total 4
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 powerups
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 single weapons
+
+L:/ce/tags/item collections/powerups:
+total 3
+-rw-r--r-- 1 minto 197121 261 Apr 24 20:26 powerup health pack.item_collection
+-rw-r--r-- 1 minto 197121 267 Apr 24 20:26 powerup invisibility.item_collection
+-rw-r--r-- 1 minto 197121 261 Apr 24 20:26 powerup super shield.item_collection
+
+L:/ce/tags/item collections/single weapons:
+total 10
+-rw-r--r-- 1 minto 197121 276 Apr 24 20:26 assault rifle.item_collection
+-rw-r--r-- 1 minto 197121 274 Apr 24 20:26 frag grenades.item_collection
+-rw-r--r-- 1 minto 197121 264 Apr 24 20:26 needler.item_collection
+-rw-r--r-- 1 minto 197121 262 Apr 24 20:26 pistol.item_collection
+-rw-r--r-- 1 minto 197121 278 Apr 24 20:26 plasma grenades.item_collection
+-rw-r--r-- 1 minto 197121 276 Apr 24 20:26 plasma pistol.item_collection
+-rw-r--r-- 1 minto 197121 274 Apr 24 20:26 plasma rifle.item_collection
+-rw-r--r-- 1 minto 197121 280 Apr 24 20:26 rocket launcher.item_collection
+-rw-r--r-- 1 minto 197121 264 Apr 24 20:26 shotgun.item_collection
+-rw-r--r-- 1 minto 197121 274 Apr 24 20:26 sniper rifle.item_collection
+
+L:/ce/tags/levels:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 a50
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 b30
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 c10
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 test
+
+L:/ce/tags/levels/a50:
+total 8
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 devices
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shaders
+
+L:/ce/tags/levels/a50/bitmaps:
+total 2100
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 covenant alpha grate.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 covenant circuits bump.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 covenant circuits glow.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 covenant circuits.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 covenant metal generic.bitmap
+-rw-r--r-- 1 minto 197121 175180 Apr 24 20:26 covenant metal panel bump.bitmap
+-rw-r--r-- 1 minto 197121 175180 Apr 24 20:26 covenant metal panel.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 covenant metal strips narrow bump.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 covenant metal strips narrow.bitmap
+-rw-r--r-- 1 minto 197121 349852 Apr 24 20:26 covenant metal strips wide bump.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 covenant metal strips wide glow.bitmap
+-rw-r--r-- 1 minto 197121 349852 Apr 24 20:26 covenant metal strips wide.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 covenant plate floor bump.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 covenant plate floor.bitmap
+
+L:/ce/tags/levels/a50/devices:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 prison door
+
+L:/ce/tags/levels/a50/devices/prison door:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+
+L:/ce/tags/levels/a50/devices/prison door/bitmaps:
+total 24
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 energy plasma.bitmap
+
+L:/ce/tags/levels/a50/shaders:
+total 20
+-rw-r--r-- 1 minto 197121 1062 Apr 24 20:26 covenant circuits.shader_environment
+-rw-r--r-- 1 minto 197121 1066 Apr 24 20:26 covenant metal panel.shader_environment
+-rw-r--r-- 1 minto 197121 1082 Apr 24 20:26 covenant metal strips narrow.shader_environment
+-rw-r--r-- 1 minto 197121 1129 Apr 24 20:26 covenant metal strips wide.shader_environment
+-rw-r--r-- 1 minto 197121 1028 Apr 24 20:26 covenant plate floor.shader_environment
+
+L:/ce/tags/levels/b30:
+total 4
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 devices
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shaders
+
+L:/ce/tags/levels/b30/bitmaps:
+total 3072
+-rw-r--r-- 1 minto 197121  66332 Apr 24 20:26 cube map forerunner interiors.bitmap
+-rw-r--r-- 1 minto 197121  17180 Apr 24 20:26 cubemap beach.bitmap
+-rw-r--r-- 1 minto 197121  11292 Apr 24 20:26 detail brushed metal.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 detail metal sratches.bitmap
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 detail tech panels.bitmap
+-rw-r--r-- 1 minto 197121 349852 Apr 24 20:26 glass.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 lights small strips.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 metal flat generic bump.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 metal flat generic.bitmap
+-rw-r--r-- 1 minto 197121 349852 Apr 24 20:26 metal panels generic ext.bitmap
+-rw-r--r-- 1 minto 197121 349852 Apr 24 20:26 metal strips decorative wide bump.bitmap
+-rw-r--r-- 1 minto 197121 349852 Apr 24 20:26 metal strips decorative wide.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 metal strips narrow bump.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 metal strips narrow.bitmap
+-rw-r--r-- 1 minto 197121 349852 Apr 24 20:26 metal strips wide bump.bitmap
+-rw-r--r-- 1 minto 197121 349852 Apr 24 20:26 metal strips wide.bitmap
+
+L:/ce/tags/levels/b30/devices:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 doors
+
+L:/ce/tags/levels/b30/devices/doors:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 door small
+
+L:/ce/tags/levels/b30/devices/doors/door small:
+total 2
+-rw-r--r-- 1 minto 197121 484 Apr 24 20:26 locklight.lens_flare
+-rw-r--r-- 1 minto 197121 462 Apr 24 20:26 locklight.light
+
+L:/ce/tags/levels/b30/shaders:
+total 12
+-rw-r--r-- 1 minto 197121 1071 Apr 24 20:26 metal flat generic.shader_environment
+-rw-r--r-- 1 minto 197121 1018 Apr 24 20:26 metal panels generic ext.shader_environment
+-rw-r--r-- 1 minto 197121 1088 Apr 24 20:26 metal strips decorative wide.shader_environment
+
+L:/ce/tags/levels/c10:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+
+L:/ce/tags/levels/c10/bitmaps:
+total 1
+-rw-r--r-- 1 minto 197121 412 Apr 24 20:26 c10_inv.bitmap
+
+L:/ce/tags/levels/test:
+total 4
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 chillout
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 pat_chillout
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 prisoner
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 redshift
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 xbox_patrace
+
+L:/ce/tags/levels/test/chillout:
+total 7
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 412 Apr 24 20:26 chillout sky.sky
+-rw-r--r-- 1 minto 197121 460 Apr 24 20:26 chillout.fog
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 multiplayer.wind
+drwxr-xr-x 1 minto 197121   0 Apr 24 20:26 shaders
+
+L:/ce/tags/levels/test/chillout/bitmaps:
+total 348
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 chillout glass.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 chillout metal flat.bitmap
+-rw-r--r-- 1 minto 197121  87708 Apr 24 20:26 chillout metal grate bump.bitmap
+
+L:/ce/tags/levels/test/chillout/shaders:
+total 39
+-rw-r--r-- 1 minto 197121 1036 Apr 24 20:26 chillout alpha grate.shader_environment
+-rw-r--r-- 1 minto 197121  433 Apr 24 20:26 chillout blue black light.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121  431 Apr 24 20:26 chillout blue light.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 1072 Apr 24 20:26 chillout f-runner strips narrow.shader_environment
+-rw-r--r-- 1 minto 197121 1068 Apr 24 20:26 chillout f-runner strips wide.shader_environment
+-rw-r--r-- 1 minto 197121  637 Apr 24 20:26 chillout glass.shader_transparent_glass
+-rw-r--r-- 1 minto 197121  419 Apr 24 20:26 chillout greenlight.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 1082 Apr 24 20:26 chillout metal flat.shader_environment
+-rw-r--r-- 1 minto 197121 1091 Apr 24 20:26 chillout metal strips narrow.shader_environment
+-rw-r--r-- 1 minto 197121 1087 Apr 24 20:26 chillout metal strips wide.shader_environment
+-rw-r--r-- 1 minto 197121 1075 Apr 24 20:26 chillout overhead light.shader_environment
+-rw-r--r-- 1 minto 197121  431 Apr 24 20:26 chillout pin light.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121  983 Apr 24 20:26 chillout plate floor.shader_environment
+-rw-r--r-- 1 minto 197121  433 Apr 24 20:26 chillout yellow black light.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121  431 Apr 24 20:26 chillout yellow light.shader_transparent_chicago
+
+L:/ce/tags/levels/test/pat_chillout:
+total 2565
+drwxr-xr-x 1 minto 197121       0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121     658 Apr 24 20:26 hud messages.hud_message_text
+-rw-r--r-- 1 minto 197121  249500 Apr 24 20:26 pat_chillout.bitmap
+-rw-r--r-- 1 minto 197121  417412 Apr 24 20:26 pat_chillout.scenario
+-rw-r--r-- 1 minto 197121 1012376 Apr 24 20:26 pat_chillout.scenario_structure_bsp
+-rw-r--r-- 1 minto 197121  939136 Apr 24 20:26 pat_chillout_SBSP.gbxmodel
+drwxr-xr-x 1 minto 197121       0 Apr 24 20:26 shaders
+
+L:/ce/tags/levels/test/pat_chillout/bitmaps:
+total 172
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 ck.bitmap
+
+L:/ce/tags/levels/test/pat_chillout/shaders:
+total 2
+-rw-r--r-- 1 minto 197121 443 Apr 24 20:26 chilly volume light blue.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 428 Apr 24 20:26 ck.shader_transparent_chicago
+
+L:/ce/tags/levels/test/prisoner:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+
+L:/ce/tags/levels/test/prisoner/bitmaps:
+total 12
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 black light.bitmap
+
+L:/ce/tags/levels/test/redshift:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shaders
+
+L:/ce/tags/levels/test/redshift/bitmaps:
+total 88
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 scratch_glass.bitmap
+
+L:/ce/tags/levels/test/redshift/shaders:
+total 1
+-rw-r--r-- 1 minto 197121 636 Apr 24 20:26 scratch_glass.shader_transparent_glass
+
+L:/ce/tags/levels/test/xbox_patrace:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+
+L:/ce/tags/levels/test/xbox_patrace/bitmaps:
+total 44
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 volume light blue.bitmap
+
+L:/ce/tags/nhe-credits:
+total 172
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 nhe-chroma-key-white.bitmap
+
+L:/ce/tags/old tags:
+total 1
+-rw-r--r-- 1 minto 197121 128 Apr 24 20:26 stones.point_physics
+
+L:/ce/tags/powerups:
+total 12
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 active camoflage
+-rw-r--r-- 1 minto 197121 1074 Apr 24 20:26 active camouflage.equipment
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 assault rifle ammo
+-rw-r--r-- 1 minto 197121 1070 Apr 24 20:26 health pack.equipment
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 healthpack
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 needler ammo
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 over shield
+-rw-r--r-- 1 minto 197121 1094 Apr 24 20:26 over shield.equipment
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 pistol ammo
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 rocket launcher ammo
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shotgun ammo
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 sniper rifle ammo
+
+L:/ce/tags/powerups/active camoflage:
+total 56
+-rw-r--r-- 1 minto 197121 52356 Apr 24 20:26 active camoflage.model
+-rw-r--r-- 1 minto 197121  1828 Apr 24 20:26 active camoflage.model_collision_geometry
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+
+L:/ce/tags/powerups/active camoflage/bitmaps:
+total 36
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 powerups multi.bitmap
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 powerups.bitmap
+
+L:/ce/tags/powerups/active camoflage/shaders:
+total 6
+-rw-r--r-- 1 minto 197121 1512 Apr 24 20:26 active camoflage.shader_transparent_generic
+-rw-r--r-- 1 minto 197121  687 Apr 24 20:26 powerup edge.shader_model
+-rw-r--r-- 1 minto 197121  636 Apr 24 20:26 powerup glass.shader_transparent_glass
+
+L:/ce/tags/powerups/assault rifle ammo:
+total 16
+-rw-r--r-- 1 minto 197121 1147 Apr 24 20:26 assault rifle ammo.equipment
+-rw-r--r-- 1 minto 197121 4259 Apr 24 20:26 assault rifle ammo.model
+-rw-r--r-- 1 minto 197121 2188 Apr 24 20:26 assault rifle ammo.model_collision_geometry
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+
+L:/ce/tags/powerups/assault rifle ammo/bitmaps:
+total 36
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 ar ammo multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 ar ammo.bitmap
+
+L:/ce/tags/powerups/assault rifle ammo/shaders:
+total 3
+-rw-r--r-- 1 minto 197121 643 Apr 24 20:26 ar ammo bag.shader_model
+-rw-r--r-- 1 minto 197121 605 Apr 24 20:26 ar ammo decal.shader_model
+-rw-r--r-- 1 minto 197121 643 Apr 24 20:26 ar ammo handle.shader_model
+
+L:/ce/tags/powerups/healthpack:
+total 8
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 2913 Apr 24 20:26 healthpack.model
+-rw-r--r-- 1 minto 197121 1828 Apr 24 20:26 healthpack.model_collision_geometry
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+
+L:/ce/tags/powerups/healthpack/bitmaps:
+total 88
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 healthpack.bitmap
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 healthpack_multi.bitmap
+
+L:/ce/tags/powerups/healthpack/shaders:
+total 1
+-rw-r--r-- 1 minto 197121 638 Apr 24 20:26 healthpack.shader_model
+
+L:/ce/tags/powerups/needler ammo:
+total 20
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 1127 Apr 24 20:26 needler ammo.equipment
+-rw-r--r-- 1 minto 197121 8459 Apr 24 20:26 needler ammo.model
+-rw-r--r-- 1 minto 197121 2868 Apr 24 20:26 needler ammo.model_collision_geometry
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+
+L:/ce/tags/powerups/needler ammo/bitmaps:
+total 136
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 needler ammo glow offset.bitmap
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 needler ammo glow.bitmap
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 needler ammo.bitmap
+
+L:/ce/tags/powerups/needler ammo/shaders:
+total 5
+-rw-r--r-- 1 minto 197121  637 Apr 24 20:26 needler ammo crystal.shader_transparent_glass
+-rw-r--r-- 1 minto 197121 1537 Apr 24 20:26 needler ammo glow.shader_transparent_generic
+
+L:/ce/tags/powerups/over shield:
+total 36
+-rw-r--r-- 1 minto 197121 30179 Apr 24 20:26 over shield.model
+-rw-r--r-- 1 minto 197121  1628 Apr 24 20:26 over shield.model_collision_geometry
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+
+L:/ce/tags/powerups/over shield/shaders:
+total 5
+-rw-r--r-- 1 minto 197121 1512 Apr 24 20:26 over shield.shader_transparent_generic
+-rw-r--r-- 1 minto 197121  636 Apr 24 20:26 powerup glass.shader_transparent_glass
+
+L:/ce/tags/powerups/pistol ammo:
+total 16
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 1123 Apr 24 20:26 pistol ammo.equipment
+-rw-r--r-- 1 minto 197121 4187 Apr 24 20:26 pistol ammo.model
+-rw-r--r-- 1 minto 197121 2188 Apr 24 20:26 pistol ammo.model_collision_geometry
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+
+L:/ce/tags/powerups/pistol ammo/bitmaps:
+total 36
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 p ammo multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 p ammo.bitmap
+
+L:/ce/tags/powerups/pistol ammo/shaders:
+total 3
+-rw-r--r-- 1 minto 197121 627 Apr 24 20:26 p ammo bag.shader_model
+-rw-r--r-- 1 minto 197121 589 Apr 24 20:26 p ammo decal.shader_model
+-rw-r--r-- 1 minto 197121 627 Apr 24 20:26 p ammo handle.shader_model
+
+L:/ce/tags/powerups/rocket launcher ammo:
+total 16
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 1208 Apr 24 20:26 rocket launcher ammo.equipment
+-rw-r--r-- 1 minto 197121 7823 Apr 24 20:26 rocket launcher ammo.model
+-rw-r--r-- 1 minto 197121 1828 Apr 24 20:26 rocket launcher ammo.model_collision_geometry
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+
+L:/ce/tags/powerups/rocket launcher ammo/bitmaps:
+total 132
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 rocket launcher ammo multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 rocket launcher ammo.bitmap
+
+L:/ce/tags/powerups/rocket launcher ammo/shaders:
+total 3
+-rw-r--r-- 1 minto 197121 635 Apr 24 20:26 rl ammo body.shader_model
+-rw-r--r-- 1 minto 197121 601 Apr 24 20:26 rl ammo decal.shader_model
+-rw-r--r-- 1 minto 197121 673 Apr 24 20:26 rl ammo tubes.shader_model
+
+L:/ce/tags/powerups/shotgun ammo:
+total 16
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121 1128 Apr 24 20:26 shotgun ammo.equipment
+-rw-r--r-- 1 minto 197121 5396 Apr 24 20:26 shotgun ammo.model
+-rw-r--r-- 1 minto 197121 2444 Apr 24 20:26 shotgun ammo.model_collision_geometry
+
+L:/ce/tags/powerups/shotgun ammo/bitmaps:
+total 132
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 sg ammo multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 sg ammo.bitmap
+
+L:/ce/tags/powerups/shotgun ammo/shaders:
+total 2
+-rw-r--r-- 1 minto 197121 593 Apr 24 20:26 sg ammo decal.shader_model
+-rw-r--r-- 1 minto 197121 643 Apr 24 20:26 sg ammo metal.shader_model
+
+L:/ce/tags/powerups/sniper rifle ammo:
+total 16
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121 1147 Apr 24 20:26 sniper rifle ammo.equipment
+-rw-r--r-- 1 minto 197121 7685 Apr 24 20:26 sniper rifle ammo.model
+-rw-r--r-- 1 minto 197121 2516 Apr 24 20:26 sniper rifle ammo.model_collision_geometry
+
+L:/ce/tags/powerups/sniper rifle ammo/bitmaps:
+total 132
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 sr ammo multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 sr ammo.bitmap
+
+L:/ce/tags/powerups/sniper rifle ammo/shaders:
+total 3
+-rw-r--r-- 1 minto 197121 637 Apr 24 20:26 sr ammo clear.shader_transparent_glass
+-rw-r--r-- 1 minto 197121 603 Apr 24 20:26 sr ammo decal.shader_model
+-rw-r--r-- 1 minto 197121 653 Apr 24 20:26 sr ammo metal.shader_model
+
+L:/ce/tags/scenery:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 flag_base
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 randoms
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 spawn_marker_nhe
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 teleporter_base
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 teleporter_shield
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 water_pipe
+
+L:/ce/tags/scenery/flag_base:
+total 13
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 7616 Apr 24 20:26 flag_base.model
+-rw-r--r-- 1 minto 197121 1860 Apr 24 20:26 flag_base.model_collision_geometry
+-rw-r--r-- 1 minto 197121  628 Apr 24 20:26 flag_base.scenery
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+
+L:/ce/tags/scenery/flag_base/bitmaps:
+total 88
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 flag_base.bitmap
+
+L:/ce/tags/scenery/flag_base/shaders:
+total 4
+-rw-r--r-- 1 minto 197121 1025 Apr 24 20:26 flag_base.shader_environment
+
+L:/ce/tags/scenery/randoms:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 chillout_randoms
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shaders
+
+L:/ce/tags/scenery/randoms/chillout_randoms:
+total 5
+-rw-r--r-- 1 minto 197121 1758 Apr 24 20:26 chillout_randoms.model
+-rw-r--r-- 1 minto 197121  622 Apr 24 20:26 chillout_randoms.scenery
+
+L:/ce/tags/scenery/randoms/shaders:
+total 1
+-rw-r--r-- 1 minto 197121 445 Apr 24 20:26 random_pink.shader_transparent_chicago
+
+L:/ce/tags/scenery/spawn_marker_nhe:
+total 21
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 17546 Apr 24 20:26 overflow_spawn_marker.model
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   663 Apr 24 20:26 spawn_marker_nhe.scenery
+
+L:/ce/tags/scenery/spawn_marker_nhe/bitmaps:
+total 4
+-rw-r--r-- 1 minto 197121 2972 Apr 24 20:26 spawn_marker_nhe.bitmap
+
+L:/ce/tags/scenery/spawn_marker_nhe/shaders:
+total 1
+-rw-r--r-- 1 minto 197121 442 Apr 24 20:26 spawn_marker_nhe.shader_transparent_chicago
+
+L:/ce/tags/scenery/teleporter_base:
+total 21
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121 13694 Apr 24 20:26 teleporter_base.model
+-rw-r--r-- 1 minto 197121  1700 Apr 24 20:26 teleporter_base.model_collision_geometry
+-rw-r--r-- 1 minto 197121   652 Apr 24 20:26 teleporter_base.scenery
+
+L:/ce/tags/scenery/teleporter_base/bitmaps:
+total 188
+-rw-r--r-- 1 minto 197121  3100 Apr 24 20:26 base volumetric dust.bitmap
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 teleporter_base bump.bitmap
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 teleporter_base.bitmap
+-rw-r--r-- 1 minto 197121  5788 Apr 24 20:26 teleporter_dust.bitmap
+
+L:/ce/tags/scenery/teleporter_base/shaders:
+total 8
+-rw-r--r-- 1 minto 197121 1090 Apr 24 20:26 teleporter_base.shader_environment
+-rw-r--r-- 1 minto 197121  986 Apr 24 20:26 teleporter_cone.shader_transparent_chicago
+
+L:/ce/tags/scenery/teleporter_shield:
+total 5
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121  616 Apr 24 20:26 teleporter.scenery
+-rw-r--r-- 1 minto 197121 1196 Apr 24 20:26 teleporter_shield.model
+
+L:/ce/tags/scenery/teleporter_shield/bitmaps:
+total 112
+-rw-r--r-- 1 minto 197121 87708 Apr 24 20:26 teleporter_shield.bitmap
+-rw-r--r-- 1 minto 197121 22172 Apr 24 20:26 teleporter_shield_energy mask.bitmap
+
+L:/ce/tags/scenery/teleporter_shield/shaders:
+total 4
+-rw-r--r-- 1 minto 197121 1578 Apr 24 20:26 teleporter_shield.shader_transparent_generic
+
+L:/ce/tags/scenery/water_pipe:
+total 9
+-rw-r--r-- 1 minto 197121 6619 Apr 24 20:26 water_pipe.model
+-rw-r--r-- 1 minto 197121  602 Apr 24 20:26 water_pipe.scenery
+
+L:/ce/tags/sky:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 clear afternoon
+
+L:/ce/tags/sky/clear afternoon:
+total 4
+-rw-r--r-- 1 minto 197121 2148 Apr 24 20:26 sun.lens_flare
+
+L:/ce/tags/sound:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 sfx
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 sound environments
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 timer
+
+L:/ce/tags/sound/sfx:
+total 8
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 ambience
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 impulse
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 ui
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 vehicles
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 weapons
+
+L:/ce/tags/sound/sfx/ambience:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 multiplayer
+
+L:/ce/tags/sound/sfx/ambience/multiplayer:
+total 1513
+-rw-r--r-- 1 minto 197121  453328 Apr 24 20:26 basstonalair.sound
+-rw-r--r-- 1 minto 197121     556 Apr 24 20:26 chillout.sound_looping
+-rw-r--r-- 1 minto 197121 1092088 Apr 24 20:26 subbassatmos.sound
+
+L:/ce/tags/sound/sfx/impulse:
+total 16
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 glass
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 impacts
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 material_effects
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 melee
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shellcasings
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 weapon_drops
+
+L:/ce/tags/sound/sfx/impulse/glass:
+total 172
+-rw-r--r-- 1 minto 197121 94808 Apr 24 20:26 glass_large.sound
+-rw-r--r-- 1 minto 197121 51648 Apr 24 20:26 glass_medium.sound
+-rw-r--r-- 1 minto 197121 23409 Apr 24 20:26 glass_small.sound
+
+L:/ce/tags/sound/sfx/impulse/impacts:
+total 2428
+-rw-r--r-- 1 minto 197121  55516 Apr 24 20:26 ar_water.sound
+-rw-r--r-- 1 minto 197121  27648 Apr 24 20:26 blood_splatters.sound
+-rw-r--r-- 1 minto 197121 165340 Apr 24 20:26 bullet_ricc.sound
+-rw-r--r-- 1 minto 197121 344836 Apr 24 20:26 bullets_projectile.sound
+-rw-r--r-- 1 minto 197121  46252 Apr 24 20:26 dirt_burst.sound
+-rw-r--r-- 1 minto 197121 206532 Apr 24 20:26 dirt_skid.sound
+-rw-r--r-- 1 minto 197121  29432 Apr 24 20:26 dirthits.sound
+-rw-r--r-- 1 minto 197121  23148 Apr 24 20:26 fleshhit.sound
+-rw-r--r-- 1 minto 197121  66296 Apr 24 20:26 glass_hits.sound
+-rw-r--r-- 1 minto 197121  70540 Apr 24 20:26 granhit.sound
+-rw-r--r-- 1 minto 197121  34632 Apr 24 20:26 ice_hits.sound
+-rw-r--r-- 1 minto 197121 111996 Apr 24 20:26 jeep_hit_solid.sound
+-rw-r--r-- 1 minto 197121  70288 Apr 24 20:26 lrgrocks.sound
+-rw-r--r-- 1 minto 197121  72020 Apr 24 20:26 med_dirthits.sound
+-rw-r--r-- 1 minto 197121  25064 Apr 24 20:26 med_splash.sound
+-rw-r--r-- 1 minto 197121  87183 Apr 24 20:26 medrocks.sound
+-rw-r--r-- 1 minto 197121  28210 Apr 24 20:26 metal_chip_med.sound
+-rw-r--r-- 1 minto 197121  14605 Apr 24 20:26 metal_chips.sound
+-rw-r--r-- 1 minto 197121  47612 Apr 24 20:26 metalhit.sound
+-rw-r--r-- 1 minto 197121  75132 Apr 24 20:26 needle_ricc.sound
+-rw-r--r-- 1 minto 197121 128544 Apr 24 20:26 needler_projectile.sound
+-rw-r--r-- 1 minto 197121  24760 Apr 24 20:26 needler_super_expl.sound
+-rw-r--r-- 1 minto 197121  42844 Apr 24 20:26 plasrif_projectile.sound
+-rw-r--r-- 1 minto 197121 137040 Apr 24 20:26 scorpion_projectile.sound
+-rw-r--r-- 1 minto 197121  31160 Apr 24 20:26 scorpion_suspension.sound
+-rw-r--r-- 1 minto 197121  31695 Apr 24 20:26 smallrock.sound
+-rw-r--r-- 1 minto 197121  44712 Apr 24 20:26 snow_hits.sound
+-rw-r--r-- 1 minto 197121  77032 Apr 24 20:26 vehicle_impact.sound
+-rw-r--r-- 1 minto 197121  31160 Apr 24 20:26 warthog_suspension.sound
+-rw-r--r-- 1 minto 197121 171728 Apr 24 20:26 water_driving.sound
+-rw-r--r-- 1 minto 197121  64156 Apr 24 20:26 water_tires.sound
+-rw-r--r-- 1 minto 197121  29484 Apr 24 20:26 woodhit.sound
+
+L:/ce/tags/sound/sfx/impulse/material_effects:
+total 172
+-rw-r--r-- 1 minto 197121  4960 Apr 24 20:26 impacts_concrete.sound
+-rw-r--r-- 1 minto 197121  6740 Apr 24 20:26 impacts_dirt.sound
+-rw-r--r-- 1 minto 197121  3700 Apr 24 20:26 impacts_glass.sound
+-rw-r--r-- 1 minto 197121 19628 Apr 24 20:26 impacts_grass.sound
+-rw-r--r-- 1 minto 197121 26648 Apr 24 20:26 impacts_grating.sound
+-rw-r--r-- 1 minto 197121 23240 Apr 24 20:26 impacts_metal.sound
+-rw-r--r-- 1 minto 197121 10756 Apr 24 20:26 impacts_snow.sound
+-rw-r--r-- 1 minto 197121 47364 Apr 24 20:26 impacts_water.sound
+-rw-r--r-- 1 minto 197121 15288 Apr 24 20:26 impacts_wood.sound
+-rw-r--r-- 1 minto 197121  2583 Apr 24 20:26 weapon.material_effects
+
+L:/ce/tags/sound/sfx/impulse/melee:
+total 44
+-rw-r--r-- 1 minto 197121 2404 Apr 24 20:26 assault_impact.sound
+-rw-r--r-- 1 minto 197121 4348 Apr 24 20:26 needle_impact.sound
+-rw-r--r-- 1 minto 197121 7696 Apr 24 20:26 pistol_impact.sound
+-rw-r--r-- 1 minto 197121 5572 Apr 24 20:26 plasma_impact.sound
+-rw-r--r-- 1 minto 197121 9928 Apr 24 20:26 rlauncher_impact.sound
+-rw-r--r-- 1 minto 197121 2404 Apr 24 20:26 shotgun_impact.sound
+
+L:/ce/tags/sound/sfx/impulse/shellcasings:
+total 564
+-rw-r--r-- 1 minto 197121   2488 Apr 24 20:26 ar_casings.material_effects
+-rw-r--r-- 1 minto 197121  48256 Apr 24 20:26 double_shell_dirt.sound
+-rw-r--r-- 1 minto 197121  46997 Apr 24 20:26 double_shell_metal.sound
+-rw-r--r-- 1 minto 197121  41732 Apr 24 20:26 multi_shell_dirt.sound
+-rw-r--r-- 1 minto 197121  41732 Apr 24 20:26 multi_shell_metal.sound
+-rw-r--r-- 1 minto 197121   2532 Apr 24 20:26 shotgun_casings.material_effects
+-rw-r--r-- 1 minto 197121  36812 Apr 24 20:26 shotgun_shell_dirt.sound
+-rw-r--r-- 1 minto 197121 115324 Apr 24 20:26 shotgun_shell_thick_metal.sound
+-rw-r--r-- 1 minto 197121 156084 Apr 24 20:26 shotgun_shell_thin_metal.sound
+-rw-r--r-- 1 minto 197121  29445 Apr 24 20:26 single_shell_dirt.sound
+-rw-r--r-- 1 minto 197121  29482 Apr 24 20:26 single_shell_metal.sound
+
+L:/ce/tags/sound/sfx/impulse/weapon_drops:
+total 8
+-rw-r--r-- 1 minto 197121 5572 Apr 24 20:26 plasma_impact.sound
+
+L:/ce/tags/sound/sfx/ui:
+total 8
+-rw-r--r-- 1 minto 197121 1504 Apr 24 20:26 countdown_for_respawn.sound
+-rw-r--r-- 1 minto 197121 3304 Apr 24 20:26 player_respawn.sound
+
+L:/ce/tags/sound/sfx/vehicles:
+total 715
+-rw-r--r-- 1 minto 197121    393 Apr 24 20:26 ghost.sound_looping
+-rw-r--r-- 1 minto 197121  34408 Apr 24 20:26 ghost_in.sound
+-rw-r--r-- 1 minto 197121  34444 Apr 24 20:26 ghost_lp.sound
+-rw-r--r-- 1 minto 197121  27748 Apr 24 20:26 ghost_out.sound
+-rw-r--r-- 1 minto 197121    421 Apr 24 20:26 warthog engine.sound_looping
+-rw-r--r-- 1 minto 197121  99940 Apr 24 20:26 warthog_7_engine.sound
+-rw-r--r-- 1 minto 197121    604 Apr 24 20:26 warthog_7_engine.sound_looping
+-rw-r--r-- 1 minto 197121  30052 Apr 24 20:26 warthog_7_in.sound
+-rw-r--r-- 1 minto 197121  33040 Apr 24 20:26 warthog_7_out.sound
+-rw-r--r-- 1 minto 197121 120492 Apr 24 20:26 warthog_engine.sound
+-rw-r--r-- 1 minto 197121 292744 Apr 24 20:26 warthog_engine5.sound
+-rw-r--r-- 1 minto 197121   9388 Apr 24 20:26 warthog_engine_start.sound
+-rw-r--r-- 1 minto 197121  22024 Apr 24 20:26 warthog_engine_stop.sound
+
+L:/ce/tags/sound/sfx/weapons:
+total 12
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 assault rifle
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 chaingun
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 frag grenade
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 needler
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 pistol
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 plasma grenade
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 plasma rifle
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 rocket launcher
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shield fx
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shotgun
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 sniper rifle
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 weapon_anims
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 weapon_pickup_ammo
+
+L:/ce/tags/sound/sfx/weapons/assault rifle:
+total 44
+-rw-r--r-- 1 minto 197121  2224 Apr 24 20:26 dryfire.sound
+-rw-r--r-- 1 minto 197121 35536 Apr 24 20:26 fire.sound
+-rw-r--r-- 1 minto 197121  3088 Apr 24 20:26 flashlight.sound
+
+L:/ce/tags/sound/sfx/weapons/chaingun:
+total 32
+-rw-r--r-- 1 minto 197121 31916 Apr 24 20:26 fire.sound
+
+L:/ce/tags/sound/sfx/weapons/frag grenade:
+total 52
+-rw-r--r-- 1 minto 197121 52584 Apr 24 20:26 expl.sound
+
+L:/ce/tags/sound/sfx/weapons/needler:
+total 92
+-rw-r--r-- 1 minto 197121  1216 Apr 24 20:26 dryfire.sound
+-rw-r--r-- 1 minto 197121 48192 Apr 24 20:26 expl.sound
+-rw-r--r-- 1 minto 197121 37948 Apr 24 20:26 granite.sound
+
+L:/ce/tags/sound/sfx/weapons/pistol:
+total 36
+-rw-r--r-- 1 minto 197121  1972 Apr 24 20:26 dryfire.sound
+-rw-r--r-- 1 minto 197121 10520 Apr 24 20:26 eject.sound
+-rw-r--r-- 1 minto 197121 16984 Apr 24 20:26 fire.sound
+
+L:/ce/tags/sound/sfx/weapons/plasma grenade:
+total 80
+-rw-r--r-- 1 minto 197121 81148 Apr 24 20:26 plasmagrenexpl.sound
+
+L:/ce/tags/sound/sfx/weapons/plasma rifle:
+total 228
+-rw-r--r-- 1 minto 197121 13564 Apr 24 20:26 chargefire.sound
+-rw-r--r-- 1 minto 197121 56432 Apr 24 20:26 fire.sound
+-rw-r--r-- 1 minto 197121 35988 Apr 24 20:26 overheat.sound
+-rw-r--r-- 1 minto 197121 34584 Apr 24 20:26 plasmahit.sound
+-rw-r--r-- 1 minto 197121 82192 Apr 24 20:26 sparks_plasma.sound
+
+L:/ce/tags/sound/sfx/weapons/rocket launcher:
+total 201
+-rw-r--r-- 1 minto 197121  61532 Apr 24 20:26 fire.sound
+-rw-r--r-- 1 minto 197121 136212 Apr 24 20:26 rl_projectile.sound
+-rw-r--r-- 1 minto 197121    356 Apr 24 20:26 rl_projectile.sound_looping
+
+L:/ce/tags/sound/sfx/weapons/shield fx:
+total 48
+-rw-r--r-- 1 minto 197121 45492 Apr 24 20:26 hits.sound
+
+L:/ce/tags/sound/sfx/weapons/shotgun:
+total 24
+-rw-r--r-- 1 minto 197121 20836 Apr 24 20:26 fire.sound
+
+L:/ce/tags/sound/sfx/weapons/sniper rifle:
+total 164
+-rw-r--r-- 1 minto 197121 153436 Apr 24 20:26 fire.sound
+-rw-r--r-- 1 minto 197121   5464 Apr 24 20:26 sniper_10x_zoom.sound
+-rw-r--r-- 1 minto 197121   3448 Apr 24 20:26 sniper_2x_zoom.sound
+
+L:/ce/tags/sound/sfx/weapons/weapon_anims:
+total 1056
+-rw-r--r-- 1 minto 197121 38132 Apr 24 20:26 ar_melee.sound
+-rw-r--r-- 1 minto 197121 38440 Apr 24 20:26 ar_reload.sound
+-rw-r--r-- 1 minto 197121 33596 Apr 24 20:26 needle_melee.sound
+-rw-r--r-- 1 minto 197121 34984 Apr 24 20:26 needle_posing.sound
+-rw-r--r-- 1 minto 197121 10360 Apr 24 20:26 needle_ready.sound
+-rw-r--r-- 1 minto 197121 29224 Apr 24 20:26 needle_reload.sound
+-rw-r--r-- 1 minto 197121 29204 Apr 24 20:26 pistol_melee.sound
+-rw-r--r-- 1 minto 197121 55828 Apr 24 20:26 pistol_posing.sound
+-rw-r--r-- 1 minto 197121 21340 Apr 24 20:26 pistol_reload.sound
+-rw-r--r-- 1 minto 197121 36528 Apr 24 20:26 plaspistol_melee.sound
+-rw-r--r-- 1 minto 197121 15544 Apr 24 20:26 plaspistol_overheat.sound
+-rw-r--r-- 1 minto 197121  9604 Apr 24 20:26 plaspistol_overheat_exit.sound
+-rw-r--r-- 1 minto 197121 44632 Apr 24 20:26 plaspistol_posing.sound
+-rw-r--r-- 1 minto 197121  6400 Apr 24 20:26 plaspistol_ready.sound
+-rw-r--r-- 1 minto 197121 17164 Apr 24 20:26 plasrifle_melee.sound
+-rw-r--r-- 1 minto 197121  8704 Apr 24 20:26 plasrifle_oh_exit.sound
+-rw-r--r-- 1 minto 197121 31636 Apr 24 20:26 plasrifle_overheat.sound
+-rw-r--r-- 1 minto 197121 42184 Apr 24 20:26 plasrifle_posing.sound
+-rw-r--r-- 1 minto 197121 12592 Apr 24 20:26 plasrifle_ready.sound
+-rw-r--r-- 1 minto 197121 11080 Apr 24 20:26 rocket_fire.sound
+-rw-r--r-- 1 minto 197121 51324 Apr 24 20:26 rocket_melee.sound
+-rw-r--r-- 1 minto 197121 49888 Apr 24 20:26 rocket_posing.sound
+-rw-r--r-- 1 minto 197121 48664 Apr 24 20:26 rocket_reload_e.sound
+-rw-r--r-- 1 minto 197121 42040 Apr 24 20:26 rocket_reload_f.sound
+-rw-r--r-- 1 minto 197121 10468 Apr 24 20:26 shotgun_fire.sound
+-rw-r--r-- 1 minto 197121 29780 Apr 24 20:26 shotgun_melee.sound
+-rw-r--r-- 1 minto 197121 20800 Apr 24 20:26 shotgun_posing.sound
+-rw-r--r-- 1 minto 197121 20868 Apr 24 20:26 shotgun_reload1_1.sound
+-rw-r--r-- 1 minto 197121 16620 Apr 24 20:26 shotgun_reload2_1.sound
+-rw-r--r-- 1 minto 197121  9460 Apr 24 20:26 shotgun_reload3.sound
+-rw-r--r-- 1 minto 197121 18316 Apr 24 20:26 shotgun_reload4.sound
+-rw-r--r-- 1 minto 197121 22940 Apr 24 20:26 sniper_melee.sound
+-rw-r--r-- 1 minto 197121 66664 Apr 24 20:26 sniper_posing.sound
+-rw-r--r-- 1 minto 197121 35056 Apr 24 20:26 sniper_reload_empty.sound
+-rw-r--r-- 1 minto 197121 26560 Apr 24 20:26 sniper_reload_full.sound
+
+L:/ce/tags/sound/sfx/weapons/weapon_pickup_ammo:
+total 28
+-rw-r--r-- 1 minto 197121 3304 Apr 24 20:26 ar_ammo.sound
+-rw-r--r-- 1 minto 197121 3052 Apr 24 20:26 needle_ammo.sound
+-rw-r--r-- 1 minto 197121 3232 Apr 24 20:26 pistol_ammo.sound
+-rw-r--r-- 1 minto 197121 4276 Apr 24 20:26 rocket_ammo.sound
+-rw-r--r-- 1 minto 197121 3088 Apr 24 20:26 shotgun_ammo.sound
+-rw-r--r-- 1 minto 197121 4096 Apr 24 20:26 sniper_ammo.sound
+
+L:/ce/tags/sound/sound environments:
+total 1
+-rw-r--r-- 1 minto 197121 136 Apr 24 20:26 stone_room.sound_environment
+
+L:/ce/tags/sound/timer:
+total 8
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 beeps
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 cortana
+
+L:/ce/tags/sound/timer/beeps:
+total 4
+-rw-r--r-- 1 minto 197121 3160 Apr 24 20:26 timerbeep.sound
+
+L:/ce/tags/sound/timer/cortana:
+total 2160
+-rw-r--r-- 1 minto 197121 25048 Apr 24 20:26 1.sound
+-rw-r--r-- 1 minto 197121 27640 Apr 24 20:26 10.sound
+-rw-r--r-- 1 minto 197121 43840 Apr 24 20:26 10_minutes.sound
+-rw-r--r-- 1 minto 197121 52480 Apr 24 20:26 11_minutes.sound
+-rw-r--r-- 1 minto 197121 52480 Apr 24 20:26 12_minutes.sound
+-rw-r--r-- 1 minto 197121 57088 Apr 24 20:26 13_minutes.sound
+-rw-r--r-- 1 minto 197121 57088 Apr 24 20:26 14_minutes.sound
+-rw-r--r-- 1 minto 197121 52480 Apr 24 20:26 15_minutes.sound
+-rw-r--r-- 1 minto 197121 54784 Apr 24 20:26 16_minutes.sound
+-rw-r--r-- 1 minto 197121 61624 Apr 24 20:26 17_minutes.sound
+-rw-r--r-- 1 minto 197121 54784 Apr 24 20:26 18_minutes.sound
+-rw-r--r-- 1 minto 197121 57088 Apr 24 20:26 19_minutes.sound
+-rw-r--r-- 1 minto 197121 43336 Apr 24 20:26 1_minute.sound
+-rw-r--r-- 1 minto 197121 25552 Apr 24 20:26 2.sound
+-rw-r--r-- 1 minto 197121 64144 Apr 24 20:26 20(twenny)_seconds.sound
+-rw-r--r-- 1 minto 197121 50176 Apr 24 20:26 20_minutes.sound
+-rw-r--r-- 1 minto 197121 59392 Apr 24 20:26 21_minutes.sound
+-rw-r--r-- 1 minto 197121 61624 Apr 24 20:26 22_minutes.sound
+-rw-r--r-- 1 minto 197121 63928 Apr 24 20:26 23_minutes.sound
+-rw-r--r-- 1 minto 197121 61624 Apr 24 20:26 24_minutes.sound
+-rw-r--r-- 1 minto 197121 68536 Apr 24 20:26 25_minutes.sound
+-rw-r--r-- 1 minto 197121 63928 Apr 24 20:26 26_minutes.sound
+-rw-r--r-- 1 minto 197121 66232 Apr 24 20:26 27_minutes.sound
+-rw-r--r-- 1 minto 197121 63928 Apr 24 20:26 28_minutes.sound
+-rw-r--r-- 1 minto 197121 63928 Apr 24 20:26 29_minutes.sound
+-rw-r--r-- 1 minto 197121 41032 Apr 24 20:26 2_minutes.sound
+-rw-r--r-- 1 minto 197121 19288 Apr 24 20:26 3.sound
+-rw-r--r-- 1 minto 197121 46144 Apr 24 20:26 30_minutes.sound
+-rw-r--r-- 1 minto 197121 61624 Apr 24 20:26 30_seconds_left.sound
+-rw-r--r-- 1 minto 197121 43840 Apr 24 20:26 3_minutes.sound
+-rw-r--r-- 1 minto 197121 25552 Apr 24 20:26 4.sound
+-rw-r--r-- 1 minto 197121 45640 Apr 24 20:26 4_minutes.sound
+-rw-r--r-- 1 minto 197121 25048 Apr 24 20:26 5.sound
+-rw-r--r-- 1 minto 197121 46576 Apr 24 20:26 5_minutes.sound
+-rw-r--r-- 1 minto 197121 29800 Apr 24 20:26 6.sound
+-rw-r--r-- 1 minto 197121 47944 Apr 24 20:26 6_minutes.sound
+-rw-r--r-- 1 minto 197121 29800 Apr 24 20:26 7.sound
+-rw-r--r-- 1 minto 197121 50176 Apr 24 20:26 7_minutes.sound
+-rw-r--r-- 1 minto 197121 23464 Apr 24 20:26 8.sound
+-rw-r--r-- 1 minto 197121 43336 Apr 24 20:26 8_minutes.sound
+-rw-r--r-- 1 minto 197121 25048 Apr 24 20:26 9.sound
+-rw-r--r-- 1 minto 197121 47944 Apr 24 20:26 9_minutes.sound
+-rw-r--r-- 1 minto 197121 29584 Apr 24 20:26 camo.sound
+-rw-r--r-- 1 minto 197121 45640 Apr 24 20:26 overshield.sound
+-rw-r--r-- 1 minto 197121 29584 Apr 24 20:26 rocket.sound
+
+L:/ce/tags/ui:
+total 4
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 hud
+
+L:/ce/tags/ui/hud:
+total 28
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 1537 Apr 24 20:26 gunner.unit_hud_interface
+-rw-r--r-- 1 minto 197121 3380 Apr 24 20:26 hudtimer.unicode_string_list
+-rw-r--r-- 1 minto 197121 2719 Apr 24 20:26 master plasma.weapon_hud_interface
+-rw-r--r-- 1 minto 197121 2726 Apr 24 20:26 master rounds.weapon_hud_interface
+-rw-r--r-- 1 minto 197121  701 Apr 24 20:26 master.weapon_hud_interface
+-rw-r--r-- 1 minto 197121 1537 Apr 24 20:26 passenger_2.unit_hud_interface
+-rw-r--r-- 1 minto 197121 1489 Apr 24 20:26 warthog driver.unit_hud_interface
+
+L:/ce/tags/ui/hud/bitmaps:
+total 8
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 combined
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 pistol
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 sniper
+
+L:/ce/tags/ui/hud/bitmaps/combined:
+total 512
+-rw-r--r-- 1 minto 197121  23596 Apr 24 20:26 hud_ammo_alphas.bitmap
+-rw-r--r-- 1 minto 197121 132156 Apr 24 20:26 hud_ammo_meters.bitmap
+-rw-r--r-- 1 minto 197121  27244 Apr 24 20:26 hud_ammo_outlines.bitmap
+-rw-r--r-- 1 minto 197121   3804 Apr 24 20:26 hud_ammo_type_icons.bitmap
+-rw-r--r-- 1 minto 197121  34172 Apr 24 20:26 hud_reticle_warnings.bitmap
+-rw-r--r-- 1 minto 197121  63628 Apr 24 20:26 hud_reticles.bitmap
+-rw-r--r-- 1 minto 197121  56924 Apr 24 20:26 hud_unit_backgrounds.bitmap
+-rw-r--r-- 1 minto 197121 132060 Apr 24 20:26 hud_unit_meters.bitmap
+-rw-r--r-- 1 minto 197121  33500 Apr 24 20:26 hud_weapon_backgrounds.bitmap
+
+L:/ce/tags/ui/hud/bitmaps/pistol:
+total 200
+-rw-r--r-- 1 minto 197121  65820 Apr 24 20:26 pistol_scope_mask split.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 pistol_scope_mask.bitmap
+
+L:/ce/tags/ui/hud/bitmaps/sniper:
+total 448
+-rw-r--r-- 1 minto 197121  41276 Apr 24 20:26 caption.bitmap
+-rw-r--r-- 1 minto 197121   8636 Apr 24 20:26 hud_reticles_scope.bitmap
+-rw-r--r-- 1 minto 197121  48092 Apr 24 20:26 sniper_scope_crosshairs2.bitmap
+-rw-r--r-- 1 minto 197121  12636 Apr 24 20:26 sniper_scope_crosshairs_sm.bitmap
+-rw-r--r-- 1 minto 197121 262428 Apr 24 20:26 sniper_scope_mask2.bitmap
+-rw-r--r-- 1 minto 197121  65820 Apr 24 20:26 sniper_scope_mask_sm.bitmap
+
+L:/ce/tags/vehicles:
+total 24
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 banshee
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 ghost
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 scorpion
+-rw-r--r-- 1 minto 197121 6316 Apr 24 20:26 vehicle.material_effects
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 warthog
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 wraith
+
+L:/ce/tags/vehicles/banshee:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 effects
+
+L:/ce/tags/vehicles/banshee/bitmaps:
+total 32
+-rw-r--r-- 1 minto 197121 17180 Apr 24 20:26 cubemap banshee.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 detail banshee.bitmap
+
+L:/ce/tags/vehicles/banshee/effects:
+total 1
+-rw-r--r-- 1 minto 197121 572 Apr 24 20:26 antigravity particles.effect
+
+L:/ce/tags/vehicles/ghost:
+total 300
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121    736 Apr 24 20:26 ghost bolt.damage_effect
+-rw-r--r-- 1 minto 197121    488 Apr 24 20:26 ghost bolt.lens_flare
+-rw-r--r-- 1 minto 197121    442 Apr 24 20:26 ghost bolt.light
+-rw-r--r-- 1 minto 197121    572 Apr 24 20:26 ghost bolt.light_volume
+-rw-r--r-- 1 minto 197121   8114 Apr 24 20:26 ghost bolt.projectile
+-rw-r--r-- 1 minto 197121   2639 Apr 24 20:26 ghost gun fire beam.effect
+-rw-r--r-- 1 minto 197121   2368 Apr 24 20:26 ghost gun.weapon
+-rw-r--r-- 1 minto 197121    906 Apr 24 20:26 ghost gun.weapon_hud_interface
+-rw-r--r-- 1 minto 197121    632 Apr 24 20:26 ghost pilot.actor_variant
+-rw-r--r-- 1 minto 197121 235923 Apr 24 20:26 ghost.model
+-rw-r--r-- 1 minto 197121   2104 Apr 24 20:26 ghost.model_animations
+-rw-r--r-- 1 minto 197121   1160 Apr 24 20:26 ghost.physics
+-rw-r--r-- 1 minto 197121  18140 Apr 24 20:26 ghost_mp.model_collision_geometry
+-rw-r--r-- 1 minto 197121   2739 Apr 24 20:26 ghost_mp.vehicle
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121    736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/vehicles/ghost/bitmaps:
+total 432
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 ghost multi.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 ghost.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 ghost_destroyed.bitmap
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 ghost_destroyed_multi.bitmap
+
+L:/ce/tags/vehicles/ghost/shaders:
+total 5
+-rw-r--r-- 1 minto 197121 669 Apr 24 20:26 damaged ghost hull metal.shader_model
+-rw-r--r-- 1 minto 197121 588 Apr 24 20:26 damaged ghost self illuminated.shader_model
+-rw-r--r-- 1 minto 197121 618 Apr 24 20:26 ghost hull diffuse shine.shader_model
+-rw-r--r-- 1 minto 197121 649 Apr 24 20:26 ghost hull metal.shader_model
+-rw-r--r-- 1 minto 197121 568 Apr 24 20:26 ghost self illuminated.shader_model
+
+L:/ce/tags/vehicles/scorpion:
+total 124
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121  681 Apr 24 20:26 bullet.contrail
+-rw-r--r-- 1 minto 197121  736 Apr 24 20:26 bullet.damage_effect
+-rw-r--r-- 1 minto 197121 7702 Apr 24 20:26 bullet.projectile
+-rw-r--r-- 1 minto 197121  128 Apr 24 20:26 cannon fire cloud.point_physics
+-rw-r--r-- 1 minto 197121  500 Apr 24 20:26 cannon flash large.particle
+-rw-r--r-- 1 minto 197121  500 Apr 24 20:26 cannon flash med.particle
+-rw-r--r-- 1 minto 197121  500 Apr 24 20:26 cannon flash small.particle
+-rw-r--r-- 1 minto 197121  128 Apr 24 20:26 cannon smoke cloud.point_physics
+-rw-r--r-- 1 minto 197121  495 Apr 24 20:26 cannon smoke trail.particle
+-rw-r--r-- 1 minto 197121  496 Apr 24 20:26 cannon smoke.particle
+-rw-r--r-- 1 minto 197121  504 Apr 24 20:26 headlight scorpion.light
+-rw-r--r-- 1 minto 197121  479 Apr 24 20:26 headlights scorpion.lens_flare
+-rw-r--r-- 1 minto 197121 2023 Apr 24 20:26 scorpion cannon fire.effect
+-rw-r--r-- 1 minto 197121 3018 Apr 24 20:26 scorpion cannon.weapon
+-rw-r--r-- 1 minto 197121 1163 Apr 24 20:26 scorpion cannon.weapon_hud_interface
+-rw-r--r-- 1 minto 197121 1112 Apr 24 20:26 scorpion medium antenna.antenna
+-rw-r--r-- 1 minto 197121  632 Apr 24 20:26 scorpion pilot.actor_variant
+-rw-r--r-- 1 minto 197121  856 Apr 24 20:26 scorpion short antenna.antenna
+-rw-r--r-- 1 minto 197121 9328 Apr 24 20:26 scorpion.model_animations
+-rw-r--r-- 1 minto 197121 2824 Apr 24 20:26 scorpion.physics
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 scorpion_mp
+-rw-r--r-- 1 minto 197121 4818 Apr 24 20:26 scorpion_mp.vehicle
+-rw-r--r-- 1 minto 197121 6986 Apr 24 20:26 secondary fire bullet.effect
+-rw-r--r-- 1 minto 197121  736 Apr 24 20:26 secondary trigger.damage_effect
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121  498 Apr 24 20:26 shell dirt burst.particle
+-rw-r--r-- 1 minto 197121  128 Apr 24 20:26 shell dirt burst.point_physics
+-rw-r--r-- 1 minto 197121  736 Apr 24 20:26 shell explosion.damage_effect
+-rw-r--r-- 1 minto 197121 1957 Apr 24 20:26 shell explosion.effect
+-rw-r--r-- 1 minto 197121  485 Apr 24 20:26 shell explosion.lens_flare
+-rw-r--r-- 1 minto 197121  450 Apr 24 20:26 shell explosion.light
+-rw-r--r-- 1 minto 197121 2127 Apr 24 20:26 shell explosion.particle_system
+-rw-r--r-- 1 minto 197121  128 Apr 24 20:26 shell fire explosion hot.point_physics
+-rw-r--r-- 1 minto 197121 1380 Apr 24 20:26 shell impact dirt.effect
+-rw-r--r-- 1 minto 197121  736 Apr 24 20:26 shell shock wave.damage_effect
+-rw-r--r-- 1 minto 197121  865 Apr 24 20:26 shell.contrail
+-rw-r--r-- 1 minto 197121 6594 Apr 24 20:26 tank shell.projectile
+
+L:/ce/tags/vehicles/scorpion/bitmaps:
+total 516
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 headlight_lens_flare.bitmap
+-rw-r--r-- 1 minto 197121  66332 Apr 24 20:26 headlights gel scorpion.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 scorpion_body.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 scorpion_multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 scorpion_treads.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 scorpion_treads_multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  21820 Apr 24 20:26 shell dirt burst.bitmap
+-rw-r--r-- 1 minto 197121   5692 Apr 24 20:26 smoke cannon.bitmap
+
+L:/ce/tags/vehicles/scorpion/scorpion_mp:
+total 256
+-rw-r--r-- 1 minto 197121 229250 Apr 24 20:26 scorpion_mp.model
+-rw-r--r-- 1 minto 197121  29148 Apr 24 20:26 scorpion_mp.model_collision_geometry
+
+L:/ce/tags/vehicles/scorpion/shaders:
+total 10
+-rw-r--r-- 1 minto 197121 592 Apr 24 20:26 headlight.shader_model
+-rw-r--r-- 1 minto 197121 646 Apr 24 20:26 hull_darkened.shader_model
+-rw-r--r-- 1 minto 197121 646 Apr 24 20:26 hull_double%.shader_model
+-rw-r--r-- 1 minto 197121 646 Apr 24 20:26 hull_non_reflective.shader_model
+-rw-r--r-- 1 minto 197121 696 Apr 24 20:26 hull_reflective.shader_model
+-rw-r--r-- 1 minto 197121 655 Apr 24 20:26 tread_left.shader_model
+-rw-r--r-- 1 minto 197121 655 Apr 24 20:26 tread_right.shader_model
+
+L:/ce/tags/vehicles/warthog:
+total 484
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121    736 Apr 24 20:26 bullet.damage_effect
+-rw-r--r-- 1 minto 197121   7463 Apr 24 20:26 bullet.projectile
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 effects
+-rw-r--r-- 1 minto 197121    464 Apr 24 20:26 headlights light.light
+-rw-r--r-- 1 minto 197121    479 Apr 24 20:26 headlights.lens_flare
+-rw-r--r-- 1 minto 197121    444 Apr 24 20:26 headlights.light
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121    474 Apr 24 20:26 tailights.lens_flare
+-rw-r--r-- 1 minto 197121    443 Apr 24 20:26 taillights.light
+-rw-r--r-- 1 minto 197121    736 Apr 24 20:26 trigger.damage_effect
+-rw-r--r-- 1 minto 197121    128 Apr 24 20:26 warthog antenna steel.point_physics
+-rw-r--r-- 1 minto 197121   1240 Apr 24 20:26 warthog antenna.antenna
+-rw-r--r-- 1 minto 197121    469 Apr 24 20:26 warthog gun casing par.particle
+-rw-r--r-- 1 minto 197121   2851 Apr 24 20:26 warthog gun.weapon
+-rw-r--r-- 1 minto 197121    906 Apr 24 20:26 warthog gun.weapon_hud_interface
+-rw-r--r-- 1 minto 197121    632 Apr 24 20:26 warthog gunner.actor_variant
+-rw-r--r-- 1 minto 197121 377886 Apr 24 20:26 warthog.model
+-rw-r--r-- 1 minto 197121   8404 Apr 24 20:26 warthog.model_animations
+-rw-r--r-- 1 minto 197121  39880 Apr 24 20:26 warthog.model_collision_geometry
+-rw-r--r-- 1 minto 197121   2440 Apr 24 20:26 warthog.physics
+-rw-r--r-- 1 minto 197121   4602 Apr 24 20:26 warthog.vehicle
+
+L:/ce/tags/vehicles/warthog/bitmaps:
+total 1064
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 antenna.bitmap
+-rw-r--r-- 1 minto 197121 174476 Apr 24 20:26 casings.bitmap
+-rw-r--r-- 1 minto 197121   3100 Apr 24 20:26 chain gun_blur.bitmap
+-rw-r--r-- 1 minto 197121  14812 Apr 24 20:26 headlight flares.bitmap
+-rw-r--r-- 1 minto 197121 262940 Apr 24 20:26 headlights gel warthog.bitmap
+-rw-r--r-- 1 minto 197121   2844 Apr 24 20:26 meter sensor.bitmap
+-rw-r--r-- 1 minto 197121  20764 Apr 24 20:26 meter speedometer.bitmap
+-rw-r--r-- 1 minto 197121  17180 Apr 24 20:26 reflection diffuse metal.bitmap
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 warthog chaingun multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 warthog chaingun.bitmap
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 warthog diplays.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 warthog multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 warthog reflection mask.bitmap
+-rw-r--r-- 1 minto 197121  11292 Apr 24 20:26 warthog tires multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 warthog tires.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 warthog.bitmap
+
+L:/ce/tags/vehicles/warthog/effects:
+total 140
+-rw-r--r-- 1 minto 197121  3107 Apr 24 20:26 impact armored skin.effect
+-rw-r--r-- 1 minto 197121   880 Apr 24 20:26 impact c shield.effect
+-rw-r--r-- 1 minto 197121  2475 Apr 24 20:26 impact cyborg armor.effect
+-rw-r--r-- 1 minto 197121  7508 Apr 24 20:26 impact cyborg shield.effect
+-rw-r--r-- 1 minto 197121  1748 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121  4550 Apr 24 20:26 impact elite armored skin.effect
+-rw-r--r-- 1 minto 197121  6635 Apr 24 20:26 impact engineer force field.effect
+-rw-r--r-- 1 minto 197121  2508 Apr 24 20:26 impact engineer sack.effect
+-rw-r--r-- 1 minto 197121  2670 Apr 24 20:26 impact floodcarrier.effect
+-rw-r--r-- 1 minto 197121  2258 Apr 24 20:26 impact floodcombat elite.effect
+-rw-r--r-- 1 minto 197121  1456 Apr 24 20:26 impact glass.effect
+-rw-r--r-- 1 minto 197121  4384 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121  3359 Apr 24 20:26 impact h skin.effect
+-rw-r--r-- 1 minto 197121  2440 Apr 24 20:26 impact hunter shield.effect
+-rw-r--r-- 1 minto 197121  3098 Apr 24 20:26 impact hunter skin.effect
+-rw-r--r-- 1 minto 197121 10749 Apr 24 20:26 impact jackal shield.effect
+-rw-r--r-- 1 minto 197121  2255 Apr 24 20:26 impact metal hollow reflect.effect
+-rw-r--r-- 1 minto 197121  2085 Apr 24 20:26 impact metal hunter.effect
+-rw-r--r-- 1 minto 197121  2437 Apr 24 20:26 impact metal thick reflect.effect
+-rw-r--r-- 1 minto 197121  2255 Apr 24 20:26 impact metal thin reflect.effect
+-rw-r--r-- 1 minto 197121  1709 Apr 24 20:26 impact monitor.effect
+-rw-r--r-- 1 minto 197121  1692 Apr 24 20:26 impact plastic.effect
+-rw-r--r-- 1 minto 197121  1076 Apr 24 20:26 impact rubber pen.effect
+-rw-r--r-- 1 minto 197121  1686 Apr 24 20:26 impact sand.effect
+-rw-r--r-- 1 minto 197121  1958 Apr 24 20:26 impact sentinel.effect
+-rw-r--r-- 1 minto 197121  1231 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121  1816 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121  2099 Apr 24 20:26 impact wood.effect
+-rw-r--r-- 1 minto 197121  3095 Apr 24 20:26 warthog gun fire.effect
+
+L:/ce/tags/vehicles/warthog/shaders:
+total 20
+-rw-r--r-- 1 minto 197121 434 Apr 24 20:26 chain gun belt ammo.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 545 Apr 24 20:26 decal buttons.shader_model
+-rw-r--r-- 1 minto 197121 545 Apr 24 20:26 decal sensor.shader_model
+-rw-r--r-- 1 minto 197121 433 Apr 24 20:26 decal speedometer.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 694 Apr 24 20:26 decal velocity.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 367 Apr 24 20:26 meter engine.shader_transparent_meter
+-rw-r--r-- 1 minto 197121 430 Apr 24 20:26 meter sensor.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 367 Apr 24 20:26 meter speedometer.shader_transparent_meter
+-rw-r--r-- 1 minto 197121 705 Apr 24 20:26 warthog chain gun.shader_model
+-rw-r--r-- 1 minto 197121 432 Apr 24 20:26 warthog chain gun_blur.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 687 Apr 24 20:26 warthog hull.shader_model
+-rw-r--r-- 1 minto 197121 425 Apr 24 20:26 warthog lights.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 645 Apr 24 20:26 warthog tires.shader_model
+-rw-r--r-- 1 minto 197121 636 Apr 24 20:26 warthog windshield.shader_transparent_glass
+
+L:/ce/tags/vehicles/wraith:
+total 0
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 effects
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shaders
+
+L:/ce/tags/vehicles/wraith/bitmaps:
+total 24
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 blown_open_damage.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 wraith_destroyed_multi.bitmap
+
+L:/ce/tags/vehicles/wraith/effects:
+total 16
+-rw-r--r-- 1 minto 197121 1763 Apr 24 20:26 impact ice.effect
+-rw-r--r-- 1 minto 197121 1844 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121 2110 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121 1376 Apr 24 20:26 impact wood.effect
+
+L:/ce/tags/vehicles/wraith/shaders:
+total 1
+-rw-r--r-- 1 minto 197121 643 Apr 24 20:26 wraith_destroyed.shader_model
+
+L:/ce/tags/weapons:
+total 40
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 assault rifle
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 frag grenade
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 needler
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 pistol
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 plasma grenade
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 plasma pistol
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 plasma rifle
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 rocket launcher
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 shotgun
+drwxr-xr-x 1 minto 197121 0 Apr 24 20:26 sniper rifle
+
+L:/ce/tags/weapons/assault rifle:
+total 99
+-rw-r--r-- 1 minto 197121 41580 Apr 24 20:26 assault rifle.model
+-rw-r--r-- 1 minto 197121  4464 Apr 24 20:26 assault rifle.model_collision_geometry
+-rw-r--r-- 1 minto 197121  4221 Apr 24 20:26 assault rifle.weapon
+-rw-r--r-- 1 minto 197121  1154 Apr 24 20:26 assault rifle.weapon_hud_interface
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121   681 Apr 24 20:26 bullet.contrail
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 bullet.damage_effect
+-rw-r--r-- 1 minto 197121  7709 Apr 24 20:26 bullet.projectile
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+-rw-r--r-- 1 minto 197121   612 Apr 24 20:26 flashlight_assault rifle.lens_flare
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 fp
+-rw-r--r-- 1 minto 197121   775 Apr 24 20:26 melee.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 melee_response.damage_effect
+-rw-r--r-- 1 minto 197121   416 Apr 24 20:26 muzzle flash.light
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/weapons/assault rifle/bitmaps:
+total 28
+-rw-r--r-- 1 minto 197121 5788 Apr 24 20:26 assault rifle_card.bitmap
+-rw-r--r-- 1 minto 197121 5788 Apr 24 20:26 assault rifle_card_multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 5788 Apr 24 20:26 bolt.bitmap
+-rw-r--r-- 1 minto 197121 1052 Apr 24 20:26 tracer contrail.bitmap
+
+L:/ce/tags/weapons/assault rifle/effects:
+total 147
+-rw-r--r-- 1 minto 197121  372 Apr 24 20:26 empty.effect
+-rw-r--r-- 1 minto 197121 7190 Apr 24 20:26 fire bullet.effect
+-rw-r--r-- 1 minto 197121  375 Apr 24 20:26 flashlight.effect
+-rw-r--r-- 1 minto 197121 3118 Apr 24 20:26 impact armored skin.effect
+-rw-r--r-- 1 minto 197121  848 Apr 24 20:26 impact c shield.effect
+-rw-r--r-- 1 minto 197121 2176 Apr 24 20:26 impact cyborg armor.effect
+-rw-r--r-- 1 minto 197121 7241 Apr 24 20:26 impact cyborg shield.effect
+-rw-r--r-- 1 minto 197121 1419 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121 4251 Apr 24 20:26 impact elite armored skin.effect
+-rw-r--r-- 1 minto 197121 6368 Apr 24 20:26 impact engineer force field.effect
+-rw-r--r-- 1 minto 197121 2241 Apr 24 20:26 impact engineer sack.effect
+-rw-r--r-- 1 minto 197121 2374 Apr 24 20:26 impact floodcarrier.effect
+-rw-r--r-- 1 minto 197121 2270 Apr 24 20:26 impact floodcombat elite.effect
+-rw-r--r-- 1 minto 197121 1716 Apr 24 20:26 impact glass.effect
+-rw-r--r-- 1 minto 197121  497 Apr 24 20:26 impact grass.effect
+-rw-r--r-- 1 minto 197121 4085 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121 2784 Apr 24 20:26 impact h skin.effect
+-rw-r--r-- 1 minto 197121 2141 Apr 24 20:26 impact hunter shield.effect
+-rw-r--r-- 1 minto 197121 2530 Apr 24 20:26 impact hunter skin.effect
+-rw-r--r-- 1 minto 197121 1080 Apr 24 20:26 impact ice.effect
+-rw-r--r-- 1 minto 197121 1127 Apr 24 20:26 impact jackal shield.effect
+-rw-r--r-- 1 minto 197121 1956 Apr 24 20:26 impact metal hollow reflect.effect
+-rw-r--r-- 1 minto 197121 1786 Apr 24 20:26 impact metal hunter.effect
+-rw-r--r-- 1 minto 197121 1956 Apr 24 20:26 impact metal reflect.effect
+-rw-r--r-- 1 minto 197121 2138 Apr 24 20:26 impact metal thick reflect.effect
+-rw-r--r-- 1 minto 197121 1956 Apr 24 20:26 impact metal thin reflect.effect
+-rw-r--r-- 1 minto 197121 1410 Apr 24 20:26 impact monitor.effect
+-rw-r--r-- 1 minto 197121 1393 Apr 24 20:26 impact plastic.effect
+-rw-r--r-- 1 minto 197121  777 Apr 24 20:26 impact rubber pen.effect
+-rw-r--r-- 1 minto 197121 1088 Apr 24 20:26 impact sand.effect
+-rw-r--r-- 1 minto 197121 1694 Apr 24 20:26 impact sentinel.effect
+-rw-r--r-- 1 minto 197121 1339 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121 2224 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121 1242 Apr 24 20:26 impact water pen.effect
+-rw-r--r-- 1 minto 197121 1800 Apr 24 20:26 impact wood.effect
+
+L:/ce/tags/weapons/assault rifle/fp:
+total 180
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121  64339 Apr 24 20:26 fp.model
+-rw-r--r-- 1 minto 197121 109331 Apr 24 20:26 fp.model_animations
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 shaders
+
+L:/ce/tags/weapons/assault rifle/fp/bitmaps:
+total 468
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 assault rifle multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 assault rifle_fp.bitmap
+-rw-r--r-- 1 minto 197121  23148 Apr 24 20:26 compass_plate.bitmap
+-rw-r--r-- 1 minto 197121  17180 Apr 24 20:26 diffuse gunmetal.bitmap
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 display multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  44060 Apr 24 20:26 display_fp.bitmap
+-rw-r--r-- 1 minto 197121  28876 Apr 24 20:26 numbers_plate.bitmap
+
+L:/ce/tags/weapons/assault rifle/fp/shaders:
+total 7
+-rw-r--r-- 1 minto 197121 436 Apr 24 20:26 ar data.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 439 Apr 24 20:26 compass.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 602 Apr 24 20:26 display.shader_model
+-rw-r--r-- 1 minto 197121 664 Apr 24 20:26 grip.shader_model
+-rw-r--r-- 1 minto 197121 664 Apr 24 20:26 gun.shader_model
+-rw-r--r-- 1 minto 197121 436 Apr 24 20:26 icons.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 439 Apr 24 20:26 numbers.shader_transparent_chicago
+
+L:/ce/tags/weapons/assault rifle/shaders:
+total 2
+-rw-r--r-- 1 minto 197121 665 Apr 24 20:26 ar lod.shader_model
+-rw-r--r-- 1 minto 197121 666 Apr 24 20:26 bolt.shader_transparent_generic
+
+L:/ce/tags/weapons/frag grenade:
+total 37
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 explosion.damage_effect
+-rw-r--r-- 1 minto 197121   416 Apr 24 20:26 explosion.light
+-rw-r--r-- 1 minto 197121  1081 Apr 24 20:26 frag grenade.equipment
+-rw-r--r-- 1 minto 197121 18674 Apr 24 20:26 frag grenade.model
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 shock wave.damage_effect
+
+L:/ce/tags/weapons/frag grenade/bitmaps:
+total 96
+-rw-r--r-- 1 minto 197121  5788 Apr 24 20:26 frag grenade decal.bitmap
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 frag grenade multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 frag grenade.bitmap
+
+L:/ce/tags/weapons/frag grenade/effects:
+total 20
+-rw-r--r-- 1 minto 197121  513 Apr 24 20:26 drifting smoke.particle
+-rw-r--r-- 1 minto 197121 2128 Apr 24 20:26 explosion med.particle_system
+-rw-r--r-- 1 minto 197121 1558 Apr 24 20:26 explosion.effect
+-rw-r--r-- 1 minto 197121  128 Apr 24 20:26 fire explosion.point_physics
+-rw-r--r-- 1 minto 197121  997 Apr 24 20:26 grenade quickflash.lens_flare
+-rw-r--r-- 1 minto 197121  464 Apr 24 20:26 grenade quickflash.light
+-rw-r--r-- 1 minto 197121  975 Apr 24 20:26 impact water pen.effect
+-rw-r--r-- 1 minto 197121  128 Apr 24 20:26 smoke explosion.point_physics
+
+L:/ce/tags/weapons/frag grenade/shaders:
+total 4
+-rw-r--r-- 1 minto 197121 552 Apr 24 20:26 frag decal.shader_model
+-rw-r--r-- 1 minto 197121 440 Apr 24 20:26 frag light.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 651 Apr 24 20:26 frag metal.shader_model
+-rw-r--r-- 1 minto 197121 651 Apr 24 20:26 frag plastic.shader_model
+
+L:/ce/tags/weapons/needler:
+total 115
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 detonation damage.damage_effect
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 explosion.damage_effect
+-rw-r--r-- 1 minto 197121   485 Apr 24 20:26 explosion.lens_flare
+-rw-r--r-- 1 minto 197121   442 Apr 24 20:26 explosion.light
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 fp
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 impact damage.damage_effect
+-rw-r--r-- 1 minto 197121   774 Apr 24 20:26 melee.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 melee_response.damage_effect
+-rw-r--r-- 1 minto 197121   416 Apr 24 20:26 muzzle flash.light
+-rw-r--r-- 1 minto 197121   451 Apr 24 20:26 needle flare.light
+-rw-r--r-- 1 minto 197121   572 Apr 24 20:26 needle.light_volume
+-rw-r--r-- 1 minto 197121  7790 Apr 24 20:26 needle.projectile
+-rw-r--r-- 1 minto 197121   488 Apr 24 20:26 needler lens flare.lens_flare
+-rw-r--r-- 1 minto 197121   675 Apr 24 20:26 needler.contrail
+-rw-r--r-- 1 minto 197121 42357 Apr 24 20:26 needler.model
+-rw-r--r-- 1 minto 197121  5292 Apr 24 20:26 needler.model_collision_geometry
+-rw-r--r-- 1 minto 197121  3620 Apr 24 20:26 needler.weapon
+-rw-r--r-- 1 minto 197121  1154 Apr 24 20:26 needler.weapon_hud_interface
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 projectile
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 shock wave.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/weapons/needler/bitmaps:
+total 424
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 needle plasma mask.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 needle plasma offset.bitmap
+-rw-r--r-- 1 minto 197121   1052 Apr 24 20:26 needler contrail.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 needler multipurpose map.bitmap
+-rw-r--r-- 1 minto 197121    796 Apr 24 20:26 needler needles 3p.bitmap
+-rw-r--r-- 1 minto 197121  11292 Apr 24 20:26 needler needles.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 needler.bitmap
+-rw-r--r-- 1 minto 197121  11292 Apr 24 20:26 needler_card.bitmap
+
+L:/ce/tags/weapons/needler/effects:
+total 67
+-rw-r--r-- 1 minto 197121  366 Apr 24 20:26 empty.effect
+-rw-r--r-- 1 minto 197121 1217 Apr 24 20:26 explosion.effect
+-rw-r--r-- 1 minto 197121 2132 Apr 24 20:26 explosion.particle_system
+-rw-r--r-- 1 minto 197121 5860 Apr 24 20:26 fire needle.effect
+-rw-r--r-- 1 minto 197121 1750 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121 1493 Apr 24 20:26 impact elite and jackal.effect
+-rw-r--r-- 1 minto 197121 1493 Apr 24 20:26 impact engineer.effect
+-rw-r--r-- 1 minto 197121 1258 Apr 24 20:26 impact flood and hunter.effect
+-rw-r--r-- 1 minto 197121 1225 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121 1219 Apr 24 20:26 impact h skin.effect
+-rw-r--r-- 1 minto 197121 1263 Apr 24 20:26 impact hunter glow.effect
+-rw-r--r-- 1 minto 197121  913 Apr 24 20:26 impact hunter shield.effect
+-rw-r--r-- 1 minto 197121 1312 Apr 24 20:26 impact ice.effect
+-rw-r--r-- 1 minto 197121 1179 Apr 24 20:26 impact rubber.effect
+-rw-r--r-- 1 minto 197121  909 Apr 24 20:26 impact sand.effect
+-rw-r--r-- 1 minto 197121 1747 Apr 24 20:26 needle detonate.effect
+-rw-r--r-- 1 minto 197121  649 Apr 24 20:26 needle reflect.effect
+-rw-r--r-- 1 minto 197121  228 Apr 24 20:26 ready.effect
+
+L:/ce/tags/weapons/needler/fp:
+total 164
+-rw-r--r-- 1 minto 197121 87673 Apr 24 20:26 fp.model
+-rw-r--r-- 1 minto 197121 77638 Apr 24 20:26 fp.model_animations
+
+L:/ce/tags/weapons/needler/projectile:
+total 4
+-rw-r--r-- 1 minto 197121 1299 Apr 24 20:26 projectile.model
+
+L:/ce/tags/weapons/needler/shaders:
+total 10
+-rw-r--r-- 1 minto 197121 1522 Apr 24 20:26 needler core.shader_transparent_generic
+-rw-r--r-- 1 minto 197121  626 Apr 24 20:26 needler dull.shader_model
+-rw-r--r-- 1 minto 197121  635 Apr 24 20:26 needler gun.shader_model
+-rw-r--r-- 1 minto 197121  541 Apr 24 20:26 needler lod.shader_model
+-rw-r--r-- 1 minto 197121  435 Apr 24 20:26 needler luminous 3p.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121  432 Apr 24 20:26 needler luminous.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121  618 Apr 24 20:26 needler luminous.shader_transparent_glass
+
+L:/ce/tags/weapons/pistol:
+total 92
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 bullet.damage_effect
+-rw-r--r-- 1 minto 197121  7403 Apr 24 20:26 bullet.projectile
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 fp
+-rw-r--r-- 1 minto 197121   774 Apr 24 20:26 melee.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 melee_response.damage_effect
+-rw-r--r-- 1 minto 197121 45874 Apr 24 20:26 pistol.model
+-rw-r--r-- 1 minto 197121  1124 Apr 24 20:26 pistol.model_animations
+-rw-r--r-- 1 minto 197121  3536 Apr 24 20:26 pistol.model_collision_geometry
+-rw-r--r-- 1 minto 197121  2933 Apr 24 20:26 pistol.weapon
+-rw-r--r-- 1 minto 197121  1930 Apr 24 20:26 pistol.weapon_hud_interface
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/weapons/pistol/bitmaps:
+total 132
+-rw-r--r-- 1 minto 197121 88412 Apr 24 20:26 casings.bitmap
+-rw-r--r-- 1 minto 197121 17180 Apr 24 20:26 pistol cubemap.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 pistol_card multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 pistol_card.bitmap
+
+L:/ce/tags/weapons/pistol/effects:
+total 127
+-rw-r--r-- 1 minto 197121  365 Apr 24 20:26 empty.effect
+-rw-r--r-- 1 minto 197121 4187 Apr 24 20:26 fire bullet.effect
+-rw-r--r-- 1 minto 197121 3677 Apr 24 20:26 impact armored skin.effect
+-rw-r--r-- 1 minto 197121 2759 Apr 24 20:26 impact cyborg armor.effect
+-rw-r--r-- 1 minto 197121 7824 Apr 24 20:26 impact cyborg shield.effect
+-rw-r--r-- 1 minto 197121 2590 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121 3543 Apr 24 20:26 impact elite armored skin.effect
+-rw-r--r-- 1 minto 197121 4227 Apr 24 20:26 impact engineer force field.effect
+-rw-r--r-- 1 minto 197121 3104 Apr 24 20:26 impact engineer sack.effect
+-rw-r--r-- 1 minto 197121 3205 Apr 24 20:26 impact floodcarrier.effect
+-rw-r--r-- 1 minto 197121 2859 Apr 24 20:26 impact floodcombat elite.effect
+-rw-r--r-- 1 minto 197121 4668 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121 3507 Apr 24 20:26 impact h skin.effect
+-rw-r--r-- 1 minto 197121 2724 Apr 24 20:26 impact hunter shield.effect
+-rw-r--r-- 1 minto 197121 3118 Apr 24 20:26 impact hunter skin.effect
+-rw-r--r-- 1 minto 197121 1240 Apr 24 20:26 impact ice.effect
+-rw-r--r-- 1 minto 197121 1742 Apr 24 20:26 impact jackal shield.effect
+-rw-r--r-- 1 minto 197121 2533 Apr 24 20:26 impact metal hollow reflect.effect
+-rw-r--r-- 1 minto 197121 2369 Apr 24 20:26 impact metal hunter.effect
+-rw-r--r-- 1 minto 197121 2721 Apr 24 20:26 impact metal thick reflect.effect
+-rw-r--r-- 1 minto 197121 2539 Apr 24 20:26 impact metal thin reflect.effect
+-rw-r--r-- 1 minto 197121 1993 Apr 24 20:26 impact monitor.effect
+-rw-r--r-- 1 minto 197121 1724 Apr 24 20:26 impact plastic.effect
+-rw-r--r-- 1 minto 197121 1672 Apr 24 20:26 impact rubber pen.effect
+-rw-r--r-- 1 minto 197121 2133 Apr 24 20:26 impact sentinel.effect
+-rw-r--r-- 1 minto 197121 1866 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121 2683 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121 2411 Apr 24 20:26 impact wood.effect
+-rw-r--r-- 1 minto 197121  228 Apr 24 20:26 ready.effect
+-rw-r--r-- 1 minto 197121  228 Apr 24 20:26 reload.effect
+
+L:/ce/tags/weapons/pistol/fp:
+total 196
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121  63072 Apr 24 20:26 fp.model
+-rw-r--r-- 1 minto 197121 132520 Apr 24 20:26 fp.model_animations
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 shaders
+
+L:/ce/tags/weapons/pistol/fp/bitmaps:
+total 272
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 bullet.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 pistol multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 pistol.bitmap
+
+L:/ce/tags/weapons/pistol/fp/shaders:
+total 3
+-rw-r--r-- 1 minto 197121 537 Apr 24 20:26 black.shader_model
+-rw-r--r-- 1 minto 197121 537 Apr 24 20:26 bullet.shader_model
+-rw-r--r-- 1 minto 197121 621 Apr 24 20:26 silver.shader_model
+
+L:/ce/tags/weapons/pistol/shaders:
+total 1
+-rw-r--r-- 1 minto 197121 637 Apr 24 20:26 p lod.shader_model
+
+L:/ce/tags/weapons/plasma grenade:
+total 25
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 explosion.damage_effect
+-rw-r--r-- 1 minto 197121   416 Apr 24 20:26 explosion.light
+-rw-r--r-- 1 minto 197121  1135 Apr 24 20:26 plasma grenade.equipment
+-rw-r--r-- 1 minto 197121 11934 Apr 24 20:26 plasma grenade.model
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 shock wave.damage_effect
+
+L:/ce/tags/weapons/plasma grenade/bitmaps:
+total 88
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 plasma grenade multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 44060 Apr 24 20:26 plasma grenade.bitmap
+
+L:/ce/tags/weapons/plasma grenade/effects:
+total 12
+-rw-r--r-- 1 minto 197121 2059 Apr 24 20:26 detonation start.effect
+-rw-r--r-- 1 minto 197121 1119 Apr 24 20:26 explosion.effect
+-rw-r--r-- 1 minto 197121 2132 Apr 24 20:26 explosion.particle_system
+
+L:/ce/tags/weapons/plasma grenade/shaders:
+total 4
+-rw-r--r-- 1 minto 197121 659 Apr 24 20:26 pg body.shader_model
+-rw-r--r-- 1 minto 197121 659 Apr 24 20:26 pg button.shader_model
+-rw-r--r-- 1 minto 197121 318 Apr 24 20:26 pg decal.shader_transparent_generic
+-rw-r--r-- 1 minto 197121 609 Apr 24 20:26 pg light.shader_model
+
+L:/ce/tags/weapons/plasma pistol:
+total 105
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 bolt.damage_effect
+-rw-r--r-- 1 minto 197121   572 Apr 24 20:26 bolt.light_volume
+-rw-r--r-- 1 minto 197121  7764 Apr 24 20:26 bolt.projectile
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 fp
+-rw-r--r-- 1 minto 197121   774 Apr 24 20:26 melee.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 melee_response.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 misfire.damage_effect
+-rw-r--r-- 1 minto 197121   416 Apr 24 20:26 muzzle flash.light
+-rw-r--r-- 1 minto 197121   463 Apr 24 20:26 plasma pistol flare.light
+-rw-r--r-- 1 minto 197121   481 Apr 24 20:26 plasma pistol lens flare.lens_flare
+-rw-r--r-- 1 minto 197121 34008 Apr 24 20:26 plasma pistol.model
+-rw-r--r-- 1 minto 197121  6720 Apr 24 20:26 plasma pistol.model_collision_geometry
+-rw-r--r-- 1 minto 197121  4870 Apr 24 20:26 plasma pistol.weapon
+-rw-r--r-- 1 minto 197121   971 Apr 24 20:26 plasma pistol.weapon_hud_interface
+-rw-r--r-- 1 minto 197121   463 Apr 24 20:26 plasma.light
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 plasma_bump.damage_effect
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 trigger overcharge.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/weapons/plasma pistol/bitmaps:
+total 300
+-rw-r--r-- 1 minto 197121   1052 Apr 24 20:26 pistol charged contrail.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 plasma pistol multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 plasma pistol.bitmap
+-rw-r--r-- 1 minto 197121  11292 Apr 24 20:26 plasma pistol_card multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  11292 Apr 24 20:26 plasma pistol_card.bitmap
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 pp display.bitmap
+
+L:/ce/tags/weapons/plasma pistol/effects:
+total 64
+-rw-r--r-- 1 minto 197121 4350 Apr 24 20:26 fire bolt.effect
+-rw-r--r-- 1 minto 197121 2276 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121 3725 Apr 24 20:26 impact elite armored skin.effect
+-rw-r--r-- 1 minto 197121 2355 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121 3760 Apr 24 20:26 impact h skin.effect
+-rw-r--r-- 1 minto 197121 1999 Apr 24 20:26 impact hunter shield.effect
+-rw-r--r-- 1 minto 197121 2108 Apr 24 20:26 impact ice.effect
+-rw-r--r-- 1 minto 197121 1470 Apr 24 20:26 impact metal hunter.effect
+-rw-r--r-- 1 minto 197121 2002 Apr 24 20:26 impact metal reflect.effect
+-rw-r--r-- 1 minto 197121 1895 Apr 24 20:26 impact sentinel.effect
+-rw-r--r-- 1 minto 197121 1394 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121 2272 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121 4581 Apr 24 20:26 misfire.effect
+-rw-r--r-- 1 minto 197121 3568 Apr 24 20:26 overheated.effect
+
+L:/ce/tags/weapons/plasma pistol/fp:
+total 144
+-rw-r--r-- 1 minto 197121  37243 Apr 24 20:26 fp.model
+-rw-r--r-- 1 minto 197121 104872 Apr 24 20:26 fp.model_animations
+
+L:/ce/tags/weapons/plasma pistol/shaders:
+total 5
+-rw-r--r-- 1 minto 197121 655 Apr 24 20:26 pp dull.shader_model
+-rw-r--r-- 1 minto 197121 365 Apr 24 20:26 pp gauge.shader_transparent_meter
+-rw-r--r-- 1 minto 197121 665 Apr 24 20:26 pp lod.shader_model
+-rw-r--r-- 1 minto 197121 605 Apr 24 20:26 pp luminous.shader_model
+-rw-r--r-- 1 minto 197121 655 Apr 24 20:26 pp shiney.shader_model
+
+L:/ce/tags/weapons/plasma rifle:
+total 163
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 bolt.damage_effect
+-rw-r--r-- 1 minto 197121   488 Apr 24 20:26 bolt.lens_flare
+-rw-r--r-- 1 minto 197121   442 Apr 24 20:26 bolt.light
+-rw-r--r-- 1 minto 197121   572 Apr 24 20:26 bolt.light_volume
+-rw-r--r-- 1 minto 197121  8160 Apr 24 20:26 bolt.projectile
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 charged bolt.damage_effect
+-rw-r--r-- 1 minto 197121   488 Apr 24 20:26 charged bolt.lens_flare
+-rw-r--r-- 1 minto 197121   450 Apr 24 20:26 charged bolt.light
+-rw-r--r-- 1 minto 197121   572 Apr 24 20:26 charged bolt.light_volume
+-rw-r--r-- 1 minto 197121  8640 Apr 24 20:26 charged bolt.projectile
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 fp
+-rw-r--r-- 1 minto 197121   774 Apr 24 20:26 melee.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 melee_response.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 misfire.damage_effect
+-rw-r--r-- 1 minto 197121   416 Apr 24 20:26 muzzle flash.light
+-rw-r--r-- 1 minto 197121   481 Apr 24 20:26 overcharge.lens_flare
+-rw-r--r-- 1 minto 197121   448 Apr 24 20:26 overcharge.light
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 overheat damage.damage_effect
+-rw-r--r-- 1 minto 197121   754 Apr 24 20:26 plasma charged bolt.contrail
+-rw-r--r-- 1 minto 197121   461 Apr 24 20:26 plasma rifle flare.light
+-rw-r--r-- 1 minto 197121   481 Apr 24 20:26 plasma rifle lens flare.lens_flare
+-rw-r--r-- 1 minto 197121 57998 Apr 24 20:26 plasma rifle.model
+-rw-r--r-- 1 minto 197121 10720 Apr 24 20:26 plasma rifle.model_collision_geometry
+-rw-r--r-- 1 minto 197121  4496 Apr 24 20:26 plasma rifle.weapon
+-rw-r--r-- 1 minto 197121   971 Apr 24 20:26 plasma rifle.weapon_hud_interface
+-rw-r--r-- 1 minto 197121   790 Apr 24 20:26 plasma.contrail
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/weapons/plasma rifle/bitmaps:
+total 48
+-rw-r--r-- 1 minto 197121 17180 Apr 24 20:26 cubemap plasma rifle.bitmap
+-rw-r--r-- 1 minto 197121  1052 Apr 24 20:26 plasma rifle contrail.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 plasma rifle_card multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 plasma rifle_card.bitmap
+
+L:/ce/tags/weapons/plasma rifle/effects:
+total 218
+-rw-r--r-- 1 minto 197121  2132 Apr 24 20:26 charged bolt explosion.particle_system
+-rw-r--r-- 1 minto 197121   374 Apr 24 20:26 charged bolt fire.effect
+-rw-r--r-- 1 minto 197121  3497 Apr 24 20:26 charged bolt impact dirt.effect
+-rw-r--r-- 1 minto 197121  3507 Apr 24 20:26 charged bolt impact elite.effect
+-rw-r--r-- 1 minto 197121  2753 Apr 24 20:26 charged bolt impact engineer.effect
+-rw-r--r-- 1 minto 197121  2474 Apr 24 20:26 charged bolt impact flood.effect
+-rw-r--r-- 1 minto 197121  2959 Apr 24 20:26 charged bolt impact grunt.effect
+-rw-r--r-- 1 minto 197121  2926 Apr 24 20:26 charged bolt impact human armor.effect
+-rw-r--r-- 1 minto 197121  2662 Apr 24 20:26 charged bolt impact hunter.effect
+-rw-r--r-- 1 minto 197121  2315 Apr 24 20:26 charged bolt impact leaves.effect
+-rw-r--r-- 1 minto 197121  2748 Apr 24 20:26 charged bolt impact metal.effect
+-rw-r--r-- 1 minto 197121  2435 Apr 24 20:26 charged bolt impact rubber.effect
+-rw-r--r-- 1 minto 197121  2757 Apr 24 20:26 charged bolt impact sand.effect
+-rw-r--r-- 1 minto 197121  2468 Apr 24 20:26 charged bolt impact snow.effect
+-rw-r--r-- 1 minto 197121  2736 Apr 24 20:26 charged bolt impact stone.effect
+-rw-r--r-- 1 minto 197121  2736 Apr 24 20:26 charged bolt impact wood.effect
+-rw-r--r-- 1 minto 197121  7040 Apr 24 20:26 charged bolt sparks.effect
+-rw-r--r-- 1 minto 197121   522 Apr 24 20:26 detonate.effect
+-rw-r--r-- 1 minto 197121  3134 Apr 24 20:26 impact armored skin.effect
+-rw-r--r-- 1 minto 197121 10490 Apr 24 20:26 impact c shield.effect
+-rw-r--r-- 1 minto 197121  2316 Apr 24 20:26 impact cyborg armor.effect
+-rw-r--r-- 1 minto 197121  7386 Apr 24 20:26 impact cyborg shield.effect
+-rw-r--r-- 1 minto 197121  2232 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121  3725 Apr 24 20:26 impact elite armored skin.effect
+-rw-r--r-- 1 minto 197121  3264 Apr 24 20:26 impact engineer force field.effect
+-rw-r--r-- 1 minto 197121  2611 Apr 24 20:26 impact engineer sack.effect
+-rw-r--r-- 1 minto 197121  2191 Apr 24 20:26 impact floodcarrier.effect
+-rw-r--r-- 1 minto 197121  2270 Apr 24 20:26 impact floodcombat elite.effect
+-rw-r--r-- 1 minto 197121  1714 Apr 24 20:26 impact glass.effect
+-rw-r--r-- 1 minto 197121   946 Apr 24 20:26 impact grass.effect
+-rw-r--r-- 1 minto 197121  2355 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121  3760 Apr 24 20:26 impact h skin.effect
+-rw-r--r-- 1 minto 197121  1987 Apr 24 20:26 impact hunter shield.effect
+-rw-r--r-- 1 minto 197121  2958 Apr 24 20:26 impact hunter skin.effect
+-rw-r--r-- 1 minto 197121  2102 Apr 24 20:26 impact ice.effect
+-rw-r--r-- 1 minto 197121  1470 Apr 24 20:26 impact metal hunter.effect
+-rw-r--r-- 1 minto 197121  1990 Apr 24 20:26 impact metal reflect.effect
+-rw-r--r-- 1 minto 197121  1410 Apr 24 20:26 impact monitor.effect
+-rw-r--r-- 1 minto 197121  1569 Apr 24 20:26 impact plastic.effect
+-rw-r--r-- 1 minto 197121   953 Apr 24 20:26 impact rubber pen.effect
+-rw-r--r-- 1 minto 197121  1094 Apr 24 20:26 impact sand.effect
+-rw-r--r-- 1 minto 197121  1883 Apr 24 20:26 impact sentinel.effect
+-rw-r--r-- 1 minto 197121  1393 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121  2260 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121  1035 Apr 24 20:26 impact water pen.effect
+-rw-r--r-- 1 minto 197121  1983 Apr 24 20:26 impact wood.effect
+-rw-r--r-- 1 minto 197121  1191 Apr 24 20:26 misfire.effect
+-rw-r--r-- 1 minto 197121  1320 Apr 24 20:26 overheated damage.effect
+-rw-r--r-- 1 minto 197121  4776 Apr 24 20:26 plasma rifle lower fire.effect
+-rw-r--r-- 1 minto 197121  4776 Apr 24 20:26 plasma rifle upper fire.effect
+
+L:/ce/tags/weapons/plasma rifle/fp:
+total 168
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 72986 Apr 24 20:26 fp.model
+-rw-r--r-- 1 minto 197121 97783 Apr 24 20:26 fp.model_animations
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+
+L:/ce/tags/weapons/plasma rifle/fp/bitmaps:
+total 300
+-rw-r--r-- 1 minto 197121  33052 Apr 24 20:26 heat gauge.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 plasma rifle multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 plasma rifle_fp.bitmap
+
+L:/ce/tags/weapons/plasma rifle/fp/shaders:
+total 5
+-rw-r--r-- 1 minto 197121 660 Apr 24 20:26 amber.shader_model
+-rw-r--r-- 1 minto 197121 660 Apr 24 20:26 dull.shader_model
+-rw-r--r-- 1 minto 197121 367 Apr 24 20:26 gauge.shader_transparent_meter
+-rw-r--r-- 1 minto 197121 660 Apr 24 20:26 gun.shader_model
+-rw-r--r-- 1 minto 197121 610 Apr 24 20:26 luminous.shader_model
+
+L:/ce/tags/weapons/plasma rifle/shaders:
+total 1
+-rw-r--r-- 1 minto 197121 661 Apr 24 20:26 pr lod.shader_model
+
+L:/ce/tags/weapons/rocket launcher:
+total 129
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+-rw-r--r-- 1 minto 197121   995 Apr 24 20:26 exhaust.contrail
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 explosion.damage_effect
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 fp
+-rw-r--r-- 1 minto 197121   777 Apr 24 20:26 melee.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 melee_response.damage_effect
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 projectile
+-rw-r--r-- 1 minto 197121 66227 Apr 24 20:26 rocket launcher.model
+-rw-r--r-- 1 minto 197121 10164 Apr 24 20:26 rocket launcher.model_collision_geometry
+-rw-r--r-- 1 minto 197121  2998 Apr 24 20:26 rocket launcher.weapon
+-rw-r--r-- 1 minto 197121   572 Apr 24 20:26 rocket.light_volume
+-rw-r--r-- 1 minto 197121  7542 Apr 24 20:26 rocket.projectile
+-rw-r--r-- 1 minto 197121  1930 Apr 24 20:26 rocket_launcher.weapon_hud_interface
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/weapons/rocket launcher/bitmaps:
+total 440
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 exhaust contrail.bitmap
+-rw-r--r-- 1 minto 197121  65820 Apr 24 20:26 rocket launcher decal.bitmap
+-rw-r--r-- 1 minto 197121   3100 Apr 24 20:26 rocket launcher ends.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 rocket launcher multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 rocket launcher.bitmap
+
+L:/ce/tags/weapons/rocket launcher/effects:
+total 66
+-rw-r--r-- 1 minto 197121  504 Apr 24 20:26 exhaust.effect
+-rw-r--r-- 1 minto 197121 1499 Apr 24 20:26 fire rocket.effect
+-rw-r--r-- 1 minto 197121 1511 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121 2212 Apr 24 20:26 impact elite and jackal.effect
+-rw-r--r-- 1 minto 197121 1419 Apr 24 20:26 impact flood bits.effect
+-rw-r--r-- 1 minto 197121 2500 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121 2754 Apr 24 20:26 impact human armored.effect
+-rw-r--r-- 1 minto 197121 2486 Apr 24 20:26 impact human.effect
+-rw-r--r-- 1 minto 197121 1642 Apr 24 20:26 impact hunter skin.effect
+-rw-r--r-- 1 minto 197121  497 Apr 24 20:26 impact leaves.effect
+-rw-r--r-- 1 minto 197121 1402 Apr 24 20:26 impact metal.effect
+-rw-r--r-- 1 minto 197121 1404 Apr 24 20:26 impact rubber.effect
+-rw-r--r-- 1 minto 197121  845 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121 1114 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121 1119 Apr 24 20:26 impact water.effect
+-rw-r--r-- 1 minto 197121 1285 Apr 24 20:26 impact wood.effect
+-rw-r--r-- 1 minto 197121 1915 Apr 24 20:26 rocket exhaust.particle_system
+-rw-r--r-- 1 minto 197121 1963 Apr 24 20:26 rocket explosion.effect
+
+L:/ce/tags/weapons/rocket launcher/fp:
+total 224
+-rw-r--r-- 1 minto 197121 110230 Apr 24 20:26 fp.model
+-rw-r--r-- 1 minto 197121 115104 Apr 24 20:26 fp.model_animations
+
+L:/ce/tags/weapons/rocket launcher/projectile:
+total 8
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 bitmaps
+-rw-r--r-- 1 minto 197121 5118 Apr 24 20:26 projectile.model
+drwxr-xr-x 1 minto 197121    0 Apr 24 20:26 shaders
+
+L:/ce/tags/weapons/rocket launcher/projectile/bitmaps:
+total 24
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 rocket multipuropse.bitmap
+-rw-r--r-- 1 minto 197121 11292 Apr 24 20:26 rocket.bitmap
+
+L:/ce/tags/weapons/rocket launcher/projectile/shaders:
+total 1
+-rw-r--r-- 1 minto 197121 667 Apr 24 20:26 rocket launcher hull.shader_model
+
+L:/ce/tags/weapons/rocket launcher/shaders:
+total 5
+-rw-r--r-- 1 minto 197121 663 Apr 24 20:26 rocket launcher body.shader_model
+-rw-r--r-- 1 minto 197121 596 Apr 24 20:26 rocket launcher decal.shader_model
+-rw-r--r-- 1 minto 197121 557 Apr 24 20:26 rocket launcher ends.shader_model
+-rw-r--r-- 1 minto 197121 663 Apr 24 20:26 rocket launcher grip.shader_model
+-rw-r--r-- 1 minto 197121 651 Apr 24 20:26 rocket launcher tubes.shader_model
+
+L:/ce/tags/weapons/shotgun:
+total 112
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 effects
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 fp
+-rw-r--r-- 1 minto 197121   775 Apr 24 20:26 melee.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 melee_response.damage_effect
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 pellet.damage_effect
+-rw-r--r-- 1 minto 197121  7365 Apr 24 20:26 pellet.projectile
+drwxr-xr-x 1 minto 197121     0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121 51721 Apr 24 20:26 shotgun.model
+-rw-r--r-- 1 minto 197121  1772 Apr 24 20:26 shotgun.model_animations
+-rw-r--r-- 1 minto 197121  8144 Apr 24 20:26 shotgun.model_collision_geometry
+-rw-r--r-- 1 minto 197121  3571 Apr 24 20:26 shotgun.weapon
+-rw-r--r-- 1 minto 197121  1154 Apr 24 20:26 shotgun.weapon_hud_interface
+-rw-r--r-- 1 minto 197121   736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/weapons/shotgun/bitmaps:
+total 616
+-rw-r--r-- 1 minto 197121 174476 Apr 24 20:26 casings.bitmap
+-rw-r--r-- 1 minto 197121   3100 Apr 24 20:26 sg loading port multipurpose.bitmap
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 sg loading port.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 shotgun bolt.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 shotgun multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 shotgun.bitmap
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 shotgun_card multipurpose.bitmap
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 shotgun_card.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 shotshell multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 shotshell.bitmap
+
+L:/ce/tags/weapons/shotgun/effects:
+total 142
+-rw-r--r-- 1 minto 197121  2808 Apr 24 20:26 impact armored skin.effect
+-rw-r--r-- 1 minto 197121   848 Apr 24 20:26 impact c shield.effect
+-rw-r--r-- 1 minto 197121  2176 Apr 24 20:26 impact cyborg armor.effect
+-rw-r--r-- 1 minto 197121  7241 Apr 24 20:26 impact cyborg shield.effect
+-rw-r--r-- 1 minto 197121  1419 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121  4251 Apr 24 20:26 impact elite armored skin.effect
+-rw-r--r-- 1 minto 197121  6368 Apr 24 20:26 impact engineer force field.effect
+-rw-r--r-- 1 minto 197121  2241 Apr 24 20:26 impact engineer sack.effect
+-rw-r--r-- 1 minto 197121  2374 Apr 24 20:26 impact floodcarrier.effect
+-rw-r--r-- 1 minto 197121  2258 Apr 24 20:26 impact floodcombat elite.effect
+-rw-r--r-- 1 minto 197121  1566 Apr 24 20:26 impact glass.effect
+-rw-r--r-- 1 minto 197121   770 Apr 24 20:26 impact grass.effect
+-rw-r--r-- 1 minto 197121  4069 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121  2784 Apr 24 20:26 impact h skin.effect
+-rw-r--r-- 1 minto 197121  2141 Apr 24 20:26 impact hunter shield.effect
+-rw-r--r-- 1 minto 197121  2809 Apr 24 20:26 impact hunter skin.effect
+-rw-r--r-- 1 minto 197121 10624 Apr 24 20:26 impact jackal shield.effect
+-rw-r--r-- 1 minto 197121  1956 Apr 24 20:26 impact metal hollow reflect.effect
+-rw-r--r-- 1 minto 197121  1786 Apr 24 20:26 impact metal hunter.effect
+-rw-r--r-- 1 minto 197121  2138 Apr 24 20:26 impact metal thick reflect.effect
+-rw-r--r-- 1 minto 197121  1956 Apr 24 20:26 impact metal thin reflect.effect
+-rw-r--r-- 1 minto 197121  1410 Apr 24 20:26 impact monitor.effect
+-rw-r--r-- 1 minto 197121  1393 Apr 24 20:26 impact plastic.effect
+-rw-r--r-- 1 minto 197121   507 Apr 24 20:26 impact rubber pen.effect
+-rw-r--r-- 1 minto 197121  1088 Apr 24 20:26 impact sand.effect
+-rw-r--r-- 1 minto 197121  1694 Apr 24 20:26 impact sentinel.effect
+-rw-r--r-- 1 minto 197121  1371 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121  2224 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121  1242 Apr 24 20:26 impact water pen.effect
+-rw-r--r-- 1 minto 197121  1800 Apr 24 20:26 impact wood.effect
+-rw-r--r-- 1 minto 197121   365 Apr 24 20:26 shotgun empty.effect
+-rw-r--r-- 1 minto 197121  3647 Apr 24 20:26 shotgun firing.effect
+
+L:/ce/tags/weapons/shotgun/fp:
+total 108
+-rw-r--r-- 1 minto 197121 51688 Apr 24 20:26 fp.model
+-rw-r--r-- 1 minto 197121 54579 Apr 24 20:26 fp.model_animations
+
+L:/ce/tags/weapons/shotgun/shaders:
+total 9
+-rw-r--r-- 1 minto 197121 635 Apr 24 20:26 shotgun decal.shader_model
+-rw-r--r-- 1 minto 197121 631 Apr 24 20:26 shotgun gun.shader_model
+-rw-r--r-- 1 minto 197121 631 Apr 24 20:26 shotgun light.shader_model
+-rw-r--r-- 1 minto 197121 670 Apr 24 20:26 shotgun primary.shader_transparent_generic
+-rw-r--r-- 1 minto 197121 623 Apr 24 20:26 shotgun shell.shader_model
+-rw-r--r-- 1 minto 197121 629 Apr 24 20:26 shotgun_card.shader_model
+
+L:/ce/tags/weapons/sniper rifle:
+total 237
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 bitmaps
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 effects
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 fp
+-rw-r--r-- 1 minto 197121    775 Apr 24 20:26 melee.damage_effect
+-rw-r--r-- 1 minto 197121    736 Apr 24 20:26 melee_response.damage_effect
+-rw-r--r-- 1 minto 197121    416 Apr 24 20:26 muzzle flash.light
+drwxr-xr-x 1 minto 197121      0 Apr 24 20:26 shaders
+-rw-r--r-- 1 minto 197121    736 Apr 24 20:26 sniper bullet.damage_effect
+-rw-r--r-- 1 minto 197121   7682 Apr 24 20:26 sniper bullet.projectile
+-rw-r--r-- 1 minto 197121 169268 Apr 24 20:26 sniper rifle.model
+-rw-r--r-- 1 minto 197121    860 Apr 24 20:26 sniper rifle.model_animations
+-rw-r--r-- 1 minto 197121   7688 Apr 24 20:26 sniper rifle.model_collision_geometry
+-rw-r--r-- 1 minto 197121   3353 Apr 24 20:26 sniper rifle.weapon
+-rw-r--r-- 1 minto 197121   6347 Apr 24 20:26 sniper rifle.weapon_hud_interface
+-rw-r--r-- 1 minto 197121    865 Apr 24 20:26 sniper.contrail
+-rw-r--r-- 1 minto 197121    736 Apr 24 20:26 trigger.damage_effect
+
+L:/ce/tags/weapons/sniper rifle/bitmaps:
+total 408
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 angle_ticks.bitmap
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 angle_ticks2.bitmap
+-rw-r--r-- 1 minto 197121   1564 Apr 24 20:26 angle_ticks_black.bitmap
+-rw-r--r-- 1 minto 197121   3100 Apr 24 20:26 angle_ticks_mask.bitmap
+-rw-r--r-- 1 minto 197121   1692 Apr 24 20:26 sniper contrail.bitmap
+-rw-r--r-- 1 minto 197121 175132 Apr 24 20:26 sniper rifle multipurpose.bitmap
+-rw-r--r-- 1 minto 197121 131356 Apr 24 20:26 sniper rifle.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 sr bolt.bitmap
+-rw-r--r-- 1 minto 197121  11292 Apr 24 20:26 sr decal multipurpose.bitmap
+-rw-r--r-- 1 minto 197121  22172 Apr 24 20:26 sr decal.bitmap
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 sr subscreen decal.bitmap
+-rw-r--r-- 1 minto 197121   5788 Apr 24 20:26 sr subscreen ghost.bitmap
+
+L:/ce/tags/weapons/sniper rifle/effects:
+total 145
+-rw-r--r-- 1 minto 197121  2387 Apr 24 20:26 fire bullet.effect
+-rw-r--r-- 1 minto 197121  3118 Apr 24 20:26 impact armored skin.effect
+-rw-r--r-- 1 minto 197121   848 Apr 24 20:26 impact c shield.effect
+-rw-r--r-- 1 minto 197121  3300 Apr 24 20:26 impact cyborg armor.effect
+-rw-r--r-- 1 minto 197121  7241 Apr 24 20:26 impact cyborg shield.effect
+-rw-r--r-- 1 minto 197121  1445 Apr 24 20:26 impact dirt.effect
+-rw-r--r-- 1 minto 197121  4251 Apr 24 20:26 impact elite armored skin.effect
+-rw-r--r-- 1 minto 197121  6368 Apr 24 20:26 impact engineer force field.effect
+-rw-r--r-- 1 minto 197121  2241 Apr 24 20:26 impact engineer sack.effect
+-rw-r--r-- 1 minto 197121  2374 Apr 24 20:26 impact floodcarrier.effect
+-rw-r--r-- 1 minto 197121  2258 Apr 24 20:26 impact floodcombat elite.effect
+-rw-r--r-- 1 minto 197121  1566 Apr 24 20:26 impact glass.effect
+-rw-r--r-- 1 minto 197121  4069 Apr 24 20:26 impact grunt.effect
+-rw-r--r-- 1 minto 197121  2784 Apr 24 20:26 impact h skin.effect
+-rw-r--r-- 1 minto 197121  2141 Apr 24 20:26 impact hunter shield.effect
+-rw-r--r-- 1 minto 197121  2809 Apr 24 20:26 impact hunter skin.effect
+-rw-r--r-- 1 minto 197121  1080 Apr 24 20:26 impact ice.effect
+-rw-r--r-- 1 minto 197121 10624 Apr 24 20:26 impact jackal shield.effect
+-rw-r--r-- 1 minto 197121   765 Apr 24 20:26 impact leaves.effect
+-rw-r--r-- 1 minto 197121  1956 Apr 24 20:26 impact metal hollow reflect.effect
+-rw-r--r-- 1 minto 197121  1786 Apr 24 20:26 impact metal hunter.effect
+-rw-r--r-- 1 minto 197121  2138 Apr 24 20:26 impact metal thick reflect.effect
+-rw-r--r-- 1 minto 197121  1956 Apr 24 20:26 impact metal thin reflect.effect
+-rw-r--r-- 1 minto 197121  1410 Apr 24 20:26 impact monitor.effect
+-rw-r--r-- 1 minto 197121  1393 Apr 24 20:26 impact plastic.effect
+-rw-r--r-- 1 minto 197121   507 Apr 24 20:26 impact rubber pen.effect
+-rw-r--r-- 1 minto 197121  1387 Apr 24 20:26 impact sand.effect
+-rw-r--r-- 1 minto 197121  1694 Apr 24 20:26 impact sentinel.effect
+-rw-r--r-- 1 minto 197121  1339 Apr 24 20:26 impact snow.effect
+-rw-r--r-- 1 minto 197121  2490 Apr 24 20:26 impact stone.effect
+-rw-r--r-- 1 minto 197121  1035 Apr 24 20:26 impact water pen.effect
+-rw-r--r-- 1 minto 197121  2068 Apr 24 20:26 impact wood.effect
+
+L:/ce/tags/weapons/sniper rifle/fp:
+total 180
+-rw-r--r-- 1 minto 197121 82540 Apr 24 20:26 fp.model
+-rw-r--r-- 1 minto 197121 96300 Apr 24 20:26 fp.model_animations
+
+L:/ce/tags/weapons/sniper rifle/shaders:
+total 15
+-rw-r--r-- 1 minto 197121  631 Apr 24 20:26 sniper rifle decal.shader_model
+-rw-r--r-- 1 minto 197121  651 Apr 24 20:26 sniper rifle grip.shader_model
+-rw-r--r-- 1 minto 197121  651 Apr 24 20:26 sniper rifle metal.shader_model
+-rw-r--r-- 1 minto 197121  670 Apr 24 20:26 sniper rifle primary.shader_transparent_generic
+-rw-r--r-- 1 minto 197121  946 Apr 24 20:26 sniper rifle screen.shader_transparent_chicago
+-rw-r--r-- 1 minto 197121 1244 Apr 24 20:26 sniper rifle subscreen.shader_transparent_chicago

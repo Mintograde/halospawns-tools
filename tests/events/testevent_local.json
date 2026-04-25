@@ -1,0 +1,8 @@
+{
+  "io_mode": "local",
+  "base_directory": "/tmp/ce",
+  "output_directory": "/tmp/ce/output",
+  "input_directory": "/tmp/ce/input",
+  "local_input_map": "/local_input/chillout.map",
+  "stage_local_input": false
+}
