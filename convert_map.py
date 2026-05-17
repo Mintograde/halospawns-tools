@@ -39,7 +39,12 @@ def map_to_glb(map_filename, base_directory, output_directory, keep_blend_files=
 
     scenario_filename, meta_filename = map_to_scenario(map_filename, base_directory)
 
-    files = scenario_to_obj(scenario_path=scenario_filename, meta_filename=meta_filename, remove_lights=False)
+    files = scenario_to_obj(
+        scenario_path=scenario_filename,
+        meta_filename=meta_filename,
+        remove_lights=False,
+        ce_path=base_directory,
+    )
     destination = os.path.join(output_directory, files['map_name'])
     destination_files = {}
     # remove duplicates with list(dict.fromkeys())

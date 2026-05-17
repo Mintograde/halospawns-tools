@@ -23,8 +23,6 @@ CLEAN_PROJECT_FILES = True
 CLEAN_DATA_FOLDER = True
 
 aether_path = r"C:\Users\minto\Downloads\Aether\Aether.exe"
-ce_path = os.environ.get('CE_PATH', r"L:\ce")
-# ce_path = r"V:\test"
 current_time = str(time.time()).replace(".","")
 aeth_project_name = f'{current_time}.aeth'
 
@@ -45,7 +43,7 @@ def collect_images(image_filenames, destination_folder):
     return copied_files
 
 
-def run_aether_and_get_paths(scenario_path):
+def run_aether_and_get_paths(scenario_path, ce_path=None):
     """
     Runs the Aether tool and extracts specified file paths from its output.
 
@@ -60,10 +58,11 @@ def run_aether_and_get_paths(scenario_path):
         'AETHER_EXECUTABLE_PATH',
         r"L:\bens_stuff\projects\AetherCLI\bin\Debug\net8.0\AetherCLI.exe"
     )
+    ce_path = str(ce_path or os.environ.get('CE_PATH', r"L:\ce"))
 
     command = [
         exe_path,
-        '--hek-folder', ce_path.rstrip(os.sep) + os.sep,  # FIXME: better path handling
+        '--hek-folder', ce_path.rstrip('/\\') + os.sep,
         '--bitmap-format', '3',
         '--bitmap-export', '1',
         '--overwrite-files', 'true',
@@ -117,7 +116,8 @@ def run_aether_and_get_paths(scenario_path):
         return None
 
 
-def scenario_to_obj(scenario_path, meta_filename=None, remove_lights=True):
+def scenario_to_obj(scenario_path, meta_filename=None, remove_lights=True, ce_path=None):
+    ce_path = str(ce_path or os.environ.get('CE_PATH', r"L:\ce"))
 
     if CLEAN_DATA_FOLDER:
         try:
@@ -126,7 +126,7 @@ def scenario_to_obj(scenario_path, meta_filename=None, remove_lights=True):
             print('Warning: could not clean data folder.')
             print(e)
 
-    aether_output = run_aether_and_get_paths(scenario_path)
+    aether_output = run_aether_and_get_paths(scenario_path, ce_path=ce_path)
 
     if aether_output:
         print("Successfully extracted data:\n")
