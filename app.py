@@ -54,6 +54,7 @@ try:
         "APP_API_BASE_URL",
         "APP_API_TRUSTED_CLIENT_NAME",
         "APP_API_TRUSTED_CLIENT_HMAC_SECRET_ID",
+        "APP_API_MAP_FINALIZATION_PATH",
     ]:
         print(f"{var:<45} = {_redacted_env(var)}")
     print("-" * 20)
@@ -208,50 +209,19 @@ def _process_map_object(map_object):
         )
         _copy_object(map_object.bucket, map_object.key, processed_keys["original_map"])
 
-        _send_upload_status(
+        _finalize_map_upload(
             upload_id,
-            "processed",
-            actual_size_bytes=downloaded.size_bytes,
-            actual_sha256=downloaded.sha256,
-            metadata={
-                "s3": {
-                    "bucket": map_object.bucket,
-                    "original_key": map_object.key,
-                    "processed_original_key": processed_keys["original_map"],
-                    "event_name": map_object.event_name,
-                },
-                "map": {
-                    "map_name": str(result_path.get("map_name") or ""),
-                    "processed_artifacts": {
-                        "glb": {
-                            "s3_bucket": map_object.bucket,
-                            "s3_key": processed_keys["glb"],
-                            "content_type": "model/gltf-binary",
-                        },
-                        "blend": {
-                            "s3_bucket": map_object.bucket,
-                            "s3_key": processed_keys["blend"],
-                            "content_type": "application/octet-stream",
-                        },
-                        "metadata": {
-                            "s3_bucket": map_object.bucket,
-                            "s3_key": processed_keys["metadata"],
-                            "content_type": "application/json",
-                        },
-                        "original_map": {
-                            "s3_bucket": map_object.bucket,
-                            "s3_key": processed_keys["original_map"],
-                            "content_type": downloaded.content_type or "application/octet-stream",
-                        },
-                    },
-                },
-            },
+            bucket=map_object.bucket,
+            source_key=map_object.key,
+            downloaded=downloaded,
+            result_path=result_path,
+            processed_keys=processed_keys,
         )
 
         _delete_object(map_object.bucket, map_object.key)
         print(
             f"Processed map upload {upload_id} from s3://{map_object.bucket}/{map_object.key} "
-            f"to s3://{map_object.bucket}/{processed_keys['original_map']}"
+            f"to s3://{map_object.bucket}/{processed_keys['original_map']} and finalized catalog ingest"
         )
         return {
             "input": f"s3://{map_object.bucket}/{map_object.key}",
@@ -394,19 +364,152 @@ def _validate_expected_upload(downloaded):
 
 
 def _upload_processed_outputs(*, bucket, upload_id, source_key, result_path, processed_prefix):
-    map_name = str(result_path.get("map_name") or Path(source_key).stem)
+    map_name = _map_name_from_result(result_path, source_key)
     prefix = f"{processed_prefix}{upload_id}/"
     keys = {
         "original_map": f"{prefix}{posixpath.basename(source_key)}",
         "glb": f"{prefix}{map_name}.glb",
-        "blend": f"{prefix}{map_name}.blend",
         "metadata": f"{prefix}{map_name}.json",
     }
+    if result_path.get("blend"):
+        keys["blend"] = f"{prefix}{map_name}.blend"
 
     _upload_file(result_path["glb"], bucket, keys["glb"], "model/gltf-binary")
-    _upload_file(result_path["blend"], bucket, keys["blend"], "application/octet-stream")
     _upload_file(result_path["meta"], bucket, keys["metadata"], "application/json")
+    if "blend" in keys:
+        _upload_file(result_path["blend"], bucket, keys["blend"], "application/octet-stream")
     return keys
+
+
+def _finalize_map_upload(upload_id, *, bucket, source_key, downloaded, result_path, processed_keys):
+    try:
+        return _call_app_api(
+            "POST",
+            _settings()["map_finalization_path"],
+            _map_finalization_payload(
+                upload_id=upload_id,
+                bucket=bucket,
+                source_key=source_key,
+                downloaded=downloaded,
+                result_path=result_path,
+                processed_keys=processed_keys,
+            ),
+        )
+    except Exception as error:
+        print(f"Map finalization failed for upload {upload_id}: {error}")
+        _report_finalization_failure(
+            upload_id,
+            bucket=bucket,
+            source_key=source_key,
+            downloaded=downloaded,
+            processed_keys=processed_keys,
+            error=error,
+        )
+        raise
+
+
+def _map_finalization_payload(*, upload_id, bucket, source_key, downloaded, result_path, processed_keys):
+    map_name = _map_name_from_result(result_path, source_key)
+    original_file_metadata = {
+        "original_s3_key": source_key,
+    }
+    original_filename = downloaded.metadata.get("original-filename")
+    if original_filename:
+        original_file_metadata["original_filename"] = original_filename
+
+    artifacts = {
+        "glb": {
+            "s3_bucket": bucket,
+            "s3_key": processed_keys["glb"],
+            "file_role": "processed",
+            "content_type": "model/gltf-binary",
+        },
+        "metadata": {
+            "s3_bucket": bucket,
+            "s3_key": processed_keys["metadata"],
+            "file_role": "metadata",
+            "content_type": "application/json",
+        },
+    }
+    if processed_keys.get("blend"):
+        artifacts["blend"] = {
+            "s3_bucket": bucket,
+            "s3_key": processed_keys["blend"],
+            "content_type": "application/octet-stream",
+        }
+
+    return {
+        "upload_id": upload_id,
+        "source_external_id": upload_id,
+        "map": {
+            "map_name": map_name,
+            "display_name": _display_name_for_map(
+                map_name=map_name,
+                source_key=source_key,
+                downloaded_metadata=downloaded.metadata,
+            ),
+            "engine_name": map_name,
+            "metadata": {},
+        },
+        "original_file": {
+            "s3_bucket": bucket,
+            "s3_key": processed_keys["original_map"],
+            "file_role": "original",
+            "content_type": downloaded.content_type or "application/octet-stream",
+            "size_bytes": downloaded.size_bytes,
+            "sha256": downloaded.sha256,
+            "metadata": original_file_metadata,
+        },
+        "artifacts": artifacts,
+        "metadata": {
+            "processor_runtime": {
+                "name": "halospawns-tools",
+            },
+        },
+    }
+
+
+def _report_finalization_failure(upload_id, *, bucket, source_key, downloaded, processed_keys, error):
+    try:
+        _send_upload_status(
+            upload_id,
+            "failed",
+            actual_size_bytes=downloaded.size_bytes,
+            actual_sha256=downloaded.sha256,
+            processing_error=f"Map finalization failed: {error}",
+            metadata={
+                "s3": {
+                    "bucket": bucket,
+                    "original_key": source_key,
+                    "processed_original_key": processed_keys.get("original_map"),
+                },
+            },
+        )
+    except Exception as status_error:
+        print(
+            f"Failed to report map finalization failure for upload {upload_id}: "
+            f"{status_error}"
+        )
+
+
+def _map_name_from_result(result_path, source_key):
+    map_name = str(result_path.get("map_name") or Path(posixpath.basename(source_key)).stem).strip()
+    if not map_name:
+        raise NonRetryableMapError("Converted map result did not include a map name")
+    return map_name
+
+
+def _display_name_for_map(*, map_name, source_key, downloaded_metadata):
+    raw_name = downloaded_metadata.get("original-filename") or posixpath.basename(source_key)
+    display_name = Path(str(raw_name)).stem
+    display_name = UUID_PATTERN.sub("", display_name).strip(" ._-")
+    display_name = re.sub(r"[_-]+", " ", display_name)
+    display_name = re.sub(r"\s+", " ", display_name).strip()
+    if not display_name:
+        display_name = map_name
+    if display_name.islower():
+        display_name = display_name.title()
+    return display_name
 
 
 def _upload_file(filename, bucket, key, content_type):
@@ -562,6 +665,7 @@ def _settings():
             "APP_API_UPLOAD_PROCESSING_STATUS_PATH_TEMPLATE",
             "/v1/uploads/{upload_id}/processing-status",
         ),
+        "map_finalization_path": _path_env("APP_API_MAP_FINALIZATION_PATH", "/v1/ingest/map-uploads"),
         "unprocessed_prefix": _prefix_env("MAP_UNPROCESSED_PREFIX", "maps/unprocessed/"),
         "processed_prefix": _prefix_env("MAP_PROCESSED_PREFIX", "maps/processed/"),
         "failed_prefix": _prefix_env("MAP_FAILED_PREFIX", "maps/failed/"),
@@ -579,6 +683,13 @@ def _required_env(name):
 def _prefix_env(name, default):
     value = (os.getenv(name) or default).strip().strip("/")
     return f"{value}/"
+
+
+def _path_env(name, default):
+    value = (os.getenv(name) or default).strip()
+    if not value.startswith("/"):
+        value = f"/{value}"
+    return value
 
 
 def _bool_env(name, default):
