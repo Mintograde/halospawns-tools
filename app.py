@@ -1,6 +1,7 @@
 import hashlib
 import hmac
 import json
+import math
 import os
 import posixpath
 import re
@@ -15,13 +16,14 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import boto3
-
 from conversion_runtime import run_conversion
 from local_io_mode import process_local_event, resolve_io_mode
 
 S3 = None
 SECRETS = None
 SECRET_CACHE = {}
+MAX_SPAWN_POINTS = 512
+PROCESSOR_NAME = "halospawns-tools"
 
 UUID_PATTERN = re.compile(
     r"(?P<upload_id>[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-"
@@ -221,7 +223,8 @@ def _process_map_object(map_object):
         _delete_object(map_object.bucket, map_object.key)
         print(
             f"Processed map upload {upload_id} from s3://{map_object.bucket}/{map_object.key} "
-            f"to s3://{map_object.bucket}/{processed_keys['original_map']} and finalized catalog ingest"
+            f"to s3://{map_object.bucket}/{processed_keys['original_map']} "
+            "and finalized catalog ingest"
         )
         return {
             "input": f"s3://{map_object.bucket}/{map_object.key}",
@@ -408,7 +411,15 @@ def _finalize_map_upload(upload_id, *, bucket, source_key, downloaded, result_pa
         raise
 
 
-def _map_finalization_payload(*, upload_id, bucket, source_key, downloaded, result_path, processed_keys):
+def _map_finalization_payload(
+    *,
+    upload_id,
+    bucket,
+    source_key,
+    downloaded,
+    result_path,
+    processed_keys,
+):
     map_name = _map_name_from_result(result_path, source_key)
     original_file_metadata = {
         "original_s3_key": source_key,
@@ -438,7 +449,7 @@ def _map_finalization_payload(*, upload_id, bucket, source_key, downloaded, resu
             "content_type": "application/octet-stream",
         }
 
-    return {
+    payload = {
         "upload_id": upload_id,
         "source_external_id": upload_id,
         "map": {
@@ -463,13 +474,95 @@ def _map_finalization_payload(*, upload_id, bucket, source_key, downloaded, resu
         "artifacts": artifacts,
         "metadata": {
             "processor_runtime": {
-                "name": "halospawns-tools",
+                "name": PROCESSOR_NAME,
             },
         },
     }
+    spawn_points = _map_spawn_points_from_metadata(result_path)
+    if spawn_points:
+        payload["spawn_points"] = spawn_points
+        payload["spawn_source"] = {
+            "path": "$.spawns",
+            "extractor": PROCESSOR_NAME,
+        }
+    return payload
 
 
-def _report_finalization_failure(upload_id, *, bucket, source_key, downloaded, processed_keys, error):
+def _map_spawn_points_from_metadata(result_path):
+    metadata_path = result_path.get("meta")
+    if not metadata_path:
+        return None
+
+    try:
+        with Path(metadata_path).open("r", encoding="utf-8") as metadata_file:
+            metadata = json.load(metadata_file)
+    except Exception as error:
+        print(f"Map spawn extraction skipped; metadata JSON could not be read: {error}")
+        return None
+
+    return _spawn_points_from_records(metadata.get("spawns"))
+
+
+def _spawn_points_from_records(records):
+    if not isinstance(records, list):
+        return None
+
+    points = []
+    skipped = 0
+    for record in records:
+        point = _spawn_point_from_record(record)
+        if point is None:
+            skipped += 1
+            continue
+        points.append(point)
+        if len(points) >= MAX_SPAWN_POINTS:
+            break
+
+    if skipped:
+        print(f"Skipped {skipped} spawn record(s) without finite x/y/z coordinates")
+    if len(records) > MAX_SPAWN_POINTS:
+        print(f"Truncated spawn records from {len(records)} to {MAX_SPAWN_POINTS}")
+    return points or None
+
+
+def _spawn_point_from_record(record):
+    try:
+        if isinstance(record, dict):
+            if all(axis in record for axis in ("x", "y", "z")):
+                return _finite_spawn_point(record["x"], record["y"], record["z"])
+            for key in ("position", "translation", "origin", "location"):
+                nested = record.get(key)
+                if isinstance(nested, dict) and all(axis in nested for axis in ("x", "y", "z")):
+                    return _finite_spawn_point(nested["x"], nested["y"], nested["z"])
+                if isinstance(nested, (list, tuple)) and len(nested) >= 3:
+                    return _finite_spawn_point(nested[0], nested[1], nested[2])
+        if isinstance(record, (list, tuple)) and len(record) >= 3:
+            return _finite_spawn_point(record[0], record[1], record[2])
+    except (TypeError, ValueError):
+        return None
+    return None
+
+
+def _finite_spawn_point(x, y, z):
+    point = {
+        "x": float(x),
+        "y": float(y),
+        "z": float(z),
+    }
+    if not all(math.isfinite(component) for component in point.values()):
+        return None
+    return point
+
+
+def _report_finalization_failure(
+    upload_id,
+    *,
+    bucket,
+    source_key,
+    downloaded,
+    processed_keys,
+    error,
+):
     try:
         _send_upload_status(
             upload_id,
@@ -568,7 +661,7 @@ def _send_upload_status(
         "metadata": {
             **(metadata or {}),
             "processor_runtime": {
-                "name": "halospawns-tools",
+                "name": PROCESSOR_NAME,
             },
         },
     }
@@ -665,7 +758,10 @@ def _settings():
             "APP_API_UPLOAD_PROCESSING_STATUS_PATH_TEMPLATE",
             "/v1/uploads/{upload_id}/processing-status",
         ),
-        "map_finalization_path": _path_env("APP_API_MAP_FINALIZATION_PATH", "/v1/ingest/map-uploads"),
+        "map_finalization_path": _path_env(
+            "APP_API_MAP_FINALIZATION_PATH",
+            "/v1/ingest/map-uploads",
+        ),
         "unprocessed_prefix": _prefix_env("MAP_UNPROCESSED_PREFIX", "maps/unprocessed/"),
         "processed_prefix": _prefix_env("MAP_PROCESSED_PREFIX", "maps/processed/"),
         "failed_prefix": _prefix_env("MAP_FAILED_PREFIX", "maps/failed/"),
